@@ -1,0 +1,12 @@
+.xans-myshop-depositsummary { margin:14px 7px; }
+.xans-myshop-depositsummary h3 { padding:14px; font-size:14px; line-height:1.2em; color:#222; background:#fcfcfc; border: 1px solid #ddd; border-width: 1px 0; }
+.xans-myshop-depositsummary .ec-base-table { border-width: 1px 0; }
+.xans-myshop-depositsummary .ec-base-table th, .xans-myshop-depositsummary .ec-base-table td { border-top: 1px dotted #eee; }
+
+/* 관련 링크 */
+.xans-myshop-deposithistorypackage .navigation { padding:0 7px 14px; }
+.xans-myshop-deposithistorypackage .navigation ul { border:1px solid #ddd; border-width: 1px 0; }
+.xans-myshop-deposithistorypackage .navigation li { background:#fcfcfc; border-top:1px dotted #eee; }
+.xans-myshop-deposithistorypackage .navigation li:first-child { border-top:0; }
+.xans-myshop-deposithistorypackage .navigation li a { display:block; position:relative; padding:14px; font-weight: 400; font-size:14px; line-height:1.2em; color:#222; }
+.xans-myshop-deposithistorypackage .navigation li a:after { display:block; content:""; width:20px; height:20px; position:absolute; top:12px; right:12px; background: url("/web/upload/mynomy/kr_mobile/layout/btn_more_board.png") no-repeat scroll 97% 50%; background-size: 13px 25px; }

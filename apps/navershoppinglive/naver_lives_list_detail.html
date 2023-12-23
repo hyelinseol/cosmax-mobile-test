@@ -1,0 +1,112 @@
+<!--@layout(/layout/basic/layout.html)-->
+<script type="text/javascript" src="https://cafe24img.poxo.com/file.cafe24cos.com/common/js/jquery/jquery.min-3.6.0.js"></script>
+<script>
+    var jQuery3 = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="https://im.pstatic.net/live-commerce/modules/launcher/0.20.1/index.js"></script>
+<script type="text/javascript" src="https://cafe24img.poxo.com/file.cafe24cos.com/nsl/archive_files/resources/prod/js/naverlibrary.js"></script>
+<link rel="stylesheet" href="https://cafe24img.poxo.com/file.cafe24cos.com/nsl/archive_files/resources/common/css/form_nickname.css">
+<div module="Layout_Dummy">
+    <div id='broadcast-list-page-cafe24'></div>
+</div>
+<script>
+    jQuery3(document).ready(function () {
+        let oNaverLivesList = {
+            initiateLibrary: function () {
+                this.oLibrary = window.navershoppinglivelibrary(this);
+            },
+            runLico: function () {
+                lico.launcher({
+                    name: 'ShoppingLiveBroadcastListPage',
+                    module: {
+                        resourcePath: 'https://im.pstatic.net/live-commerce/products/broadcast-page/latest/real/',
+                        js: 'index.js',
+                        css: 'bundle.css'
+                    },
+                    moduleConfig: {
+                        externalServiceId: oNaverLivesList.oLibrary.externalServiceId,
+                        header: {
+                            use: true,
+                            title: '',
+                            backButton: {
+                                use: false,
+                            },
+                        },
+                        documentTitle: {
+                            title: {
+                                text: '전체 페이지',
+                            },
+                        },
+                        margin: 20,
+                        align: 'center',
+                        display: {
+                            standby: {
+                                title: {
+                                    text: '예고 페이지',
+                                    style: {
+                                        fontColor: '#1E1E23',
+                                        fontSize: '17px',
+                                        fontFamily: 'Noto Sans KR',
+                                        fontWeight: '700', // '700' '800' 가능
+                                        align: 'left', // 'left' 'center' 가능
+                                    },
+                                },
+                                layout: 'list', // 'list' 'grid' 가능
+                                onClickBridge: (oEvent, oBroadcast) => {
+                                    window.location.href = '/apps/navershoppinglive/naver_lives_preview.html?broadcastId=' + oBroadcast.broadcastId;
+                                }, // 커스텀 없이 네이버 페이지 랜딩하는 경우 핸들러 제거
+                                onClickLive: (oEvent, oBroadcast) => {
+                                    oNaverLivesList.oLibrary.verifyPlatform('#broadcast-list-page-cafe24', oBroadcast.broadcastId);
+                                }, // 커스텀 없이 네이버 페이지 랜딩하는 경우 핸들러 제거
+                            },
+                            onair: {
+                                title: {
+                                    text: '지금 라이브 중',
+                                    style: {
+                                        fontColor: '#1E1E23',
+                                        fontSize: '17px',
+                                        fontFamily: 'Noto Sans KR',
+                                        fontWeight: '700', // '700' '800' 가능
+                                        align: 'left', // 'left' 'center' 가능
+                                    },
+                                },
+                                layout: 'highlight', // 'list' 'grid' 'highlight' 가능
+                                onClickItem: (oEvent, oBroadcast) => {
+                                    oNaverLivesList.oLibrary.verifyPlatform('#broadcast-list-page-cafe24', oBroadcast.broadcastId);
+                                },
+                            },
+                            replay: {
+                                defaultSort: 'LATEST', // 'LATEST', 'VIEW_COUNT', 'SALE_AMOUNT' 가능
+                                sortTypes: ['LATEST', 'VIEW_COUNT', 'SALE_AMOUNT'], // 'LATEST'는 없어도 기본적으로 들어감
+                                title: {
+                                    text: '다시보기',
+                                    style: {
+                                        fontColor: '#1E1E23',
+                                        fontSize: '17px',
+                                        fontFamily: 'Noto Sans KR',
+                                        fontWeight: '700', // '700' '800' 가능
+                                        align: 'left', // 'left' 'center' 가능
+                                    },
+                                },
+                                layout: 'grid', // 'list' 'grid' 가능
+                                onClickItem: (oEvent, oBroadcast) => {
+                                    oNaverLivesList.oLibrary.verifyPlatform('#broadcast-list-page-cafe24', oBroadcast.broadcastId);
+                                }
+                            }
+                        },
+                        target: document.getElementById('broadcast-list-page-cafe24'),
+                        debug: true,
+                    },
+                    onLoad(oInstance) {
+                        window.liveListPage = oInstance;
+                    },
+                    onError(oError) {
+                        console.error(oError);
+                    },
+                });
+            }
+        }
+        oNaverLivesList.initiateLibrary();
+        oNaverLivesList.oLibrary.init();
+    });
+</script>

@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#header .category { position:absolute; left:0; top:0; width:47px; height:43px; vertical-align:middle; }
+#header .category a { display:inline-block; overflow:hidden; width:100%; height:100%; text-indent:100%; white-space:nowrap; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_category.png") no-repeat 0 0; background-size:47px 43px; }
+
+#contents { position:relative; background-color:#fff; }
+
+/* 마이페이지 레이아웃css */
+/*#mypage #container { background:#f8f6f4;}
+#mypage #container #contents{ background:#f8f6f4; }
+#mypage2 #container { background:#fff; }
+#mypage2 #container #contents { background:#fff; }
+#mypage .inner { padding:0 20px;}*/
+
+.btnTop { display:none; position:fixed; top:0; left:50%; z-index:100; margin:0 0 0 -36px; border:1px solid #d6d6d7; border-top:0; border-radius:0 0 3px 3px; opacity:0.9; background:#616161 url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_btntop.png") no-repeat 90% 7px; background-size:12px 12px; }
+.btnTop a { display:inline-block; height:29px; padding:0 26px 0 10px; line-height:29px; color:#fff; }
+
+#mobileQuickLink { z-index:301 !important; }
+#mobileBtnQuickLink { z-index:100 !important; }
+
+.dimmed { display:none; position:fixed; left:0px; top:0; right:0px; bottom:0px; z-index:150; background:rgba(0,0,0,0.7); }
+#dimmedSlider { display:none; position:fixed; left:0px; top:0; right:0px; bottom:0px; z-index:500; background:rgba(0,0,0,0.7); }
+
+/* 메인 검색 */
+/*#main .searchWrap { position:relative; height:38px; padding:5px 41px 0 47px; }
+#main .searchWrap .searchForm { position:relative; padding:0 28px 0 33px; border:1px solid #ccc; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_search.png") no-repeat 5px 5px; background-size:20px 20px; }
+#main .searchWrap .btnDelete { position:absolute; right:3px; top:5px; width:20px; height:20px; border:0; cursor:pointer; overflow:hidden; text-indent:100%; font-size:0; white-space:nowrap; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0; background-size:20px 20px; }
+#main .searchWrap #keyword { width:100%; padding:0; border:0; }*/
+
+/* 메인 카테고리*/
+#main #header #topArea .xans-layout-mobilemaincategory { position:relative; height:43px; border-bottom:1px solid #e3e3e3; background-color:#fff; }
+#main #header #topArea .xans-layout-mobilemaincategory ul { display:inline-block; width:100%; padding:0; text-align:left; font-size:0; line-height:0; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+#main #header #topArea .xans-layout-mobilemaincategory ul li { display:inline-block; width:33.3%; font-size:13px; text-align:center; }
+
+/* 메인 스와이프 */
+#main #header #topArea .xans-layout-mobilemaincategory .afterNone { display:none; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul { display:table; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul > li { width:100%; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul > li > ul { padding:0 40px; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul > li > ul li { border-bottom:3px solid #fff; width:33%; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul > li > ul li.selected { border-bottom-color:#217bdb; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul > li > ul li a { display:inline-block; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; padding:22px 0 18px; font-weight:bold; color:#9a9a9a; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul > li > ul li.selected a { color:#217bdb; }
+#main #header #topArea .xans-layout-mobilemaincategory > ul > li > ul li a img { max-height:40px; }
+#main #header #topArea .xans-layout-mobilemaincategory p { position:absolute; top:0; background-color:#fff; }
+#main #header #topArea .xans-layout-mobilemaincategory p.btnPrev { left:0; display:none; }
+#main #header #topArea .xans-layout-mobilemaincategory p.btnNext { right:0; display:none; }
+#main #header #topArea .xans-layout-mobilemaincategory p a { display:inline-block; padding:13px 14px; }
+
+/* 메인 배너 */
+#main .mainBanner { position:relative; }
+#main .mainBanner a img { max-height:290px; }
+#main .mainBanner .ec-base-paginate { position:absolute; bottom:8px; z-index:10; width:100%; }
+#main .mainBanner .afterNone { display:none; }
+
+/* 메인 기능버튼 */
+#main .funcArea { margin:0 0 10px 0; padding:6px; border-bottom:1px solid #c2c2c2; text-align:right; background-color:#fff; }
+#main .funcArea .btnSearchdata { width:33px; height:29px; font-size:0; line-height:0; cursor:pointer; border:0; outline:0; background:url(//img.echosting.cafe24.com/skin/mobile/layout/btn_searchdata.gif) no-repeat 0 0; background-size:33px 29px; }
+
+/* 타이틀 */
+#titleArea { position:relative; background-color:#fff; }
+#titleArea h2 { padding:0 61px; line-height:43px; font-size:22px; color:#222; font-weight: 500; text-align:center; margin: 16px auto; }
+#titleArea > span { display:none; position:absolute; top:6px; left:14px; }
+
+/* 마이쇼핑 메인 */
+.myshopMain { /*padding:0px 20px; font-size:13px; */}
+
+.comnPrd .boardCate { position: relative; margin:0 auto; padding-top:0px; }
+.comnPrd .boardCate.fixed {position:fixed; left:50%; top:0px; transform:translate(-50%, 0); width:100%; max-width:1280px; z-index:100; margin:0;}
+.comnPrd .boardCate .board_menu { display:flex; }
+.comnPrd .boardCate .board_menu li { flex:1; height:40px; line-height:40px; border: 1px solid #eee; border-right:0; background:#fff; text-align: center; font-size:14px;}
+.comnPrd .boardCate .board_menu li:first-child {border-left:0px solid #eee;}
+.comnPrd .boardCate .board_menu li.on { border:1px solid #000; background:#000; }
+.comnPrd .boardCate .board_menu li.on a { color:#fff; font-weight:500; }
+.comnPrd .boardCate .board_menu li a { display:block; font-size: 14px; color: #999; font-weight: 400;}
+.comnPrd .boardCate .board_menu li a .review_count {display:inline-block; font-size:12px;} 
+
+.fixed-box.active {z-index:99999999 !important;}
+
+/* 상세페이지 상품문의 공통 */
+.comnCauTable .rowBlock {align-items:stretch; flex-direction:column;}
+.comnCauTable .rowBlock .itemTh {width:100% !important; border:0 !important; padding:10px 5px 5px 5px !important; font-weight:600;}
+.comnCauTable .rowBlock .itemTd {width:100% !important; border:0 !important; padding:0 5px 10px 5px !important;}

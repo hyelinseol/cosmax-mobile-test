@@ -1,0 +1,37 @@
+/* 자주묻는질문 */
+.faq_wrap{margin-top:30px;}   
+.faq_wrap #acco { background: #fff;	width:100%;	margin: 10px auto;	color: #000;   border: 1px solid #efefef; }
+.faq_wrap #acco .tit { position: relative; font-size: 18px; line-height: 34px; cursor: pointer; border-bottom:1px solid #e5e5e5; }
+.faq_wrap #acco .tit span{display: inline-block; width: 50px; height:51px; background:#f2f2f2; line-height:50px; text-align: center; }
+.faq_wrap #acco .tit h3{display:inline-block; height:50px; line-height:50px; font-size:15px; padding-left: 18px; }
+.faq_wrap #acco ul ul li {	color: #333;	text-decoration: none;	font-size: 14px; line-height: 20px;	display: block;	-webkit-transition: all 0.15s;	-moz-transition: all 0.15s;	-o-transition: all 0.15s;	-ms-transition: all 0.15s;	transition: all 0.15s;}
+.faq_wrap #acco ul ul { display:none; background:#fff; padding: 50px 30px; border-bottom:1px solid #e5e5e5;}
+.faq_wrap #acco li.active ul {	display: block; }
+
+
+.cs { border-bottom:1px solid #d1d1d1; border-top:1px solid #d1d1d1; padding:20px 0; margin:30px 0; }
+.cs .myshop_tit h2 { margin-bottom:10px; }
+.cs .myshop_tit p { font-size: 13px; color: #999; line-height: 17px; }
+.cs ul li { width:100%; background:#0b0a0a; text-align:center; line-height:40px; margin-top:10px; }
+.cs ul li a{ font-size:14px; color: #fff; }
+
+/* 게시판 아코디언 */
+
+.boardList .line {overflow:hidden; border-bottom:1px solid #e5e5e5; font-weight:300;}
+.boardList .line:first-child {border-top:1px solid #e5e5e5;}
+.boardList .line .checkbox {float:left; padding:0 10px 0 0;}
+.boardList .line .checkbox input {height:70px; line-height:70px;}
+.boardList .line .title {font-size:15px; cursor:pointer; background:#fff; display:flex; justify-content:flex-start; align-items:center;}
+.boardList .line .title .num {height:50px; line-height:50px; padding:0; width:40px; text-align:center;}
+.boardList .line .title .num a {padding:0px; background:transparent; color:#000; text-align:center; font-weight:700; text-decoration:none; text-align:center;}
+.boardList .line .title .tit {height:50px; line-height:50px; width:calc(100% - 40px); box-sizing:border-box;}
+.boardList .line .title .tit a {display:block; text-decoration:none; color:#0b0a0a; font-weight:400; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; box-sizing:border-box;}
+.boardList .line .contArea { background:#fafafa; border-top:1px solid #e5e5e5;}
+.boardList .line .contArea p {padding: 20px 15px;line-height:22px; font-size:14px !important; }
+.boardList .line a { display:inline-block; }
+
+.xans-board-listpackage{background:none !important;}
+.xans-board-listpackage .titArea{display:flex; align-items: center;}
+.xans-board-listpackage #myshop_tit h2{width:100%; text-align:left; padding:0; }
+.xans-board-listpackage #myshop_tit .check_box{width:100%; margin:0;}
+.xans-board-listpackage #myshop_tit .check_box select{width:100%;}

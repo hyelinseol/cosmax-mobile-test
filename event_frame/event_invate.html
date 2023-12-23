@@ -1,0 +1,30 @@
+<style>
+body {margin:0; padding:0;}
+img {max-width:100%;}
+</style>
+<div>
+	<div class="eventBlock"><img src="/file_data/threewaau/2023/02/21/c028246f7ae11c74187d126f530885da.jpg"></div>
+	<img src="/web/upload/mynomy/event/contents_invate.jpg" usemap="#image-map">
+</div>
+
+<map name="image-map">
+    <area target="_parent" alt="" title="" href="https://3waau.com/member/modify.html" coords="303,448,1201,673" shape="rect">
+</map>
+
+<script>
+$(document).ready(function() {
+	$('img[usemap]').rwdImageMaps();
+});
+</script>
+<script>
+function copyURL() {
+	var copyText = document.createElement("textarea");
+	document.body.appendChild(copyText);
+	copyText.value = 'https://3waau.com/member/join.html';
+	copyText.select();
+	document.execCommand('copy');
+	document.body.removeChild(copyText);
+	alert(copyText.value + '\n회원가입 주소가 복사 되었습니다.');
+}
+</script>
+<script src="/gd_import/js/jquery.rwdImageMaps.min.js"></script>

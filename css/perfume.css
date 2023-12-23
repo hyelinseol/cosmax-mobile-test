@@ -1,0 +1,6 @@
+.perfume_wrap { position:relative; font-size:0; line-height:0; text-align:center; }
+.perfume_wrap img { max-width:100%; }
+.perfume_wrap a { position:absolute; }
+.perfume_wrap a.perfume_1 { left:2%; bottom:20.7%; width:96%; height:1.7%; }
+.perfume_wrap a.perfume_2 { left:19%; bottom:1%; width:62%; height:2%; }
+.perfume_wrap .perfume_button { position:absolute; top:0.7%; right:25%; width:50%; height:1.2%; cursor: pointer; }

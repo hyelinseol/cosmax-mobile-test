@@ -1,0 +1,94 @@
+<script type="text/javascript" src="https://cafe24img.poxo.com/file.cafe24cos.com/common/js/jquery/jquery.min-3.6.0.js"></script>
+<script>
+    var jQuery3 = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="https://im.pstatic.net/live-commerce/modules/launcher/0.20.1/index.js"></script>
+<script type="text/javascript" src="https://cafe24img.poxo.com/file.cafe24cos.com/nsl/archive_files/resources/prod/js/naverlibrary.js"></script>
+<link rel="stylesheet" href="https://cafe24img.poxo.com/file.cafe24cos.com/nsl/archive_files/resources/common/css/form_nickname.css">
+<div module="Layout_Dummy">
+    <div id='broadcast-list-cafe24'></div>
+</div>
+<script>
+    jQuery3(document).ready(function () {
+        let oNaverLivesList = {
+            initiateLibrary: function () {
+                this.oLibrary = window.navershoppinglivelibrary(this);
+            },
+            runLico: function () {
+                lico.launcher({
+                    name: 'ShoppingLiveBroadcastList',
+                    module: {
+                        resourcePath: 'https://im.pstatic.net/live-commerce/products/broadcast-list/latest/real/', //개발환경에서는 beta로 설정
+                        js: 'index.js',
+                        css: 'bundle.css'
+                    },
+                    moduleConfig: {
+                        externalServiceId: oNaverLivesList.oLibrary.externalServiceId,
+                        layout: {
+                            layoutType: 'carousel', // carousel(default), list, grid, highlight
+                        },
+                        title: {
+                            useFeature: true,
+                            text: 'LIVE', // 없을 경우 기본값 으로
+                            style: {
+                                fontWeight: "bold", // bold(default), extrabold, regular 등
+                                fontColor: "#1E1E23", // rgb, hex 등으로 적용 가능
+                                align: "left", // left(default), center
+                                fontFamily: "",
+                                fontSize: "19px", // 모듈 로드 시 mw pc 나눠 적용함. mw: 19px / pc: 22px (default)
+                                paddingTop: "0px", // '0px'(default)
+                                paddingBottom: "13px" // 13px(default) 타이틀 하단 마진 설정값, 상단은 영역 top margin으로 처리함
+                            }
+                        },
+                        broadcasts: {
+                            displayType: 'ALL', // ALL(default), ONAIR, REPLAY
+                            onClickLive: function (oEvent, oBroadcast) {
+                                oNaverLivesList.oLibrary.verifyPlatform('#broadcast-list-cafe24', oBroadcast.broadcastId);
+                            },
+                            onClickReplay: function (oEvent, oBroadcast) {
+                                oNaverLivesList.oLibrary.verifyPlatform('#broadcast-list-cafe24', oBroadcast.broadcastId);
+                            },
+                            onClickBridge: function (oEvent, oBroadcast) {
+                                window.location.href = '/apps/navershoppinglive/naver_lives_preview.html?broadcastId=' + oBroadcast.broadcastId;
+                            },
+                            onClickMore: function (oEvent) {
+                                window.location.href = '/apps/navershoppinglive/naver_lives_list_detail.html';
+                            }
+                        },
+                        moreButton: {
+                            useFeature: true,
+                            label: '라이브 더보기', //버튼 레이블 설정
+                            onClick: function (oEvent) {
+                                window.location.href = '/apps/navershoppinglive/naver_lives_list_detail.html';
+                            }
+                        },
+                        style: {
+                            mobileMargin: {
+                                left: "20px",
+                                right: "20px", // 해당 값이 default (가이드 제공)
+                                top: "30px",
+                                bottom: "32px" // 해당 값이 default (가이드 제공)
+                            },
+                            pcMargin: {
+                                left: "40px",
+                                right: "40px", // 해당 값이 default (가이드 제공)
+                                top: "30px",
+                                bottom: "32px" // 해당 값이 default (가이드 제공)
+                            },
+                            maxWidth: "1280px", // 해당 값이 default (가이드 제공)
+                        },
+                        target: document.getElementById('broadcast-list-cafe24'),
+                    },
+                    onLoad(oInstance) {
+                        window.liveList = oInstance;
+                    },
+                    onError(oError) {
+                        console.error(oError);
+                    },
+                });
+            }
+        }
+        oNaverLivesList.initiateLibrary();
+        oNaverLivesList.oLibrary.init();
+    });
+</script>

@@ -1,0 +1,57 @@
+.xans-product-additional .ec-base-tab {padding:40px 20px 20px 20px; display:block;}
+.xans-product-additional .ec-base-tab ul {margin:0; display:block; border:0 !important;}
+.xans-product-additional .ec-base-tab li {border:0; background:transparent !important; padding:14px 20px; border:0px !important; border-bottom:1px solid #ececec !important; margin:0 !important; display:block; text-align:left;}
+.xans-product-additional .ec-base-tab li:first-child {border-top:1px solid #ececec !important;}
+.xans-board-list .summary a {padding:0 !important;}
+
+.ec-base-tab a {display:inline-block !important; padding:10px 15px !important;}
+
+  /* typeList */
+.ec-base-paginate.typeList { padding:14px 0; font-size:0; line-height:0; }
+.ec-base-paginate.typeList ol { }
+.ec-base-paginate.typeList ol,
+.ec-base-paginate.typeList ol li { display:inline-block; vertical-align:middle; !imporatant; border:0 !important; padding:0 !important; min-height:auto !important;}
+.ec-base-paginate.typeList ol li:first-child {border-top:0 !important;}
+.ec-base-paginate.typeList ol li a { display:inline-block; width:31px; height:27px; font-size:15px; line-height:27px; color:#1b1b1b; vertical-align:middle; /*background:#fff;*/ padding:0 !important; text-align:center;}
+.ec-base-paginate.typeList ol li .this { color:#000; }
+.ec-base-paginate.typeList [class*='btn'] { display:inline-block; overflow:hidden; width:31px; height:27px; font-size:1px; line-height:0; text-indent:-9999em; vertical-align:middle; background:#fff; background-repeat:no-repeat; background-position:50% 50%; background-size:7px auto; }
+
+.infoBox {display:block;}
+.infoBox .box {display:block;}
+
+.comnPrd .infoBox .contDetail {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: #000;
+    line-height: 1.4;
+    word-break: keep-all;
+    padding-left: 10px;
+}
+.comnPrd .infoBox .contDetail h3 {
+    font-size: 14px;
+    color: #000;
+    padding-left: 10px;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+.xans-product-additional .ec-base-tab ul.delivery {display:block; height:auto; padding:0 !important; font-size:14px;}
+.xans-product-additional .ec-base-tab ul.delivery li {padding:0 !important; font-size:12px; border:0 !important; min-height:auto !important; line-height:1.5;}
+.xans-product-additional .ec-base-tab ul.delivery li:first-child {border-top:0 !important;}
+
+.comnPrd .infoBox .contDetail table {padding:0; margin:0; width:100% !important; table-layout:fixed;}
+.comnPrd .infoBox .contDetail table colgroup {display:none;}
+.comnPrd .infoBox .contDetail table tbody th, .infoBox .contDetail table tbody td {font-size:14px; border:0px solid #ccc !important; font-family:'Pretendard' !important; display:block; width:100% !important;}
+.comnPrd .infoBox .contDetail table tbody td:first-child {padding-bottom:5px !important; font-weight:500;}
+.comnPrd .infoBox .contDetail table tbody td:first-child br {display:none;}
+.comnPrd .infoBox .contDetail table tbody td:nth-child(even) {padding-bottom:10px !important; margin-bottom:10px !important; border-bottom:1px solid #ececec !important; font-weight:300;}
+
+strong.summary {display: block; padding: 0 0 7px; font-size: 14px; line-height: 1.3em; color: #333;}
+.descriptions a {display:block; padding:0 !important;}
+.descriptions a span {position: relative; padding: 0 6px 0 0;}
+
+.xans-board-list .subject img {max-width:100% !important; width:auto !important;}
+.xans-board-list .summary > a > span.point img {max-width:100% !important; width:auto !important;}

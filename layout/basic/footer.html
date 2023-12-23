@@ -1,0 +1,76 @@
+<span class="btnSkinChat"><a href="https://app.skinchat.ai/3waau" target="_blank"></a></span>
+<footer id="footer">
+  <div class="footer-inner">
+  <div class="footer-top">
+    <ul class="menus">
+      <li><a href="/shopinfo/company.html">회사소개</a></li>
+      <li><a href="/member/mall_agreement.html"><b>이용약관</b></a></li>
+      <li><a href="/member/privacy.html"><b>개인정보처리방침</b></a></li>
+      <li><a href="/board/free/list.html?board_no=1">고객케어센터</a></li>
+    </ul>
+  </div>
+  <div class="cs-wrap">
+    <div class="cs">
+      <div class="tit">고객케어센터</div>
+      <div class="tel"><a href="tel:031-1234-5567">1577-6542</a></div>
+    </div>
+    <ul class="sns">
+      <!-- <li><a href="#none" target="_blank"><img src="/web/upload/mynomy/kr/layout/ico_facebook02.svg" alt="페이스북" /></a></li> -->
+      <li><a href="https://www.instagram.com/3waau.kr/" target="_blank"><img src="/web/upload/mynomy/kr/layout/ico_instagram02.svg" alt="인스타그램" /></a></li>
+    </ul>
+    <!-- <a href="#none" class="chatbot">1:1 챗봇 상담하기</a> -->
+  </div>
+  <div class="shop-info" module="Layout_footer">
+    <div class="copyright">&copy; 2023 <b>{$mall_name}</b> All rights reserved.</div>
+    <address>
+      상호명 : {$company_name}<br />
+      대표자 : {$president_name}&nbsp;&nbsp;&nbsp;사업자등록번호 : {$company_regno}<br />
+      통신판매업자 신고 : {$network_regno}<br />
+      전화 : {$phone}&nbsp;&nbsp;&nbsp;<br />
+      주소 : {$mall_zipcode} {$mall_addr1} {$mall_addr2}<br />
+      이메일: {$cpo_email}
+    </address>
+  </div>
+<!--		<div class="name"><img src="/web/upload/mynomy/kr_mobile/layout/footer_mynomy.png" alt="" /></div>-->
+</div>
+</footer>
+
+<!-------------------------------------------------------------------------------------
+::: 결제를 위한 필수 영역 :: 절대 삭제하지 마세요 ▼ :::
+--------------------------------------------------------------------------------------->
+<div id="progressPaybar" style="display:none;">
+  <div id="progressPaybarBackground" class="layerProgress"></div>
+  <div id="progressPaybarView">
+      <p class="graph">현재 결제가 진행중입니다.</p>
+      <p class="txt">
+          본 결제 창은 결제완료 후 자동으로 닫히며, <br>
+          결제 진행 중에 본 결제 창을 닫으시면<br>
+          주문이 되지 않으니 <br>
+          결제 완료 될 때 까지 닫지 마시기 바랍니다.
+      </p>
+  </div>
+</div>
+<div module="Layout_multishopShipping" class="ec-base-layer typeModal">
+  <!--@css(/css/module/layout/multishopShipping.css)-->
+  <!--@js(/js/module/layout/multishopShipping.js)-->
+  <h1>WORLD SHIPPING</h1>
+  <div class="wrap worldshipLayer">
+      <p class="desc">PLEASE SELECT THE DESTINATION COUNTRY AND LANGUAGE :</p>
+      <div class="select">
+          <select module="Layout_multishopShippingCountrylist">
+              <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+              <option value="{$country_code}"{$country_default_selected}>SHIPPING TO : {$country_name}</option>
+          </select>
+      </div>
+      <div class="select">
+          <select module="Layout_multishopShippingLanguagelist">
+              <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+              <option value="{$shop_domain}"{$shop_default_selected}>LANGUAGE : {$shop_language_name}</option>
+          </select>
+      </div>
+  </div>
+  <div class="ec-base-button gFull">
+      <a href="#none" class="btnSubmit">GO</a>
+  </div>
+  <a href="#none" class="btnClose">닫기</a>
+</div>

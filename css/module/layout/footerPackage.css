@@ -1,0 +1,36 @@
+.xans-layout-footerpackage { position: relative; font-size:12px; line-height:1.5em; color:#333; border-top:1px solid #ddd; background: #fff; margin:10% auto 0; }
+
+.xans-layout-footerpackage .footerMenu { margin: 0 auto; }
+.xans-layout-footerpackage .footerMenu .policy { margin:0 16px; padding:16px 0; text-align: left; font-size:0; line-height:0; border-bottom:1px dashed #ddd; box-sizing: border-box; }
+.xans-layout-footerpackage .footerMenu .policy li { position:relative; display:inline-block; padding:0 8px; line-height:13px; font-size:13px; font-weight:500; color:#000; }
+.xans-layout-footerpackage .footerMenu .policy li:first-child { padding: 0 8px 0 0; }
+
+.xans-layout-footerpackage .footer01 { position:relative; }
+.xans-layout-footerpackage .footer01::after { content:""; display:block; clear:both; }
+.xans-layout-footerpackage .footer01 .tit { font-size:16px; font-weight:400; letter-spacing: -0.5px; margin:0 0 8px; }
+.xans-layout-footerpackage .footer_cs { float:left; width:50%; border-right: 1px dashed #ddd; margin:24px 0; padding:0 16px; font-size: 13px; font-weight:400; line-height: 1.5em; color:#000; box-sizing:border-box; }
+.xans-layout-footerpackage .footer_cs .tel { font-size:20px; font-weight:700; margin:0 0 8px; }
+.xans-layout-footerpackage .footer_cs span { display:block; }
+.xans-layout-footerpackage .footer_bank { float:left; width:50%; padding:24px 16px; font-size: 13px; font-weight:400; line-height: 1.5em; color:#000; box-sizing:border-box; }
+.xans-layout-footerpackage .footer_bank p:last-child { margin:8px 0 0; }
+
+.xans-layout-footerpackage address { padding:24px 0; margin:0 16px; line-height: 1.8em; border:1px dashed #ddd; border-width:1px 0; }
+.xans-layout-footerpackage address .tit { font-size:16px; font-weight:400; letter-spacing: -0.5px; margin:0 0 8px; }
+.xans-layout-footerpackage address a { color:#000; }
+
+.xans-layout-footerpackage .util { position: absolute; top: 24px; right: 16px; }
+
+.xans-layout-footerpackage .footerCon { position: relative; padding: 0 16px; }
+.xans-layout-footerpackage .footer_sns { margin: 0 0 16px; }
+.xans-layout-footerpackage .footer_sns::after { content: ""; display: block; clear: both; }
+.xans-layout-footerpackage .footer_sns li { float:left; font-size:26px; margin: 0 5px; }
+.xans-layout-footerpackage .footer_sns li:first-child { margin:0 5px 0 0; }
+.xans-layout-footerpackage .footer_sns li:hover { opacity: 0.5; }
+.xans-layout-footerpackage .footer_sns li a { display: block; color: #222; }
+.xans-layout-footerpackage .footer_sns li i { vertical-align: middle; }
+.xans-layout-footerpackage .ft_left { padding:24px 0 10px; }
+.xans-layout-footerpackage .ft_left .menu { padding:0 4px; line-height: 2.5em; box-sizing:border-box; }
+.xans-layout-footerpackage .ft_left .menu li a { font-size: 22px; color: #222; font-weight: 600;}
+.xans-layout-footerpackage .ft_left .menu li a:hover { opacity: 0.5; }
+
+.xans-layout-footerpackage .copyright { text-align:center; line-height:24px; color:#fff; font-size:10px; background:#000; padding:2px 0; }

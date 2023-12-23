@@ -1,0 +1,42 @@
+<div class="slideArea">
+    <div class="swiper-container ingredientSlide05">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgArea"><img src="/web/upload/mynomy/kr_mobile/prd/ingredient05_1.png" alt="추출물01" /></div>
+                <p>PQ-47<br/>(컬러케어 폴리머)</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgArea"><img src="/web/upload/mynomy/kr_mobile/prd/ingredient05_2.png" alt="추출물02" /></div>
+                <p>리치과피추출물</p>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgArea"><img src="/web/upload/mynomy/kr_mobile/prd/ingredient05_3.png" alt="추출물03" /></div>
+                <p>노니열매추출수</p>
+            </div>  
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>    
+    <script>
+        var ingredient_slide05 = new Swiper('.ingredientSlide05', {
+            speed: 600,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 32,
+            centeredSlides: false,
+            parallax: true,                                 
+            observer: true,
+            observeParents: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</div> 

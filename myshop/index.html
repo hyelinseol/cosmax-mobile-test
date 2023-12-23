@@ -1,0 +1,462 @@
+<!--@layout(/layout/basic/mypage.html)-->
+<!--마이페이지 > 진단 내역 X-->
+<div id="titleArea">
+  <!--h2>마이페이지</h2-->
+  <span module="Layout_MobileAction">
+    <a href="#none" onclick="{$go_back}"
+      ><img
+        src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_back.gif"
+        width="33"
+        alt="뒤로가기"
+    /></a>
+  </span>
+</div>
+
+<div module="layout_logincheck">
+  <!--
+  $url = /member/login.html
+--></div>
+
+<div class="myshopMain">
+  <div module="myshop_asyncbenefit">
+    <div class="inner">
+      <!--@css(/css/module/myshop/benefit.css)-->
+      <div class="info">
+        <div 1class="{$display_benefit|display}">
+          <div class="memberInfo">
+            <!--span><img src="{$group_image}" alt="" onerror="this.src='//img.echosting.cafe24.com/skin/base_ko_KR/member/img_member_default.gif';" width="35" class="{$group_image_tag_class}"></span-->
+            <div class="memberInfo_txt">
+              <ul>
+                <li>
+                  <strong class="name">{$member_name}님</strong>
+                  <p class="memGrade">정기결제회원</p>
+                  <!--strong class="group">[<span class="{$displayGroupIcon|display}"><img src="{$group_icon}" alt="" class="{$group_icon_tag_class}"></span>{$group_name}]</strong-->
+                </li>
+                <li class="setting_icon">
+                  <a href="/myshop/mypage/modify.html" class="icoMySet"></a>
+                </li>
+              </ul>
+              <ul class="{$bGradeAutoDisplay|display} gradeGuide" id="{$sGradeAutoDisplayId}">
+                <li class="{$bChangeTypePrice|display} {$sAutoGradeDisplay}">
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 까지 남은 구매금액은 {$sGradeIncreasePrice} 입니다.
+                </li>
+                <li class="{$bChangeTypeCount|display} {$sAutoGradeDisplay}">
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 까지 남은 구매건수는 {$sGradeIncreaseCount} 입니다.
+                </li>
+                <li class="{$bChangeTypePriceAndCount|display} {$sAutoGradeDisplay}">
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 까지 남은 구매금액은 {$sGradeIncreasePrice} 남은 구매건수는
+                  {$sGradeIncreaseCount} 입니다.
+                </li>
+                <li class="{$bChangeTypePriceOrCount|display} {$sAutoGradeDisplay}">
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 까지 남은 구매금액은 {$sGradeIncreasePrice} 또는 남은 구매건수
+                  {$sGradeIncreaseCount} 입니다.
+                </li>
+                <li class="{$bChangeMaxTypePrice|display}" id="{$sChangeMaxTypePriceId}">
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 등급을 유지하기 위해 남은 구매금액은 {$sGradeIncreasePrice}
+                  입니다.
+                </li>
+                <li class="{$bChangeMaxTypeCount|display}" id="{$sChangeMaxTypeCountId}">
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 등급을 유지하기 위해 남은 구매건수는 {$sGradeIncreaseCount}
+                  입니다.
+                </li>
+                <li
+                  class="{$bChangeMaxTypePriceAndCount|display}"
+                  id="{$sChangeMaxTypePriceAndCountId}"
+                >
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 등급을 유지하기 위해 남은 구매금액은 {$sGradeIncreasePrice}, 남은
+                  구매건수는 {$sGradeIncreaseCount} 입니다.
+                </li>
+                <li
+                  class="{$bChangeMaxTypePriceOrCount|display}"
+                  id="{$sChangeMaxTypePriceOrCountId}"
+                >
+                  [<span class="{$bDisplayNextGroupIcon|display} {$sNextGroupIconClass}"
+                    ><img src="{$group_icon}" alt="" class="{$next_group_icon_tag_class}" /></span
+                  >{$sNextGrade}] 등급을 유지하기 위해 남은 구매금액은 {$sGradeIncreasePrice}, 또는
+                  남은 구매건수 {$sGradeIncreaseCount} 입니다.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ec-base-help {$display_no_benefit|display}">
+            <p class="txt11 {$display_no_benefit|display} {$display_no_benefit_class}">
+              {$dc_pay} {$dc_min_price} 구매시 {$dc_price}{$dc_type}을 {$use_dc} 받으실 수 있습니다.
+              {$dc_max_percent}
+            </p>
+            <p class="txt11 {$display_mobile_use_dc|display} {$display_mobile_use_dc_class}">
+              ({$dc_pay} {$mobile_dc_min_price} 모바일 구매시
+              {$mobile_dc_price}{$mobile_dc_price_type}을 {$mobile_use_dc} 받으실 수 있습니다.
+              {$mobile_dc_max_percent})
+            </p>
+            <p class="txt11 {$display_with_all|display} {$display_with_all_class}">
+              {$dc_pay} {$dc_min_price_mileage} 구매시 {$dc_price_mileage}{$dc_type_mileage}을
+              {$use_dc_mileage} 받으실 수 있습니다. {$dc_max_mileage_percent}
+            </p>
+            <p
+              class="txt11 {$display_mobile_use_mileage|display} {$display_mobile_use_mileage_class}"
+            >
+              ({$dc_pay} {$mobile_dc_mileage_min_buy_amount} 모바일 구매시
+              {$mobile_dc_mileage_price_o_percent}{$mobile_dc_mileage_unit}을
+              {$mobile_use_dc_mileage} 받으실 수 있습니다.
+              {$mobile_dc_mileage_max_percent_buy_amount})
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .my_reward_wrap {
+          margin-top: 22px;
+        }
+        .my_reward_01 {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 20px;
+          color: #0b0a0a;
+          padding-left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          letter-spacing: -1px;
+        }
+        .my_reward_01:before {
+          content: "";
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          background: url(/web/upload/mynomy/kr/layout/icon_reward.svg) no-repeat 50% 50%;
+          background-size: 100% auto;
+        }
+        .my_reward_01 img {
+          vertical-align: middle;
+          margin-top: -3px;
+        }
+        .my_reward_02 {
+          margin-top: 8px;
+          font-size: 14px;
+          color: #666;
+          text-align: left;
+          padding-left: 22px;
+          line-height: 150%;
+        }
+        .my_reward_02 span {
+          position: relative;
+        }
+        .my_reward_02 span:first-child {
+          margin-right: 9px;
+        }
+        .my_reward_02 span:first-child:before {
+          content: "";
+          height: 100%;
+          width: 1px;
+          background: #666;
+          display: block;
+          height: 80%;
+          position: absolute;
+          right: -5px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .my_reward_03 a {
+          margin-top: 10px;
+          margin-bottom: 8px;
+          background: #eee;
+          color: #000;
+          border-radius: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 34px;
+          line-height: 34px;
+          box-sizing: border-box;
+          text-align: center;
+          letter-spacing: -1px;
+          font-weight: 500;
+          font-size: 16px;
+          padding-left: 5px;
+        }
+        .my_reward_03 a:after {
+          content: "";
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          background: url(/web/upload/mynomy/kr/layout/icon_share.svg) no-repeat 50% 50%;
+          background-size: 100% auto;
+        }
+        .my_reward_03 a img {
+          vertical-align: middle;
+          margin-left: 4px;
+          margin-top: 2px;
+        }
+      </style>
+
+      <div>
+        <div class="myInfoStats">
+          <div class="miBox">
+            <a href="/myshop/mypage/review.html">
+              <!-- snap review script start contact mail : support@snapvi.co.kr -->
+              <strong class="snap_writeable_review_count"></strong>
+              <!-- snap review end -->
+			  <p class="title">리뷰</p>
+            </a>
+          </div>
+          <div module="myshop_bankbook" class="miBox">
+            <a href="/myshop/coupon/coupon.html">
+              <strong class="survey_mypage_coupon_count data">{$coupon_cnt}</strong>
+			  <p class="title">쿠폰</p>
+            </a>
+          </div>
+          <div module="myshop_asyncbankbook" class="miBox">
+            <a href="/myshop/mileage/historyList.html">
+              <strong class="survey_mypage_mileage_count data">{$avail_mileage}</strong>
+			  <p class="title">포인트</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--///myshop_inner-->
+  </div>
+
+  <div module="Myshop_OrderHistoryListitem" class="ec-base-table typeList" style="display: none">
+    <table border="1" summary="" class="bdrNone">
+      <colgroup>
+        <col style="width: 112px" />
+      </colgroup>
+      <tbody class="center {$list_display|display}">
+        <tr>
+          <td class="state">
+            <a
+              href="#none"
+              class="survey_shipping_search btnLineG survey_module_shipping"
+              status="{$status}"
+              order_id="{$order_id}"
+              style="display: none"
+              onclick="{$shipping_trace_popup}"
+              >배송조회</a
+            >
+            <a
+              href="cancel.html{$param_apply}"
+              class="survey_cancel btnLineG survey_module_cancel"
+              status="{$status}"
+              order_id="{$order_id}"
+              >취소요청</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="state">
+            <a
+              href="#none"
+              class="survey_shipping_search btnLineG survey_module_shipping"
+              status="{$status}"
+              order_id="{$order_id}"
+              style="display: none"
+              onclick="{$shipping_trace_popup}"
+              >배송조회</a
+            >
+            <a
+              href="cancel.html{$param_apply}"
+              class="survey_cancel btnLineG survey_module_cancel"
+              status="{$status}"
+              order_id="{$order_id}"
+              >취소요청</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="state">
+            <a
+              href="#none"
+              class="survey_shipping_search btnLineG survey_module_shipping"
+              status="{$status}"
+              order_id="{$order_id}"
+              style="display: none"
+              onclick="{$shipping_trace_popup}"
+              >배송조회</a
+            >
+            <a
+              href="cancel.html{$param_apply}"
+              class="survey_cancel btnLineG survey_module_cancel"
+              status="{$status}"
+              order_id="{$order_id}"
+              >취소요청</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="state">
+            <a
+              href="#none"
+              class="survey_shipping_search btnLineG survey_module_shipping"
+              status="{$status}"
+              order_id="{$order_id}"
+              style="display: none"
+              onclick="{$shipping_trace_popup}"
+              >배송조회</a
+            >
+            <a
+              href="cancel.html{$param_apply}"
+              class="survey_cancel btnLineG survey_module_cancel"
+              status="{$status}"
+              order_id="{$order_id}"
+              >취소요청</a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="list">
+    <div class="comnTitle">
+      <a href="/myshop/mypage/order_check.html">
+        <h3 class="delivery">주문/배송 조회 <i>(최근 1개월)</i></h3>
+        <span class="txtMore">더보기</span>
+      </a>
+    </div>
+
+    <div module="myshop_orderstate">
+      <!--@css(/css/module/myshop/orderState.css)-->
+      <div class="state">
+        <ul class="order">
+          <li>
+            <a href="/myshop/mypage/order_check.html?status=analysis" class="count survey_n10"
+              ><span>0</span></a
+            >
+            <strong>상품준비중</strong>
+          </li>
+          <li>
+            <a href="/myshop/mypage/order_check.html?status=ready" class="count survey_n20"
+              ><span>0</span></a
+            >
+            <strong>배송준비중</strong>
+          </li>
+          <li>
+            <a href="/myshop/mypage/order_check.html?status=prepare" class="count survey_n21"
+              ><span>0</span></a
+            >
+            <strong>배송대기중</strong>
+          </li>
+          <li>
+            <a href="/myshop/mypage/order_check.html?status=shipping" class="count survey_n30"
+              ><span>0</span></a
+            >
+            <strong>배송중</strong>
+          </li>
+          <li>
+            <a href="/myshop/mypage/order_check.html?status=complate" class="count survey_n40"
+              ><span>0</span></a
+            >
+            <strong>배송완료</strong>
+          </li>
+          <li>
+            <a href="/myshop/mypage/order_check.html?status=feedbackloop" class="count survey_n50"
+              ><span>0</span></a
+            >
+            <strong>피드백루프</strong>
+          </li>
+        </ul>
+      </div>
+      <span class="guideFb">제품을 업그레이드하고 재구매 해보세요!</span>
+    </div>
+  </div>
+
+  <div module="myshop_main">
+    <!--@css(/css/module/myshop/main.css)-->
+    <ul class="myComnMenu">
+      <!-- <li>
+        <a href="#" class="mico photo">AI 사진 진단 내역</a>
+      </li>
+      <li>
+        <a href="/myshop/regular_delivery.html" class="mico subscribe">정기 결제 관리</a>
+      </li>
+	   -->
+      <li>
+        <a href="/myshop/mypage/diagnosis_list.html" class="mico myTreat">진단내역 <i>(최신순)</i></a>
+      </li>
+	  <li id="survey_board_link">
+        <a href="/board/consult/list.html?board_no=9" class="mico myqna">1:1 문의 내역<em></em></a>
+      </li>
+      <li>
+        <a href="/board/free/list.html?board_no=1002" class="mico helpdesk">스킨·헤어 맞춤 상담</a>
+      </li>
+      <li>
+        <a href="//pf.kakao.com/_XxfRRxj/chat" class="mico gift">선물함</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="event_banner myMain">
+    <!-- <a href="/article/event/8/183/"><img src="/web/renew_img/bnr_mypage_samplekit_mo.png" /></a> -->
+  </div>
+
+  <div class="btmLogout">
+    <div module="Layout_stateLogon" class="color"><a href="{$action_logout}">로그아웃</a></div>
+  </div>
+</div>
+
+<!-- 맞춤형 - 문진 -->
+<!--@import(/survey/common.html)-->
+<!--@js(/survey/js/class/MyShop.js)-->
+<!--@js(/survey/js/survey_myshop.js)-->
+
+<style>
+  .xans-myshop-orderhistorylistitem:after {
+    background: unset;
+  }
+
+  .treatHis .treatHisBox .labelFb {
+    background: url("http://ecudemo236777.cafe24.com/web/upload/mynomy/kr/diagnosis/label_feedback.svg")
+      no-repeat 50% 50%;
+  }
+
+  .survey_order_no {
+    text-decoration: none !important;
+    cursor: pointer;
+  }
+
+  .survey_order_no:hover {
+    text-decoration: underline !important;
+  }
+
+  .gColumn .btnItemFunc {
+    height: 44.6px;
+  }
+</style>
+
+<!-- 채티스 기프틴 스크립트 -->
+<!--@js(/js/module/myshop/chatis_gp_myshop_index.js)-->
+
+<!-- snap review script start contact mail : support@snapvi.co.kr -->
+<script>
+  function onloadsnapscript() {
+    var snapInstance = new snapSolution("3waau");
+    snapInstance.loadScript("review_independent", () => {
+      snapinstanceindependent.catchMoreItemReviewCnt();
+    });
+  }
+</script>
+<script
+  async
+  type="text/javascript"
+  src="//sfre-srcs-service.snapfit.co.kr/js/snap_combine_script.js"
+  defer="true"
+  charset="utf-8"
+  onload="onloadsnapscript()"
+></script>
+<!-- snap review end -->

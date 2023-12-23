@@ -1,0 +1,50 @@
+/************** button **************/ 
+.btnPrev, .btnNext, .btnFunc, .btnPur { display:inline-block; font-size:16px; letter-spacing:-0.03em; text-align:center; height:48px; line-height:48px; border-radius:8px; -moz-box-sizing:border-box; box-sizing:border-box; }
+.btnNext:hover, .btnNext:active { box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1); }
+.btnPrev { background:#666; color:#fff; }
+.btnNext { background:#ff585d; color:#fff; }
+.btnFunc { background:#ff585d; color:#fff; }
+.btnPur { background:#666; color:#fff; }
+
+/* mBtn */
+.mBtn { position:relative; padding:0; margin:16px 0 0; text-align:center; }
+
+/* dBtn */
+.dBtn { padding:0 30px; margin:32px 0 0; text-align:center; z-index:99; }
+.dBtn:after { content:""; display:block; clear:both; }
+
+/* fBtn */
+.fBtn { padding:0 20px; margin:32px 0 0; text-align:center; z-index:99; }
+.fBtn:after { content:""; display:block; clear:both; }
+
+/* gColumn */
+[class*="Btn"][class*="gColumn"] { display:flex; }
+[class*="Btn"][class*="gColumn"]:after { content:none; }
+[class*="Btn"][class*="gColumn"] a,
+[class*="Btn"][class*="gColumn"] button { flex:1; margin:0 8px 0 0; padding:0 8px; white-space:nowrap; }
+[class*="Btn"][class*="gColumn"] a:last-child, 
+[class*="Btn"][class*="gColumn"] button:last-child { margin:0; }
+
+/* gWrap */
+[class*="Btn"][class*="gWrap"] { display:flex; flex-wrap: wrap; }
+[class*="Btn"][class*="gWrap"] a:nth-child(2n),
+[class*="Btn"][class*="gWrap"] button:nth-child(2n) { margin:0; }
+[class*="Btn"][class*="gWrap"] a:last-child, 
+[class*="Btn"][class*="gWrap"] button:last-child { margin:8px 0 16px; }
+
+/* gFlex */
+[class*="Btn"][class*="gColumn"] .gFlex2 { flex:2; }
+[class*="Btn"][class*="gColumn"] .gFlex3 { flex:3; }
+[class*="Btn"][class*="gColumn"] .gFlex4 { flex:4; }
+
+/* gFull */
+[class*="Btn"].gFull a { margin:8px 0 0; }
+[class*="Btn"].gFull a:first-child { margin:0; }
+[class*="Btn"].gFull [class*="btn"], [class*="btn"].gFull { width:100%; }
+
+/* gFixed */
+[class*="Btn"].gFixed { position:fixed; z-index:120; left:0; bottom:0; margin:32px auto; max-width:100%; width:100%; box-sizing:border-box; }
+
+.regiBtns {position:relative;}
+.comnBtn {display:block; height:48px; line-height:48px; text-align:center; font-size:16px; font-weight:400; margin-bottom:10px;}
+.comnBtn.line {background:#FFF; border:1px solid #000; color:#0b0a0a;}

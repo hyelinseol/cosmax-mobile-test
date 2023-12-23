@@ -1,0 +1,647 @@
+<!--@layout(/layout/basic/main.html)--> <!-- ◁ 전체 css, 하단 정보 소스는 해당 파일을 열어주세요 -->
+<!--import(/gd_import/js/main.js)-->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------
+■■■■■■■■■■■■■■■■■■■ 굿디몰디자인입니다. 쇼핑몰 탬플릿 사용에 관한 안내사항입니다. ■■■■■■■■■■■■■■■■■■■
+
+■ 1.모든 제작물의 저작권은 굿디몰디자인에 있으며, 무단 복제나 도용은 저작권법(97조 5항)에 의해 금지되어 있습니다. 이를 위반시 처벌을 받을 수 있습니다.
+■ 2.세팅된 디자인은 1개 아이디에만 라이센스가 허락됩니다. (LOCK설정으로 다운로드 되지 않습니다.)
+■ 3.고객 및 카페24입점 디자인업체는 디자인요소 및 소스를 무단 도용시 민형사상의 처벌을 받게되고 합의는 절대 없습니다.
+■ 4.FTP상의 이미지 업로드 위치 ( web/upload/goodymall/kr_mobile_mobile_mobile 폴더에 업로드하면 됩니다. )
+     (★중요 : 저작권보호를 위해 LOCK설정으로 HTML파일 다운로드를 제한합니다. ★ 이미지폴더는 다운로드 가능합니다.)
+■ 5.궁금한 점은 이메일 또는 홈페이지를 이용해 주시기 바랍니다. 쇼핑몰 운영을 위한 공통매뉴얼이 제공되므로, 매뉴얼을 꼼꼼히 확인해 보시길 바랍니다.
+     ★굿디몰 홈페이지 : http://www.goodymall.co.kr_mobile_mobile   /   ★이메일 : help@goodymall.co.kr_mobile_mobile
+■ 6.디자인 최종업데이트 20220121
+     (★ 카페24 기능업그레이드가 계속됨으로, 구매한 디자인이 최종 업그레이드 소스까지 반영되지는 않을수 있음을 사전 안내드립니다.)
+
+											▼▼▼▼▼  꼭 읽어주세요!!   ▼▼▼▼▼
+
+※※※※※※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.※※※※※※
+※※※※※※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 ) ※※※※※※
+※※※※※※ 소스수정 전 각 소스 위 주석을 꼭 읽어주시기 바랍니다. ※※※※※※
+-------------------------------------------------------------------------------------------------------------------------------------------> 
+<style>
+	#contents {margin:0px;}
+</style>
+
+<div id="layoutMain">
+
+	<div class="content-header">
+		<div class="zoom">
+			<!---------------------------------------------------------------------------------------------------------------------------
+			■ 메인슬라이드 ■
+
+			※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+			※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.
+			---------------------------------------------------------------------------------------------------------------------------->
+			<!--@import(/gd_import/mainSlide.html)-->
+			
+			<div class="ticker-wrap">
+                <div class="ticker">
+                    <div class="item-wrap">
+                        <div class="item">
+							WE ARE ALL UNIQUE. THE BEAUTY INNOVATION FOR EACH INDIVIDUAL, 3WAAU. EXPERIENCE THE DIFFERENCE OF TRULY PERSONALIZED HAIRCARE.
+							WE ARE ALL UNIQUE. THE BEAUTY INNOVATION FOR EACH INDIVIDUAL, 3WAAU. EXPERIENCE THE DIFFERENCE OF TRULY PERSONALIZED HAIRCARE.
+							WE ARE ALL UNIQUE. THE BEAUTY INNOVATION FOR EACH INDIVIDUAL, 3WAAU. EXPERIENCE THE DIFFERENCE OF TRULY PERSONALIZED HAIRCARE.
+							WE ARE ALL UNIQUE. THE BEAUTY INNOVATION FOR EACH INDIVIDUAL, 3WAAU. EXPERIENCE THE DIFFERENCE OF TRULY PERSONALIZED HAIRCARE.
+							WE ARE ALL UNIQUE. THE BEAUTY INNOVATION FOR EACH INDIVIDUAL, 3WAAU. EXPERIENCE THE DIFFERENCE OF TRULY PERSONALIZED HAIRCARE.
+						</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="fixed-box">
+                <div class="pop">쓰리와우 1분 진단!</div>
+                <div class="btn_diagnosis">
+                    <a href="/survey?product_no=14"><strong>나만의 헤어케어 제품 만들기</strong> <img src="/web/upload/mynomy/kr_mobile/main/ico_arrow_quiz.svg" alt="헤어퀴즈 시작하기 화살표"></a>
+                </div>
+            </div>
+			
+			<section class="section01">
+				<div class="section-wrap-full">
+					<div class="title-wrap">
+						<div class="desc"><strong>3WAAU</strong>의 첫번째 이야기,</div>
+						<div class="tit">1:1 커스텀 헤어케어</div>
+						<a href="/product/list.html?cate_no=28" class="btn-more">자세히보기</a>
+					</div>
+					<div class="prd-wrap">
+						<!---------------------------------------------------------------------------------------------------------------------------
+						■ 메인진열상품(가로 4행, 할인율) ■  
+
+						• 상품관리 > 상품표시관리 > 상품 진열관리 > 추천상품에 상품을 넣어주세요.
+						※ 해당 상품진열의 타이틀은 • 상품관리 > 메인상품 진열관리 > 메인분류관리 에서 분류명을 수정해주시기 바랍니다.
+						※ 해당 상품진열의 타이틀 아래 서브텍스트는 소스창 • 에서 수정해주시기 바랍니다.
+						※ 해당 영역을 사용하지 않을 경우, 상품을 진열하지 않으시면 됩니다.
+						---------------------------------------------------------------------------------------------------------------------------->
+						<div module="product_listmain_1" class="ec-base-product">
+							<!--
+								$count = 2
+								※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+								※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+							-->
+							<div class="slide-wrap">
+								<ul class="swiper-wrapper">
+									<!--@import(/gd_import/prdList.html)-->
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section02">
+				<div class="section02-wrap">
+					<div class="cmn-txt txt01">
+						<div class="toggle-txt">
+							<div class="slide-wrap">
+								<div class="slide-box">
+									<div class="txt-slide">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><span>뷰티앱 랭킹템</span></div>
+											<div class="swiper-slide"><span>친구의 추천템</span></div>
+											<div class="swiper-slide"><span>SNS 인생템</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="txt">으로</div>
+						</div>
+						<div class="txt-tail">
+							당신의 고민이 해결됐나요?
+						</div>
+					</div>
+				</div>
+			</section>
+
+<!--			<div class="line-wrap"><div class="line line-h"></div></div>-->
+
+			<section class="section03">
+			    <div class="cmn-txt txt02">
+                    이제 나만을 위한<br /><strong>샴푸</strong>를 만드세요
+                </div>
+                <div class="in">
+                    <div class="bg_rebon01"></div>
+                    <article class="article01">
+    <!--					<div class="line-wrap"><div class="line line-v align-left"><div class="symbol"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/main/myno.png" alt="" /></div></div></div>-->
+                        <div class="box-info">
+                            <div class="txt-wrap">
+                                <div class="num"></div>
+                                <div class="tit">나를 기준으로<br />내 헤어고민에 딱 맞게</div>
+                                <div class="desc">1분 문진이면 충분해요.<br />3WAAU만의 독자 알고리즘이<br/>1,260만가지 데이터를 분석하여,<br />당신에게 딱 맞는 두피&모발 솔루션을 제공합니다.</div>
+                            </div>
+                        </div>
+                        <div class="box-action">
+                            <div class="action01">
+                                <div class="img-top">
+                                    <div class="bg-img bg01">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="/web/upload/mynomy/kr/main/article01_img02.jpg" alt="" /></div>
+												<div class="swiper-slide"><img src="/web/upload/mynomy/kr/main/article01_img03.jpg" alt="" /></div>
+												<div class="swiper-slide"><img src="/web/upload/mynomy/kr/main/article01_img01.jpg" alt="" /></div>
+											</div>
+										</div>
+									</div>
+                                    <div class="bg-img bg02">
+										<div class="swiper-container">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide"><img src="/web/upload/mynomy/kr/main/article01_img03.jpg" alt="" /></div>
+												<div class="swiper-slide"><img src="/web/upload/mynomy/kr/main/article01_img01.jpg" alt="" /></div>
+												<div class="swiper-slide"><img src="/web/upload/mynomy/kr/main/article01_img02.jpg" alt="" /></div>
+											</div>
+										</div>
+									</div>
+                                    <div class="img-wrap">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <figure data-item="3,2,2">
+                                                    <img src="/web/upload/mynomy/kr/main/article01_img01.jpg" alt="" />
+                                                    <figcaption>33세 <em>/</em> 지성 <em>/</em> 탈모 고민</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <figure data-item="0,2,0">
+                                                    <img src="/web/upload/mynomy/kr/main/article01_img02.jpg" alt="" />
+                                                    <figcaption>35세 <em>/</em> 건성 <em>/</em> 비듬 고민</figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <figure data-item="1,1,3">
+                                                    <img src="/web/upload/mynomy/kr/main/article01_img03.jpg" alt="" />
+                                                    <figcaption>28세 <em>/</em> 지성 <em>/</em> 손상모 고민</figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-wrap">
+                                    <div class="list-line">
+                                        <div class="list-bg"></div>
+                                        <div class="list">비듬</div>
+                                        <div class="list">두피가려움</div>
+                                        <div class="list">뿌리 볼륨</div>
+                                        <div class="list">탈모</div>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="list-bg"></div>
+                                        <div class="list">두피 진정</div>
+                                        <div class="list">딥클렌징</div>
+                                        <div class="list">두피쿨링</div>
+                                        <div class="list">정전기 방지</div>
+                                    </div>
+                                    <div class="list-line">
+                                        <div class="list-bg"></div>
+                                        <div class="list">두피보습</div>
+                                        <div class="list">염색모 케어</div>
+                                        <div class="list">두피냄새</div>
+                                        <div class="list">모발윤기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="explain">
+                                고객의 상태를 진단하고, 맞춤형 제품을 조제하기 위해 활용되는 문진 화면의 예시입니다.<br />
+                                처방 알고리즘에 따라, 선택한 답변이 실제 제공 제품에 100% 반영되지 않을 수 있습니다.
+                            </div>
+                        </div>
+                    </article>
+    <!--				<div class="line-wrap"><div class="line line-h"></div></div>-->
+                    <article class="article02">
+    <!--					<div class="line-wrap"><div class="line line-v align-right"><div class="symbol"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/main/myno.png" alt="" /></div></div></div>-->
+                        <div class="box-info">
+                            <div class="txt-wrap">
+                                <div class="num"></div>
+                                <div class="tit">피드백루프로<br />더 정교하게</div>
+                                <div class="desc">한번 더 당신의 의견에 귀 기울여요.<br />3WAAU 랩의 독자적인 알고리즘으로<br />더 섬세하게, 더 당신답게 맞춰드립니다.</div>
+                                <a href="/main/feedback.html" class="btn-more">자세히보기</a>
+                            </div>
+                        </div>
+                        <div class="box-action">
+                            <div class="action02">
+                                <div class="item">
+                                    <div class="bar">
+                                        <div class="plus"></div>
+                                        <div class="txt">
+                                            <span>세정력</span>
+                                        </div>
+                                        <div class="minus"></div>
+                                        <div class="progress progress50"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="bar">
+                                        <div class="plus"></div>
+                                        <div class="txt">
+                                            <span>두피 진정</span>
+                                        </div>
+                                        <div class="minus"></div>
+                                        <div class="progress progress70"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="bar">
+                                        <div class="plus"></div>
+                                        <div class="txt">
+                                            <span>모발 윤기</span>
+                                        </div>
+                                        <div class="minus"></div>
+                                        <div class="progress progress30"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="bar">
+                                        <div class="plus"></div>
+                                        <div class="txt">
+                                            <span>쿨링</span>
+                                        </div>
+                                        <div class="minus"></div>
+                                        <div class="progress progress80"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="bar">
+                                        <div class="plus"></div>
+                                        <div class="txt">
+                                            <span>딥클렌징</span>
+                                        </div>
+                                        <div class="minus"></div>
+                                        <div class="progress progress20"></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="bar">
+                                        <div class="plus"></div>
+                                        <div class="txt">
+                                            <span>모발 보습</span>
+                                        </div>
+                                        <div class="minus"></div>
+                                        <div class="progress progress60"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+    <!--				<div class="line-wrap"><div class="line line-h"></div></div>-->
+                    <article class="article03">
+    <!--					<div class="line-wrap"><div class="line line-v align-left"><div class="symbol"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/main/myno.png" alt="" /></div></div></div>-->
+                        <div class="box-info">
+                            <div class="txt-wrap">
+                                <div class="num"></div>
+                                <div class="tit">패키지까지<br/>더욱 나답게</div>
+                                <div class="desc">
+									매일의 일상이 특별해집니다.<br/>
+									내가 직접 붙인 닉네임과<br/>
+									내 샴푸가 만들어진 조제일자를<br/>
+									용기 뒷면에서 확인해보세요! 
+								</div>
+                            </div>
+                        </div>
+                        <div class="box-action">
+                            <div class="action03">
+                                <figure><img src="/web/upload/mynomy/kr/main/re_article03_img.jpg" alt="" /></figure>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="bg_rebon02"></div>
+				</div>
+<!--				<div class="line-wrap"><div class="line line-h"></div></div>-->
+
+			</section>
+
+			<section class="section04">
+				<div class="title"><strong>글로벌 코스맥스 LAB</strong>의<br /> 30년 노하우를 담은<br /><strong>1:1 개별 생산 시스템</strong></div>
+				<div class="desc">
+				    지금 쓰는 샴푸, <br/>
+					언제 만들어졌는지 확인해보셨나요? <br />
+                    3WAAU는 미리 만들어두지 않습니다.<br />
+                    1:1 개별 생산이 가능한 글로벌 코스맥스만의<br />
+                    특허 설비가 주문 즉시 조제합니다.
+				</div>
+
+				<div class="scroll-wrap">
+					<ul>
+						<li><img src="/web/upload/mynomy/kr/main/gallery01.jpg" alt="" /></li>
+						<li><img src="/web/upload/mynomy/kr/main/gallery02.jpg" alt="" /></li>
+						<li><img src="/web/upload/mynomy/kr/main/gallery03.jpg" alt="" /></li>
+						<li><img src="/web/upload/mynomy/kr/main/gallery04.jpg" alt="" /></li>
+					</ul>
+				</div>
+			</section>
+<!--			<div class="line-wrap"><div class="line line-h"></div></div>-->
+
+			<section class="section05" style="display:none;">
+				<div class="title">직접써본 리뷰</div>
+                
+				<div class="right">
+                    <div class="review_slide swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img01.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>두피산유국</strong>
+                                        <span>19세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “요즘 날씨가 너무 더워서<br /> 자꾸 떡지더라구요. 
+                                        <strong>세정력만 좀 높여 여름용 샴푸</strong>를 만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#여름샴푸</span>
+                                        <span>#유분 증가</span>
+                                        <span>#세정력강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img02.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>프로탈색러</strong>
+                                        <span>23세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “탈색을 했더니 머릿결이 망가져서, <br />
+                                        <strong>염색모 보호, 윤기 기능을<br /> 추가</strong>했어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#탈색샴푸</span>
+                                        <span>#염색샴푸</span>
+                                        <span>#모발보호강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img03.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>쿨링중독자</strong>
+                                        <span>32세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        <strong>“쿨링 단계만 조금 높여 </strong><br />
+                                        진짜 시원한 샴푸를<br /> 
+                                        만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#쿨링샴푸</span>
+                                        <span>#내맘대로</span>
+                                        <span>#단계조정</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img01.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>두피산유국</strong>
+                                        <span>19세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “요즘 날씨가 너무 더워서<br /> 자꾸 떡지더라구요. 
+                                        <strong>세정력만 좀 높여 여름용 샴푸</strong>를 만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#여름샴푸</span>
+                                        <span>#유분 증가</span>
+                                        <span>#세정력강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img02.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>프로탈색러</strong>
+                                        <span>23세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “탈색을 했더니 머릿결이 망가져서, <br />
+                                        <strong>염색모 보호, 윤기 기능을<br /> 추가</strong>했어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#탈색샴푸</span>
+                                        <span>#염색샴푸</span>
+                                        <span>#모발보호강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img03.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>쿨링중독자</strong>
+                                        <span>32세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        <strong>“쿨링 단계만 조금 높여 </strong><br />
+                                        진짜 시원한 샴푸를<br /> 
+                                        만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#쿨링샴푸</span>
+                                        <span>#내맘대로</span>
+                                        <span>#단계조정</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="review_slide swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img01.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>두피산유국</strong>
+                                        <span>19세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “요즘 날씨가 너무 더워서<br /> 자꾸 떡지더라구요. 
+                                        <strong>세정력만 좀 높여 여름용 샴푸</strong>를 만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#여름샴푸</span>
+                                        <span>#유분 증가</span>
+                                        <span>#세정력강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img02.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>프로탈색러</strong>
+                                        <span>23세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “탈색을 했더니 머릿결이 망가져서, <br />
+                                        <strong>염색모 보호, 윤기 기능을<br /> 추가</strong>했어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#탈색샴푸</span>
+                                        <span>#염색샴푸</span>
+                                        <span>#모발보호강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img03.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>쿨링중독자</strong>
+                                        <span>32세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        <strong>“쿨링 단계만 조금 높여 </strong><br />
+                                        진짜 시원한 샴푸를<br /> 
+                                        만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#쿨링샴푸</span>
+                                        <span>#내맘대로</span>
+                                        <span>#단계조정</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img01.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>두피산유국</strong>
+                                        <span>19세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “요즘 날씨가 너무 더워서<br /> 자꾸 떡지더라구요. 
+                                        <strong>세정력만 좀 높여 여름용 샴푸</strong>를 만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#여름샴푸</span>
+                                        <span>#유분 증가</span>
+                                        <span>#세정력강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img02.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>프로탈색러</strong>
+                                        <span>23세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        “탈색을 했더니 머릿결이 망가져서, <br />
+                                        <strong>염색모 보호, 윤기 기능을<br /> 추가</strong>했어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#탈색샴푸</span>
+                                        <span>#염색샴푸</span>
+                                        <span>#모발보호강화</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="slide_top">
+                                    <div class="slide_img"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/prd/slide_img03.png" alt=""></div>
+                                    <div class="slide_txt">
+                                        <strong>쿨링중독자</strong>
+                                        <span>32세</span>
+                                    </div>
+                                </div>
+                                <div class="slide_bot">
+                                    <p>
+                                        <strong>“쿨링 단계만 조금 높여 </strong><br />
+                                        진짜 시원한 샴푸를<br /> 
+                                        만들었어요!”
+                                    </p>
+                                    <div class="tag">
+                                        <span>#쿨링샴푸</span>
+                                        <span>#내맘대로</span>
+                                        <span>#단계조정</span>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</section>
+
+			<section class="section06" style="display:none;">
+				<div class="title"><img src="/web/upload/mynomy/kr/main/relogo.svg" alt="" />  Instagram</div>
+				<ul class="feed-list">
+					<li><a href="#none"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/main/re_insta01.png" alt="" /></a></li>
+					<li><a href="#none"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/main/re_insta02.png" alt="" /></a></li>
+					<li><a href="#none"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/main/re_insta03.png" alt="" /></a></li>
+					<li><a href="#none"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr/main/re_insta04.png" alt="" /></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<div class="content-footer">
+		<div class="zoom">
+			<section class="section07">
+				<div class="absCont">
+					<div class="title">
+						BECAUSE<br />
+						WE ARE<br />
+						ALL UNIQUE
+					</div>
+					<div class="desc">
+						누구나 나 다울 수 있도록,<br />
+						나만의 개성을 잃지 않도록.<br />
+						3WAAU는 획일화된 뷰티 관습을 넘어<br />
+						세상의 모든 ‘나’를 연구합니다.
+					</div>
+					<a href="/main/about.html" class="btn-more">자세히보기</a>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
+<!-- 맞춤형 - 문진 -->
+<!--@import(/survey/common.html)-->
+<!--@js(/survey/js/survey_common.js)-->
+<!--@js(/survey/js/survey_index.js)-->
+<style>
+    #survey_start_href span,
+    #survey_order_href span,
+    #survey_diagnosis_href span {
+      color: #fff;
+    }
+    .back_button {display:none;}
+</style>
+
+<!-- snap common  start contact mail : support@snapvi.co.kr -->
+<div id='spm_page_type' style='display:none'>sq_main_page</div>
+<script async type="text/javascript" src="//cdn.snapfit.co.kr/js/spm_f_common.js" charset="utf-8"></script>
+<div id="spm_banner_main"></div>
+<!--@import(/apps/cafe24plusapp/marketing/recommend_install.html)-->

@@ -1,0 +1,90 @@
+#container {background:#F8F6F4;}
+.xans-member-login { margin:14px auto 0px; }
+.xans-member-login .loginWrap { background:#F8F6F4; padding:40px 0;}
+.xans-member-login .titleArea { max-width:320px; height:43px; margin:0 auto; }
+
+.xans-member-login .loginHeader { padding-right:14px; }
+.xans-member-login .loginHeader:after { content:""; display:block; clear:both; }
+
+.xans-member-login .keyboard { line-height:43px; text-align:right; }
+.xans-member-login .keyboard .btnKey { position:relative; padding:0 20px 0 0; color:#757575; font-size:11px; cursor:pointer; border:0; background:none; }
+.xans-member-login .keyboard .btnKey.korean { display:inline-block; margin:0 14px 0 0; }
+.xans-member-login .keyboard .btnKey.special { display:inline-block; margin:0; }
+.xans-member-login .keyboard .btnKey:focus { outline:none; }
+.xans-member-login .keyboard .btnKey:before { content:""; position:absolute; right:0; top:40%; width:15px; height:9px; margin:-3px 0 0; background:url("/web/upload/mynomy/kr_mobile/layout/bg_snb_1depth_on.gif") no-repeat; background-size:100% 100%; }
+.xans-member-login .keyboard .btnKey.selected { color:#000; border:none; }
+.xans-member-login .keyboard .btnKey.selected:before { background-image: url("/web/upload/mynomy/kr_mobile/layout/bg_snb_1depth.gif"); }
+
+.xans-member-login .view { text-align:center; }
+.xans-member-login .view > div { display:none; padding:0 0 14px; }
+
+.xans-member-login .formBox { position:relative; margin:0px 20px; font-size:11px; }
+.xans-member-login .formBox:after { content:""; display:block; clear:both; }
+.xans-member-login .formBox .form { margin:0 0px 0 0; text-align:right; }
+.xans-member-login .formBox .form::after { content:""; display:block; clear:both; }
+.xans-member-login .formBox .form input[type="text"],
+.xans-member-login .formBox .form input[type="password"] {width:100%; height:43px; border-radius:0;}
+
+.xans-member-login .formBox .form span[title="아이디"]::after,
+.xans-member-login .formBox .form input[type="password"]::after { content:""; display:block; clear:both; }
+.xans-member-login .formBox .form .tit { display:inline-block; font-size:14px; margin-right:10px; }
+
+.xans-member-login .formBox .form input[type="text"] { margin:0 0 7px; }
+.xans-member-login .formBox .option { overflow:hidden; line-height:25px; font-size:13px; display:flex; justify-content:space-between; align-items:center;}
+.xans-member-login .formBox .option > span { float:left; margin:0 10px 0 0; }
+.xans-member-login .formBox .option > span.auto { float:none; display:block; }
+.xans-member-login .formBox .option > span img { margin-top:-3px; }
+.xans-member-login .formBox .option > span:last-child { margin-right:0; }
+.xans-member-login .formBox .option .ssl em { color:#555; vertical-align:middle; }
+.xans-member-login .formBox .option .ssl img { width:14px; margin:0 3px 0 0; vertical-align:middle; }
+
+.xans-member-login .loginUtil { height:35px; margin-top:12px; font-size:13px; text-align:right; line-height:25px; }
+.xans-member-login .loginUtil .btnLogin { position:relative; display:inline-block; padding:0 4px; color:#555; font-weight:normal; }
+.xans-member-login .loginUtil .btnLogin:first-child:before { display:none; }
+.xans-member-login .loginUtil .btnLogin .icon { display:inline-block; width:5px; padding:0 7px 0 6px; }
+
+.btnLogin.btnSubmit { height:48px; line-height:48px; font-size:16px; letter-spacing: -0.03em; font-family: 'Gotham','Pretendard',sans-serif; /*border-radius:8px;*/ }
+.btnJoin.btnEm { height:48px; line-height:48px; font-size:14px; }
+
+.xans-member-login .log_join { margin:20px 0; }
+.xans-member-login .log_join::after { content:""; display:block; clear:both; }
+.xans-member-login .log_join p {  display:inline-block; font-size:14px; font-weight:600; }
+.xans-member-login .log_join p span { display:block; font-size:13px; font-weight:400; margin:4px 0 0; }
+.xans-member-login .log_join .gBtn { font-size:14px; margin:0; padding:0; width:80px; height:36px; line-height:36px; float:right; text-align:center; } 
+
+.xans-member-login .snsLogin { display: grid; grid-template-columns: 42% auto; padding:20px 0 0; margin:0 0 20px; border-bottom:1px solid #ddd; }
+.xans-member-login .snsLogin::after { content:""; display:block; clear:both; }
+.xans-member-login .snsLogin p {  display:inline-block; font-size:14px; font-weight:600; }
+.xans-member-login .snsLogin p span { display:block; font-size:13px; font-weight:400; margin:4px 0 0; }
+
+.xans-member-login .snsLogin div { display:flex; flex-wrap:wrap; margin-left: auto; }
+.xans-member-login .snsLogin div > a { width:63px; padding:0 0 16px 0; text-align:center; }
+.xans-member-login .snsLogin div > a i { display:block; width: 48px; height: 48px; line-height: 48px; margin: 0 auto 8px; border-radius: 50%; border: 1px solid #000;font-size:24px; color:#333; }
+
+.xans-member-login #member_id,
+.xans-member-login #member_passwd { font-size:14px; }
+
+.loginWrap .ec-base-tab.gMerge {display:none;}
+
+.snsRegist li {display:block; height:48px; width:100%; float:none !important; padding:0 !important; margin:24px 0; box-sizing:border-box;}
+.snsRegist li.btn_kakao {background:#FAE64D;}
+.snsRegist li.btn_naver {background:#5AC467;}
+.snsRegist li.btn_facebook {background:#1877F2;}
+.snsRegist li.btn_apple {background:#000;}
+.snsRegist li.btn_google {background:#FFF; border:1px solid #C6C2C0;}
+
+.snsRegist li a {display:block;}
+.snsRegist li a .snsLoginBox {display:flex; align-items:center; justify-content:center; color:#FFF !important; font-size:16px; width:216px; height:100%; padding-left:0; box-sizing:border-box; margin:0 auto;}
+.snsRegist li a .snsLoginBox .ico {display:inline-block; width:48px; height:48px; margin-right:0px;}
+.snsRegist li a .snsLoginBox .ico.kakao {background:url(/web/upload/mynomy/kr/layout/sns_ico_kakao.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.naver {background:url(/web/upload/mynomy/kr/layout/sns_ico_naver.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.facebook {background:url(/web/upload/mynomy/kr/layout/sns_ico_facebook.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.apple {background:url(/web/upload/mynomy/kr/layout/sns_ico_apple.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.google {background:url(/web/upload/mynomy/kr/layout/sns_ico_google.svg) no-repeat 50% 50%;}
+.snsRegist li.btn_kakao a .snsLoginBox {color:#391B1B !important;}
+.snsRegist li.btn_google a .snsLoginBox {color:#0B0A0A !important;}
+
+.loginBnr {display:block; max-width:400px; margin:0 auto;}
+.loginBnr img {max-width:100%;}
+
+.ec-base-button.gFull .btnEm {border:1px solid #0b0a0a;}

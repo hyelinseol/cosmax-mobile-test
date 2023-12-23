@@ -1,0 +1,3 @@
+window.channelPluginSettings = {
+	"hideDefaultLauncher": true
+}

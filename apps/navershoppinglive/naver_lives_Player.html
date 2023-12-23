@@ -1,0 +1,212 @@
+<div class="loginState"><p module="Layout_statelogon"></p></div>
+<html lang="en">
+    <head>
+        <title>Live Stream Player</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <script type="text/javascript" src="https://cafe24img.poxo.com/file.cafe24cos.com/common/js/jquery/jquery.min-3.6.0.js"></script>
+        <script>
+            var jQuery3 = jQuery.noConflict();
+        </script>
+        <script type="text/javascript" src="https://im.pstatic.net/live-commerce/modules/launcher/0.20.1/index.js"></script>
+        <link rel="stylesheet" href="https://cafe24img.poxo.com/file.cafe24cos.com/nsl/archive_files/resources/common/css/form_nickname.css">
+    </head>
+    <body style="margin: 0; background-color: #000; height: 100%">
+        <div id="product-root" style="height: 100%"></div>
+    </body>
+</html>
+<script>
+    jQuery3(document).ready(function () {
+        let oNaverLivesList = {
+            init: function () {
+                this.iRequestCounter = 0;
+                this.externalServiceKey = '';
+                this.externalServiceId = '';
+                this.front_url = "https://navershoppinglive.cafe24.com";
+                this.broadcastId = this.getSearchParam('broadcastId');
+                this.playMode = this.getSearchParam('playMode');
+                this.isMemberLinked = false;
+                this.mall_id = this.getMallIdByDomain();
+                this.getNaverDetails();
+            },
+            getSearchParam: function (sKey) {
+                sKey = (new RegExp('[?&]' + encodeURIComponent(sKey) + '=([^&]*)')).exec(location.search);
+                return sKey !== null ? decodeURIComponent(sKey[1]) : '';
+            },
+            getMallIdByDomain: function () {
+                return CAFE24.GLOBAL_INFO.getBaseDomain().split('.')[0] ?? '';
+            },
+            getNaverDetails: function () {
+                $.ajax({
+                    url: this.front_url + '/front/getNaverDetails?mall_id=' + this.mall_id,
+                    type: 'GET',
+                    success: function (mData) {
+                        oNaverLivesList.setNaverDetails(mData);
+                    },
+                    error: function (oError) {
+                        if (oNaverLivesList.iRequestCounter === 3) {
+                            console.error(oError);
+                        } else {
+                            setTimeout(function () {
+                                oNaverLivesList.iRequestCounter++;
+                                oNaverLivesList.getNaverDetails();
+                            }, 1000);
+                        }
+                    }
+                });
+            },
+            setNaverDetails: function (mData) {
+                if ('data' in mData && mData.data[0] !== undefined) {
+                    this.externalServiceId = mData.data[0].c_naver_service_id;
+
+                    this.getMemberData();
+                }
+            },
+            getMemberData() {
+                let oMemberData = CAPP_ASYNC_METHODS.member.getData();
+                if (oMemberData.member_id !== undefined && oMemberData.member_id !== null) {
+                    oNaverLivesList.member_id = oMemberData.member_id;
+
+                    return oNaverLivesList.getMemberLinkage();
+                }
+
+                return oNaverLivesList.runLico();
+            },
+            getMemberLinkage: function() {
+                $.ajax({
+                    url: this.front_url + `/front/getMemberLinkage?mall_id=${oNaverLivesList.mall_id}&member_id=${oNaverLivesList.member_id}`,
+                    type: 'GET',
+                    success: function (mData) {
+                        oNaverLivesList.iRequestCounter = 0;
+                        if ('data' in mData && mData.data.member_linkage_no !== undefined) {
+                            oNaverLivesList.isMemberLinked = true;
+                            oNaverLivesList.nickname = mData.data.nickname;
+                            return oNaverLivesList.runLico();
+                        } else {
+                            oNaverLivesList.appendForm();
+                        }
+                    },
+                    error: function (oError) {
+                        if (oNaverLivesList.iRequestCounter === 3) {
+                            console.error(oError);
+                        } else {
+                            setTimeout(function () {
+                                oNaverLivesList.iRequestCounter++;
+                                oNaverLivesList.getMemberLinkage();
+                            }, 1000);
+                        }
+                    }
+                });
+            },
+            runLico: function () {
+                let encodeRequestParam = encodeURIComponent(`broadcastId=${oNaverLivesList.broadcastId}&playMode=${oNaverLivesList.playMode}`);
+                let returnUrl = `/apps/navershoppinglive/naver_lives_Player.html?${encodeRequestParam}`;
+                let oTemporaryConfig = {
+                    loginUrl: `https://${oNaverLivesList.mall_id}.cafe24.com/member/login.html?returnUrl=${returnUrl}`,
+                };
+
+                if (oNaverLivesList.isMemberLinked === true) {
+                    oTemporaryConfig.esuk = btoa(oNaverLivesList.member_id);
+                    oTemporaryConfig.esun = oNaverLivesList.nickname;
+                }
+
+                const moduleConfig = {
+                    playMode: this.playMode,
+                    broadcastId: this.broadcastId,
+                    externalServiceId: this.externalServiceId,
+                    accountConfig: oTemporaryConfig,
+                    target: document.getElementById('product-root'),
+                    events: {
+                        onClickOtherLiveButton: (oBroadcast) => {
+                            window.location.href = '/apps/navershoppinglive/naver_lives_list_detail.html';
+                        }
+                    }
+                };
+
+                lico.launcher({
+                    name: 'DisplayViewer',
+                    module: {
+                        resourcePath: 'https://im.pstatic.net/live-commerce/products/display-viewer/latest/real/',
+                        entry: 'index.js',
+                    },
+                    moduleConfig,
+                    onLoad: (instance) => {
+                        globalThis.viewer = instance;
+                    },
+                    onError: (oError) => {
+                        console.error(oError);
+                    },
+                });
+            },
+            appendForm: function () {
+                $('#product-root').append(`
+                    <div class="module-layer" id="nicknameForm">
+                        <div class="layer-wrap">
+                            <div class="layer-title">
+                                <h2>대화명설정</h2>
+                            </div>
+                            <div class="layer-content">
+                                <div class="layer-form"><input id="nicknameinput" value="${oNaverLivesList.member_id}" type="text" class="layer-input-text" placeholder="대화명을 설정해주세요"></div>
+                                <ul class="layer-list"><li>대화명은 최초 1회만 설정할 수 있어요.</li>
+                                    <li>직접 입력하지 않는 경우, <br> 아이디가 자동으로 반영됩니다.</li>
+                                </ul></div>
+                            <div class="layer-footer">
+                                <button id="submitNickname" type="button" class="layer-btn-submit event-close">완료</button>
+                            </div>
+                        </div>
+                    </div>
+                `);
+                this.oNicknameForm = jQuery3('#nicknameForm');
+                this.oNicknameBtn = jQuery3('#submitNickname');
+                this.oNicknameInput = jQuery3('#nicknameinput');
+                this.oNicknameBtn.css('cursor', 'pointer');
+                this.oNicknameBtn.one('click', oNaverLivesList.saveMemberLinkage);
+                this.oNicknameInput.on('input', oNaverLivesList.validateNickname);
+            },
+            validateNickname: function () {
+                oNaverLivesList.oNicknameBtn.off();
+                if (oNaverLivesList.oNicknameInput.val().length === 0) {
+                    oNaverLivesList.oNicknameBtn.css('background-color', 'gray');
+                    oNaverLivesList.oNicknameBtn.css('cursor', 'default');
+                } else {
+                    oNaverLivesList.oNicknameBtn.css('background-color', 'rgb(34, 34, 34)');
+                    oNaverLivesList.oNicknameBtn.css('cursor', 'pointer');
+                    oNaverLivesList.oNicknameBtn.one('click', oNaverLivesList.saveMemberLinkage);
+                }
+            },
+            saveMemberLinkage: function () {
+                oNaverLivesList.oNicknameBtn.off();
+                oNaverLivesList.oNicknameInput.off();
+                $.ajax({
+                    url: oNaverLivesList.front_url + '/front/saveMemberLinkage',
+                    data: {
+                        mall_id: oNaverLivesList.mall_id,
+                        member_id: oNaverLivesList.member_id,
+                        nickname: oNaverLivesList.oNicknameInput.val()
+                    },
+                    type: 'POST',
+                    success: function (mData) {
+                        oNaverLivesList.oNicknameForm.remove();
+                        oNaverLivesList.iRequestCounter = 0;
+                        if ('data' in mData && mData.data.member_linkage_no !== undefined) {
+                            oNaverLivesList.isMemberLinked = true;
+                            oNaverLivesList.nickname = oNaverLivesList.oNicknameInput.val();
+                            return oNaverLivesList.runLico();
+                        }
+                    },
+                    error: function (oError) {
+                        if (oNaverLivesList.iRequestCounter === 3) {
+                            console.error(oError);
+                        } else {
+                            setTimeout(function () {
+                                oNaverLivesList.iRequestCounter++;
+                                oNaverLivesList.saveMemberLinkage();
+                            }, 1000);
+                        }
+                    }
+                });
+            }
+        }
+        oNaverLivesList.init();
+    });
+</script>

@@ -1,0 +1,139 @@
+.detailWrap { max-width:750px; width:100%; padding: 50px 20px 0; margin:0 auto; box-sizing: border-box; }
+.detailArea:not(.detail_06) { display:flex; flex-wrap: wrap; justify-content: center; margin:100px auto; }
+.detailArea .txtBox { width: 100%; display:flex; flex-direction: column; justify-content: center; text-align:left; letter-spacing:-0.03em; }
+.detailArea .txtBox:not(.keyword) { padding: 0 0 20px; }
+.detailArea .txtBox .inner { width:100%; }
+.detailArea .txtBox.center { text-align:center; }
+/* .detailArea .txtBox.keyword { max-width:56%; } */
+.detailArea .txtBox.keyword .title { margin:0 0 104px; }
+.detailArea .txtBox .title { position:relative; letter-spacing:-0.03em; }
+.detailArea .txtBox .title > span { position:absolute; font-size:16px; line-height:40px; color:#999; font-weight:700; }
+.detailArea .txtBox .title > span:nth-child(2) { top: -75px; left:19%; }
+.detailArea .txtBox .title > span:nth-child(3) { top: -58px; left:43%; }
+.detailArea .txtBox .title > span:nth-child(4) { top: -86px; right:24%; }
+.detailArea .txtBox .title > span:nth-child(5) { top: -40px; right:5%; }
+.detailArea .txtBox .title > span:nth-child(6) { bottom: -56px; right:11%; }
+.detailArea .txtBox .title > span:nth-child(7) { bottom: -59px; left:43%; }
+.detailArea .txtBox .title > span:nth-child(8) { bottom: -72px; left:19%; }
+.detailArea .txtBox .title > span:nth-child(9) { top: -24px; left:7%; }
+.detailArea .txtBox .title h3 { font-size:26px; line-height:1.4; font-weight:700; color:#0b0a0a; }
+.detailArea .txtBox .title h3 span.highlight { background: linear-gradient(#d4dd69,#d4dd69) left center/100% 60% no-repeat; }
+.detailArea .txtBox .title h4 { font-size:24px; line-height:36px; font-weight:500; color:#5e5c5c; margin:0 0 20px; }
+.detailArea .txtBox p { font-size:16px; line-height:1.5; font-weight:500; color:#000; }
+.detailArea .txtBox p.sub { color:#71747a; margin:20px 0 0; }
+.detailArea .txtBox p > span { color:#ff585d; }
+.detailArea .listBox p {  font-weight:700; color:#333; margin:0 0 20px; }
+.detailArea .listBox p:last-child { margin:0; }
+.detailArea .contentBox { width: 100%; letter-spacing:-0.03em; }
+.detailArea .contentBox .icon { display:inline-block; text-align:center; width:30px; height:30px; background:#d4dd69; border-radius:100%; vertical-align:middle; margin:0 5px 0 0; }
+.detailArea .contentBox .icon i { color:#fff; line-height:30px; }
+.detailArea .contentBox p { font-size:15px; line-height:1.2; letter-spacing: -.8px; }
+.detailArea .contentBox p span { color:#987358; }
+.detailArea .vertical_line { display:inline-block; border-left: 1px dashed #70747a; height: 80px; left: 50%; margin:60px auto; }
+.detailArea .vertical_line2 { margin:60px auto 0; }
+
+.detail_01 .txtBox p.sub { margin:0 0 32px; } 
+
+.detail_02 .contentBox { display: flex; justify-content: center; }
+.detail_02 .diagramBox { display: flex; justify-content: space-between; align-items: flex-start; position:relative; }
+.detail_02 .diagramBox::before { display: inline-block; content: ""; background: #868686; height: 1px; position: absolute; top: 35%; left: 20px; right: 20px; z-index:1; /* transform: translateY(-50%);*/ }
+.detail_02 .diagramBox .item { width: 25%; padding: 5px; box-sizing: border-box; display:flex; flex-direction: column; }
+.detail_02 .diagramBox .item .circle { position: relative; z-index: 2; display:flex; justify-content: center; align-items: center; width:100%; background:#fff; border:1px solid #c4c4c4; border-radius:100%; padding: 10px; box-sizing:border-box; overflow: hidden; }
+.detail_02 .diagramBox .item .circle:after { content: ''; display: block; padding-bottom: 100%; }
+.detail_02 .diagramBox .item span { font-size:13px; line-height:1.2; color:#0b0a0a; font-weight:500; word-break:keep-all; text-align:center; margin:10px 5px 0; }
+
+.detail_06 .contentBox { display: flex; justify-content: center; margin:0 0 100px; }
+.detail_06 .diagramBox { display: flex; justify-content: space-between; align-items: flex-start; position:relative; width: 100%; }
+.detail_06 .diagramBox::before { display: inline-block; content: ""; background: #868686; height: 1px; position: absolute; top: 50%; left: 20px; right: 20px; z-index:1; /* transform: translateY(-50%);*/ }
+.detail_06 .diagramBox .item { width: 20%; padding: 0 2px; box-sizing: border-box; }
+.detail_06 .diagramBox .item .circle { position: relative; z-index: 2; display:flex; justify-content: center; align-items: center; width:100%; background:#c4c4c4; border-radius:100%; box-sizing:border-box; }
+.detail_06 .diagramBox .item .circle:after { content: ''; display: block; padding-bottom: 100%; }
+.detail_06 .diagramBox .item .circle.color01 { background:#868686; }
+.detail_06 .diagramBox .item .circle.color02 { background:#d4dd69; }
+.detail_06 .diagramBox .item .circle.color02 span { position:relative; color:#ff585d; font-weight:700; line-height:1.2; }
+.detail_06 .diagramBox .item .circle.color02 span i { font-size:14px; vertical-align: middle; }
+.detail_06 .diagramBox .item .circle.color02 span sup { position:absolute; top: -12px; right: -6px; font-size:10px; color:#0b0a0a; }
+.detail_06 .diagramBox .item span { text-align:center; font-size:12px; line-height:1.2; color:#fff; font-weight:600; word-break:keep-all; }
+
+.detail_07 .txtBox .title h3 { margin: 0 0 10px; }
+.detail_07 .contentBox .imgBox { display: flex; justify-content: center; }
+.detail_07 .contentBox .imgBox .imgArea { display:flex; justify-content: space-between; align-items: flex-end; padding: 0 0 40px; border-radius:8px;overflow:hidden; }
+.detail_07 .contentBox .imgBox .imgArea img { width:100%; }
+.detail_07 .txtBox p { color:#71747a; }
+
+
+/* 마이노미의 특별함 공통 */
+.articleArea section[class*="sec"] { display:flex; flex-wrap: wrap; margin:100px auto; }
+.articleArea section[class*="sec"] .txtBox { width: 100%; padding: 0 0 40px; text-align:left; }
+.articleArea section[class*="sec"] .txtBox .title { letter-spacing:-0.03em; }
+.articleArea section[class*="sec"] .txtBox .title h3 { font-size:26px; line-height:1.4; font-weight:700; color:#0b0a0a; }
+.articleArea section[class*="sec"] .txtBox .title h3 span { background: linear-gradient(#d4dd69,#d4dd69) left center/100% 60% no-repeat; }
+.articleArea section[class*="sec"] .txtBox .title h4 { font-size:15px; line-height:1.2; font-weight:700; color:#5e5c5c; margin:0 0 10px; }
+.articleArea section[class*="sec"] .txtBox p { font-size:14px; line-height:1.5; font-weight:500; color:#5e5c5c; }
+.articleArea section[class*="sec"] .txtBox p.sub { color:#333; margin:20px 0; }
+.articleArea section[class*="sec"] .contentBox { width: 100%; letter-spacing:-0.03em; text-align:center; }
+.articleArea section[class*="sec"] .contentBox p { font-size:17px; line-height:1.4; font-weight:700; color:#987358; margin:0 0 28px; }
+.articleArea section[class*="sec"] .contentBox p span {  }
+
+
+/* 마이노미의 특별함 01 */
+.articleArea .sec01 .contentBox .inner { width:100%; margin: 0 auto; padding:40px 20px; box-sizing:border-box; border-radius:8px; box-shadow:0 0 10px 4px rgb(0 0 0 / 5%) }
+.articleArea .sec01 .contentBox .barBox { display: flex; justify-content: center; }
+.articleArea .sec01 .contentBox .barBox .barArea { display:flex; justify-content: space-between; align-items: flex-end; max-width:268px; width:100%;  }
+.articleArea .sec01 .contentBox .barBox .barArea .bar01 .bar { height:245px; background:rgba(212, 221, 105, 0.73); }
+.articleArea .sec01 .contentBox .barBox .barArea .bar02 .bar { height:156px; background:rgba(212, 221, 105, 0.31); }
+.articleArea .sec01 .contentBox .barBox .barArea .bar { width:112px; border-radius:20px; }
+.articleArea .sec01 .contentBox .barBox .barArea p { font-size:16px; color:#5e5c5c; font-weight:500; margin:24px 0 0; }
+
+
+/* 마이노미의 특별함 02 */
+.articleArea section.sec02 .contentBox p { margin:0 0 40px; }
+.articleArea .sec02 .contentBox .slideBox { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.articleArea .sec02 .contentBox .slideBox .slideArea { position:relative; display: flex; width:100%;  }
+.articleArea .sec02 .contentBox .slideBox .slideArea .swiper-slide { display: flex; flex-direction: column; align-items: center; }
+.articleArea .sec02 .contentBox .slideBox .slideArea .box { text-align:left; background:#f8f6f4; padding:24px 16px; width: 100%; box-sizing:border-box; }
+.articleArea .sec02 .contentBox .slideBox .slideArea .box h3 { font-size:16px; line-height:26px; font-weight:700; color:#0b0a0a; }
+.articleArea .sec02 .contentBox .slideBox .slideArea .box p { font-size:14px; line-height:21px; font-weight:400; color:#5e5047; margin:6px 0 0; }
+.articleArea .sec02 .contentBox .imgBox { display:flex; justify-content: space-evenly; align-items: flex-start; flex-wrap: wrap; margin:25px 0 0; width: 100%; }
+.articleArea .sec02 .contentBox .imgBox .icon { width: 25%; padding: 0 5px; box-sizing: border-box; }
+.articleArea .sec02 .contentBox .imgBox .icon img { width:100%; }
+.articleArea .sec02 .contentBox .imgBox .icon p { font-size:13px; line-height:1.2; color:#5e5047; font-weight:500; margin:12px 0 0; word-break: keep-all; }
+
+/* 스와이퍼 페이지 버튼 */
+.slideBox .slideArea .swiper-button-next, .slideBox .slideArea .swiper-button-prev { top:50%; transform:translateY(-50%); }
+.slideBox .slideArea .swiper-button-prev, .slideBox .slideArea .swiper-container-rtl .swiper-button-next { left:-70px; }
+.slideBox .slideArea .swiper-button-next, .slideBox .slideArea .swiper-container-rtl .swiper-button-prev { right:-70px; }
+
+
+/* 마이노미의 특별함 03 */
+.articleArea .sec03 .contentBox { display:flex; align-items: center; justify-content: center; flex-direction: column; }
+.articleArea .sec03 .contentBox .imgBox { display:flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin: -5px; }
+.articleArea .sec03 .contentBox .imgBox .icon { width: 33.33%; padding: 5px; box-sizing: border-box; }
+.articleArea .sec03 .contentBox .imgBox .icon img { width:100%; border-radius:100%; overflow:hidden; }
+.articleArea .sec03 .contentBox .imgBox .icon p { font-size:12px; line-height:14px; color:#5e5047; font-weight:400; margin:12px 0 0; word-break: keep-all; }
+
+
+/* 마이노미의 특별함 04 */
+.articleArea .sec04 .contentBox { display:flex; align-items: center; justify-content: center; }
+.articleArea .sec04 .contentBox .inner { padding:40px 20px; background:#f8f6f4; box-sizing:border-box; } 
+.articleArea .sec04 .contentBox .imgBox { display:flex; justify-content: space-between; align-items: flex-start; }
+.articleArea .sec04 .contentBox .imgBox .icon { width: 20%; padding: 0 2px; box-sizing: border-box; }
+.articleArea .sec04 .contentBox .imgBox .icon img { width:100%; text-align: center; }
+.articleArea .sec04 .contentBox .imgBox .icon p { font-size:13px; line-height:1.2; color:#5e5047; font-weight:500; margin:12px 0 0; word-break: keep-all; }
+
+
+/* 마이노미의 특별함 05 */
+.articleArea .sec05 .contentBox .imgBox { display: flex; justify-content: center; }
+.articleArea .sec05 .contentBox .imgBox .imgArea { display:flex; justify-content: space-between; align-items: flex-end; max-width:389px; width:100%;  }
+.articleArea .sec05 .contentBox .imgBox .imgArea img { width:100%; }
+
+
+/* 마이노미의 특별함 06 */
+.articleArea .sec06 {
+	padding: 0 0 50px;
+}
+.articleArea section.sec06 .contentBox p { margin:0 0 64px; }
+.articleArea .sec06 .contentBox .imgBox { display: flex; justify-content: space-between; align-items: flex-end; }
+.articleArea .sec06 .contentBox .imgBox .imgArea { max-width:464px; }
+.articleArea .sec06 .contentBox .imgBox .brochure { max-width:152px; }
+.articleArea .sec06 .contentBox .imgBox img { width:100%; }

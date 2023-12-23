@@ -1,0 +1,24 @@
+<!--@js(/gd_import/js/top_banner.min.js)-->
+<div class="swiper-container topBanner">
+    <ul class="swiper-wrapper">
+        <li class="swiper-slide"><a href="/">신규 회원가입시 다양한 혜택이 가득 !</a></li>
+        <li class="swiper-slide"><a href="/">Beyond the interior design, alive</a></li>
+    </ul>
+	<!--span class="top_checkBox">오늘하루 열지않기 <input id="topBanner_check" type="checkbox" style="vertical-align:-2px" /></span-->
+	<span class="top_closeBtn" ><img src="/web/upload/mynomy/kr_mobile/layout/close_btn.png" alt="" title="닫기"/></span> 
+</div>
+
+<script>
+    var top_swiper = new Swiper('.topBanner', {
+        speed: 600,
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        centeredSlides: false,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+    });
+</script>

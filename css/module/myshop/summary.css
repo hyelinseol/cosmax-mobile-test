@@ -1,0 +1,13 @@
+.xans-myshop-summary { margin:14px 0px; /*border:1px solid #ddd; border-radius:8px;*/ overflow:hidden; /*box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 5%);*/ }
+.xans-myshop-summary h3 { padding:14px 0; font-size:16px; font-weight:500; line-height:1.2em; color:#222; background:#f8f8f8; border-bottom: 2px solid #0d0a0a; }
+.xans-myshop-summary .ec-base-table { border-width:0; }
+.xans-myshop-summary .ec-base-table th, .xans-myshop-summary .ec-base-table td { /*border-top: 1px dotted #eee;*/ border:0; }
+
+/* 관련 링크 */
+.xans-myshop-mileagepackage .navigation { margin:0 0px 14px; }
+.xans-myshop-mileagepackage .navigation ul {  border:1px solid #ddd; border-radius:0px; overflow:hidden; }
+.xans-myshop-mileagepackage .navigation li { background:#fafafa; border-top:1px dotted #eee; }
+.xans-myshop-mileagepackage .navigation li:first-child { border-top:0; }
+.xans-myshop-mileagepackage .navigation li a { display:block; position:relative; padding:14px; font-weight:400; font-size:14px; line-height:1.2em; color:#222; }
+.xans-myshop-mileagepackage .navigation li a:after { display:block; content:""; width:20px; height:20px; position:absolute; top:12px; right:12px;
+    background: url("/web/upload/mynomy/kr_mobile/layout/btn_more_board.png") no-repeat scroll 97% 50%; background-size: 13px 25px; }

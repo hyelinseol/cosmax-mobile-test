@@ -1,0 +1,8 @@
+.xans-myshop-likeitcatepackage .empty { padding:30px 0; color:#212530; font-size:12px; text-align:center; border:1px solid #ddd; background-color:#fff; }
+.xans-myshop-likeitcatepackage .ec-base-button { margin:0 7px; padding:7px; border:1px solid #ddd; border-width:0; }
+
+/* 상품분류정보 */
+.xans-myshop-likecategorylist { margin:8px 7px 0; }
+.xans-myshop-likecategorylist .cateList { background-color:#fff; }
+.xans-myshop-likecategorylist .cateList li { margin:-1px 0 0; padding:14px; border-bottom:1px dotted #eee; }
+.xans-myshop-likecategorylist .cateList li:last-child { border:0; }

@@ -1,0 +1,82 @@
+<!--@layout(/layout/basic/mypage2.html)-->
+<!--@css(/gd_import/css/mypage.css)-->
+
+<div class="myArea">
+    <div class="inner feedBackEssen">
+		<div class="bdgTitle">
+			<h2><img src="/web/upload/mynomy/kr/prd/logo_feedbackloop.svg" alt="feedbackloop"></h2>
+			<p class="bdgDesc"><em>30초 문진</em>으로 충분해요!<br/>직접 써본 사용감에 맞춰 나의 두번째 제품을 만들어 보세요!</p>
+		</div>
+
+		<div class="bridgeEssence">
+			<div class="rollingMock">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="/web/renew_img/img_mock01.png" /></div>
+					<div class="swiper-slide"><img src="/web/renew_img/img_mock02.png" /></div>
+					<div class="swiper-slide"><img src="/web/renew_img/img_mock03.png" /></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mBtn gFixed">
+            <a href="#none" class="btnKey">피드백 후 재구매하기</a>
+            <a href="#none" class="btnBuy">구매했던 상품 그대로 재구매하기</a>
+        </div>
+
+    </div> <!-- //inner -->
+</div> <!-- //myArea -->
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+(function($){
+
+	var _t = 1500;
+	var aaa;
+	$('.fbCon ul').attr('data-num', 0);
+	var falsjfasf = function(){
+		$('.fbCon ul').each(function(){
+			var _n = parseInt($(this).attr('data-num')) + 1;
+			var _m = $(this).children('li').length;
+
+			if (_n == _m) {
+
+				_n = 0;
+
+				$(this).children('li:eq(' + _n + ')').addClass('on');
+				$(this).children('li:not(:eq(' + _n + '))').removeClass('on');
+
+				$(this).attr('data-num', _n);
+
+			} else {
+
+				$(this).children('li:eq(' + _n + ')').addClass('on');
+				$(this).children('li:not(:eq(' + _n + '))').removeClass('on');
+
+				$(this).attr('data-num', _n);
+			}
+		});
+		//console.log('121212');
+		aaa = setTimeout(falsjfasf, _t);
+	};
+	aaa = setTimeout(falsjfasf, _t);
+	// 자동애니메이션 끝
+
+	/*
+	// 마우스오버/아웃시 애니메이션 멈춤/다시재개
+	$('.fbCon ul li').hover(function(){
+		clearTimeout(aaa);
+
+		var _idx = $(this).closest('ul').children('li').index(this);
+		//console.log(_idx);
+
+		$(this).closest('ul').attr('data-num', _idx);
+		$(this).closest('ul').children('li:not(:eq(' + _idx + '))').removeClass('on');
+
+	}, function(){
+		falsjfasf();
+	});
+	*/
+
+})(jQuery);
+</script>

@@ -1,0 +1,45 @@
+<div class="header">
+    <!--@import(/gd_import/comn_top_bnr.html)-->
+<!--div class="gMember_top2"-->
+    <section id="topArea">
+        <span module="Layout_MobileAction" class="back_button">
+            <a href="#none" onclick="{$go_back}"><span></span><span></span><!--i class="xi-angle-left"></i--></a>
+        </span>
+        <h1 module="Layout_LogoTop"><a href="/"><img src="/web/upload/mynomy/kr_mobile/main/relogo.svg" alt="{$mobile_title}" /></a></h1><!--◁ 로고 위치-->   
+        <!-- <div class="menu_button" onclick="showBtnAllMenu()"><a href="javascript:void(0);" class="btnAllMenu fold"><span></span><span></span><span></span></a></div> -->
+		<div class="menu_button"><a href="javascript:void(0);"><span></span><span></span><span></span></a></div>
+        <div class="cart_button" module="Layout_orderBasketcount"><a href="/order/basket.html" class="cart"><img src="/web/upload/mynomy/kr/layout/ico_recart.svg" alt="장바구니"><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a></div>
+        <!--span class="right">
+            <span class="search"><a href="/product/search.html"><button type="button"><i class="xi-search"></i></button></a></span>
+            <span module="Layout_orderBasketcount" class="cart"><a href="/order/basket.html"><i class="xi-market"></i><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a></span>
+        </span-->   
+    </section>
+<!--/div-->
+</div>        
+
+<!-- snap common script contact mail : support@snapvi.co.kr -->
+<span id = 'solutiontype' style='display:none;'>cafe24</span>
+<span id='sfsnapfit_store_id' style='display:none'>3waau</span>
+<div><input id="sf_draw_type" type="hidden" value="mobile"><input id="sf_store_name" type = 'hidden' value = '3waau'></div>
+
+<div module="Layout_statelogon" style="display: none">
+   <span id="sf_user_name" class="xans-member-var-id" style="display:none;">{$id}</span>
+   <span id="sf_group_name" class="xans-member-var-group_name" style="display:none;">{$group_name}</span>
+   <span id="sf_member_name" class="xans-member-var-name" style="display:none;">{$name}</span>
+</div>
+<!-- snap common end -->
+
+<script>
+    function showBtnAllMenu() {
+        $("#aside").css({
+            "visibility": "visible",
+            "display": "block",
+        });
+        $("html").addClass("expand");
+        $("#dimmedSlider").remove();
+        $('#header').append('<div id="dimmedSlider"></div>');
+        $("#dimmedSlider").css("display", "block");
+
+        event.preventDefault();
+    }
+</script>

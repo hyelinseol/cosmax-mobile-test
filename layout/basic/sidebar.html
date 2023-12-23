@@ -1,0 +1,141 @@
+<!----------------------------------------------------------
+	※ 좌측 퀵바 css및 js 수정 위치 ▼▼▼▼
+------------------------------------------------------------>
+<!--@css(/layout/basic/css/slideMenu.css)-->
+<!--@js(/layout/basic/js/slide_menu.js)-->
+<div class="dim"></div>
+<aside id="aside" module="layout_slidePackage">
+	<a href="javascript:void(0);" class="btnClose"></a>
+
+	<div module="Layout_stateLogoff" class="sideMySec">
+		<p class="welcomeMent">
+			<a href="/member/login.html">
+			<strong>로그인</strong>하세요
+			</a>
+		</p>
+	</div>
+
+	<div module="Layout_stateLogon" class="sideMySecWrap">
+		<a href="/myshop/index.html">
+		<div class="sideMySec">
+			<p class="welcomeMent">
+				<strong>{$name}</strong>님
+			</p>
+			<div class="myInfoStats">
+				<div class="miBox">
+					<!-- snap review script start contact mail : support@snapvi.co.kr -->
+					<strong class="snap_writeable_review_count"></strong>
+					<!-- snap review end -->
+					<p class="title">리뷰</p>
+				</div>
+				<div module="myshop_asyncbankbook" class="miBox">
+					<strong class="survey_coupon_count data">{$coupon_cnt}</strong>
+					<p class="title">쿠폰</p>
+				</div>
+				<div module="myshop_asyncbankbook" class="miBox">
+					<strong class="survey_mileage_count data">{$avail_mileage}</strong>
+					<p class="title">포인트</p>
+				</div>
+			</div>
+		</div>
+		</a>
+	</div>
+
+	<div class="myLetSurvey" style="display:none;">
+		<div class="msBox skin">
+			<a href="#" class="survey_skin_care">
+			<div class="msInfo">
+				<p class="msDesc">맞춤형 스킨케어</p>
+				<p class="msTitle">나만의 스킨케어<br/>만들기</p>
+			</div>
+			<div class="thumb"><img src="/web/renew_img/main_skin.png" /></div>
+			</a>
+		</div>
+
+		<div class="msBox hair">
+			<a href="#" class="survey_hair_care">
+			<div class="msInfo">
+				<p class="msDesc">맞춤형 헤어케어</p>
+				<p class="msTitle">나만의 헤어케어<br/>만들기</p>
+			</div>
+			<div class="thumb"><img src="/web/renew_img/main_hair.png" /></div>
+			</a>
+		</div>
+	</div>
+
+	<ul class="sideMyMenu">
+		<li>
+			<a href="/product/prd_list.html">Product</a>
+			<dl class="cateImg" style="display:block;">
+				<dd>
+					<a href="/product/list.html?cate_no=26">
+					<p class="img"><img src="/web/renew_img/side_img_hair.png" /></p>
+					<p class="txt">맞춤 헤어케어</p>
+					</a>
+				</dd>
+				<dd>
+					<a href="/product/list.html?cate_no=42">
+					<p class="img"><img src="/web/renew_img/side_img_skin.png" /></p>
+					<p class="txt">맞춤 스킨케어</p>
+					</a>
+				</dd>
+				<dd>
+					<a href="/product/list.html?cate_no=50">
+					<p class="img"><img src="/web/renew_img/side_img_essense.png" /></p>
+					<p class="txt">고민별 추천 레시피</p>
+					</a>
+				</dd>
+			</dl>
+		</li>
+		<li><a href="/board/product/list.html?board_no=4">Review</a></li>
+		<li><a href="/board/gallery/list.html?board_no=8&category_no=1#ING">Event</a></li>
+		<li>
+			<a href="#none" class="dp2">About<span class="ar"></span></a>
+			<dl>
+				<dd><a href="/main/about.html">Brand Story</a></dd>
+				<dd><a href="/main/feedback.html">Feedback Loop</a></dd>
+			</dl>
+		</li>
+		<li>
+			<a href="#none" class="dp2">Customer Care<span class="ar"></span></a>
+			<dl>
+				<dd><a href="/front/php/b/board_list.php?board_no=1">공지사항</a></dd>
+				<dd><a href="/board/consult/list.html?board_no=9">1:1 문의</a></dd>
+				<dd><a href="/myshop/mypage/center.html?board_no=3&category_no=">자주 묻는 질문</a></dd>
+				<dd><a href="/board/free/list.html?board_no=1002">스킨·헤어 맞춤 상담</a></dd>
+				<dd><a href="/main/skin_history.html">Skin Analysis</a></dd>
+			</dl>
+		</li>
+	</ul>
+
+</aside>
+<!-- 맞춤형 - 문진 -->
+<!--@import(/survey/common.html)-->
+<script src="/survey/js/class/Common.js?v=0.6"></script>
+<script src="/survey/js/class/Diagnosis.js"></script>
+<script src="/survey/js/survey_sidebar.js"></script>
+<script>
+//	function hideBtnAllMenu() {
+//		setTimeout(async function () {
+//			$("#aside").css({
+//				"z-index": "0",
+//				"display": "none"
+//			});
+//			$("html").removeClass("expand");
+//			$("#dimmedSlider").css("display", "");
+//		}, 100);
+//	}
+</script>
+
+
+  <!-- snap review script start contact mail : support@snapvi.co.kr -->
+  <script>
+  function onloadsnapscript () {
+      var snapInstance = new snapSolution("3waau"); snapInstance.loadScript('review_independent', () => {
+          snapinstanceindependent.catchMoreItemReviewCnt();
+      });
+  }
+  </script>
+  <script async type='text/javascript' src='//sfre-srcs-service.snapfit.co.kr/js/snap_combine_script.js' defer='true' charset='utf-8'
+  onload = 'onloadsnapscript()'></script>
+  <!-- snap review end -->

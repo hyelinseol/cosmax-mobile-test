@@ -1,0 +1,34 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Project_Package">
+    <!--@css(/css/module/product/project_package.css)-->
+    <div id="titleArea" module="product_headcategory">
+        <h2>{$title_text_or_image}</h2>
+        <span module="Layout_MobileAction">
+            <a href="#none" onclick="{$go_back}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_back.gif" width="33" alt="뒤로가기"></a>
+        </span>
+    </div>
+
+
+    <ul class="menuCategory">
+        <li module="product_projectcategory" style="display:{$display};">
+            <a href="#{$cate_id}">{$category_name} <span class="count {$product_count_display|display}">({$product_count})</span></a>
+        </li>
+    </ul>
+
+    <p class="banner" module="product_headcategory">{$top_image_tag_mobile}</p>
+
+
+    <div module="project_list" class="ec-base-product typeThumb">
+    <!--@js(/js/module/product/listnormal.js)-->
+        <!--
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <h3><span id="{$cate_id}">{$category_name}</span></h3>
+        <div module="project_productlist">
+            <ul class="prdList grid2">
+        		<!--@import(/gd_import/prdListPj.html)-->
+            </ul>
+        </div>
+    </div>
+</div>

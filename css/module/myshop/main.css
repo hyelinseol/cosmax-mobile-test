@@ -1,0 +1,25 @@
+.xans-myshop-main {background:#f7f7f7; font-size: 16px; font-weight: 600;}
+.xans-myshop-main ul{background:#fff;}
+.xans-myshop-main li {position:relative; background-size:20px; background-repeat:no-repeat; background-position:12px;padding:0 16px; line-height:60px; }
+.xans-myshop-main li a {  display:inline-block; font-size:16px; color:#0B0A0A;/* padding:17px 16px;*/ }
+.xans-myshop-main li a p{position:relative; display:inline-block;}
+.xans-myshop-main li a span{position: absolute; top: 40%; right: 28px; display: block; content: ""; width: 8px; height: 8px; border-top: 1.5px solid #333; border-right: 1.5px solid #333; transform: rotate(45deg);}
+.xans-myshop-main .on p:after{position: absolute; top: 22px; left: 107%; display:block; content:""; width:4px; height:4px; background:#FF5C5C; border-radius:50%;}
+/*.xans-myshop-main li a:after { display:block; position:absolute; top:10px; right:12px; content:""; width:15px; height:25px; background:url("/web/upload/mynomy/kr_mobile/layout/btn_more_board.png") no-repeat; }*/
+.xans-myshop-main li a img{padding-right: 10px;}
+.xans-myshop-main li .count { color:#000; }
+
+.eventBanner img{width:100%;}
+.eventBanner{margin-bottom:20px;}
+
+/*.xans-myshop-main li.order { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_order.png"); }
+.xans-myshop-main li.modify { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_modify.png"); }
+.xans-myshop-main li.wishlist { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_wishlist.png"); }
+.xans-myshop-main li.mileage { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_mileage.png"); }
+.xans-myshop-main li.deposits { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_deposits.png"); }
+.xans-myshop-main li.consult { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_consult.png"); }
+.xans-myshop-main li.coupon { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_coupon.png"); }
+.xans-myshop-main li.board { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_board.png"); }
+.xans-myshop-main li.address { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_address.png"); }
+.xans-myshop-main li.likeit { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_likeit.png"); }
+.xans-myshop-main li.regularDelivery { background-image:url("//img.echosting.cafe24.com/skin/mobile/myshop/ico_regular_delivery.png"); }*/

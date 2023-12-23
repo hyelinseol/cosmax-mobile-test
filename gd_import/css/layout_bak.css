@@ -1,0 +1,364 @@
+/************** ■ 상단 ■ **************/
+article, aside, figcaption, figure, footer, header, nav, section, main { display: block; padding: 0; margin: 0; }
+figure, figcaption { font-size: 0; }
+
+/*  메인페이지 샘플 시안  */
+.main_sample { position:relative; text-align:center; }
+.main_sample .img_area { width:100%; margin:0 auto; }
+.main_sample .img_area img { display:block; width:100%; }
+
+/* 탑배너 */
+.topBanner.swiper-container { width: 100%; height: 36px; }
+.topBanner { position:relative; z-index:1; text-align:center; background: #000; }
+.topBanner ul li { text-align:center; height: 36px; }
+.topBanner ul li a { font-size: 13px; line-height: 36px; font-weight: 300; color:#fff;}
+.topBanner .top_closeBtn { position:absolute; bottom:15px; right:5%; width:11px; height:11px; cursor:pointer; z-index:999;}
+.topBanner .top_closeBtn img { width: 100%; }
+.topBanner .top_checkBox { position:absolute; bottom:12px; right:6.5%; font:11px 돋움; color:#fafafa; z-index:999;}
+
+/* 헤더영역 */
+/*#main #header { position:absolute; }*/
+#header { position:relative; top:0; left:0; width:100%; height: 56px; }
+#header .header {
+	position: fixed; top: 0; left: 0; z-index: 110;
+	width: 100%; height: 56px;
+	background:#fff;
+}
+/* #header .header { position:relative; left:0; width:100%; height:56px; border-bottom:1px solid #000; z-index:110;  } */
+#header .header h1 { height:56px; display:flex; justify-content: center; align-items:center; box-sizing:border-box; }
+#header .header h1 img { max-width: 150px; max-height: 16px; image-rendering: -webkit-optimize-contrast; }
+#header .header .btnAllMenu { position:relative; }
+#header .header .btnHome { position:relative; }
+
+/*#header .header .gMember_top2 { width: 100%;  position: relative; display: block; vertical-align: middle;  height: 56px; }*/
+
+/* 뒤로가기 버튼 */
+.back_button { position: absolute; left: 15px; top: 16px; vertical-align: middle; }
+.back_button a { display:block; width:24px; height:24px; }
+.back_button span { display:inline-block; width:13px; height:2px; position:absolute; top:7px; left:5px; background:#0b0a0a; transform:rotate(-45deg); -ms-transform:rotate(-45deg); -webkit-transform:rotate(-45deg);
+    -webkit-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); -moz-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); -o-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); -ms-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); }
+.back_button span:nth-child(2) { top: 15px; transform:rotate(45deg); -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg);}
+.back_button i { font-size:23px; color:#0b0a0a; }
+
+/* 카테고리 버튼 */
+.menu_button { position: absolute; right: 15px; top: 16px; vertical-align: middle; }
+.menu_button a { display:block; width:24px; height:24px; }
+.menu_button span { display:inline-block; width:20px; height:2px; position:absolute; top:4px; left:2px; background:#0b0a0a;
+    -webkit-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); -moz-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); -o-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); -ms-transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); transition:0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); }
+.menu_button span:nth-child(2) { top: 11px; }
+.menu_button span:nth-child(3) { top: 18px; }
+/*.menu_button span,.menu_button span,.progress.style-2 .progress-bar{ background: #333; }*/
+
+/* 우측 상단 버튼 */
+#header .header .right { position: absolute; right: 20px; top: 28px; }
+#header .header .right i { font-size: 24px; color: #222; }
+#header .header .search button { background:transparent; border:0; margin:0 4px; }
+#header .header .cart .count { position: absolute; top: 0;  right: -8px;  text-align: center; background:#000;  border-radius:50%;  width:16px;  height:16px; line-height:16px; font-size:10px; color: #fff; font-weight:600;}
+
+/* 스크롤 시, 고정되는 상단 메뉴 */
+#header.fixed { position:fixed;  /*top:0; left:0;*/ width:100%; z-index:100; /*background: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0));*/ }
+#header.fixed .back_button { /*left:14px;*/ }
+#header.fixed .header {}
+#header.fixed .header h1 { /*margin-right:1px;*/ }
+
+/* 흐르는 상단 카테고리 */
+.ticker-ui-wrap { position: relative; width: 100%; margin: auto; overflow: hidden; background:#fff; border-top:1px solid #f6f6f6; border-bottom:1px solid #f6f6f6;  height:36px !important; z-index:2; }
+.ticker-ui { position: absolute; top: 0; left: 0; height: inherit;}
+.ticker-ui ul { display: flex;}
+@keyframes rollingleft1 {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-100%); }
+    50.01% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+@keyframes rollingleft2 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-200%); }
+}
+.ticker-ui.original { animation: rollingleft1 linear 0s infinite normal forwards running; }
+.ticker-ui.clone { animation: rollingleft2 linear 0s infinite normal none running; }
+.ticker-ui ul li { padding: 10px 12px; }
+.ticker-ui ul a { display: block; font-size: 14px; font-weight: 500; color: #333; white-space: nowrap; } /* 메뉴css */
+.ticker-ui.original, .ticker-ui.clone {	animation-duration: 100s; }  /* 메뉴길이에 따라 애니메이션속도조절 */
+
+
+/************** ■ 내용 ■ **************/
+
+
+/* 우측하단 버튼 */
+.fixed_btn { position: fixed; right: 4%; bottom: 52px; cursor: pointer; z-index: 999; display: none;}
+.sns_btn { width:56px; height:56px; margin: 0 auto 8px; border-radius:100%; display: flex;  flex-direction: column; justify-content: center; align-items: center; font-size: 20px; }
+.sns_btn:hover { opacity: 0.5; }
+.sns_btn > span { font-size:11px; font-weight:300;  }
+.kakao_icon { background: #f9e000; color:#371c1d; }
+.kakao_icon i { position:relative; font-size:30px; }
+.naver_icon { background:#00c73c; color:#fff; }
+
+#goBtn .btn { display: block; width: 56px; height: 56px; border-radius:100%; margin: 0 auto; font-size: 20px; color:#fff; }
+#goBtn .btn:hover { opacity: 0.5; }
+#goBtn .up { display: flex;  flex-direction: column; justify-content: center; align-items: center; background: #222; text-align: center; }
+#goBtn .up > span { font-size:11px; font-weight:200; color:#fff; }
+#goBtn .down { display: block; margin-top: 4px; background: #222; text-align: center; }
+#goBtn .btn:hover { opacity: 0.5;}
+
+
+#footer {
+	position: relative; z-index: 2;
+	background-color: #FF585D;
+	padding: 20px 20px 0;
+}
+#footer .footer-top {
+	display: flex; justify-content: space-between;
+	margin: 0 0 40px;
+}
+#footer .footer-top .menus {
+	display: flex; flex-wrap: wrap;
+}
+#footer .footer-top .menus li:not(:last-child) {
+	padding: 0 10px 0 0;
+}
+#footer .footer-top .menus li a {
+	display: block;
+	padding: 4px 0;
+	font-size: 14px; font-weight: 400; color: #F8F6F4;
+}
+#footer .footer-top .menus li a b {
+	font-weight: 700;
+}
+#footer .footer-top .sns {
+	flex-shrink: 0;
+	display: flex;
+	margin: 2px 0 0;
+}
+#footer .footer-top .sns li:not(:last-child) {
+	margin: 0 8px 0 0;
+}
+#footer .footer-top .sns li a {
+	display: flex; align-items: center; justify-content: center;
+	width: 40px; height: 40px;
+	border-radius: 40px;
+	background-color: #fff;
+}
+#footer .footer-top .sns li a img {
+	width: 28px;
+}
+#footer .cs-wrap {
+	display: flex; align-items: center; justify-content: space-between;
+	margin: 0 0 40px;
+}
+#footer .cs-wrap .cs {
+	flex-shrink: 0;
+	margin: 0 20px 0 0;
+}
+#footer .cs-wrap .cs .tit {
+	margin: 0 0 10px;
+	font-size: 16px; font-weight: 500; color: #fff;
+}
+#footer .cs-wrap .cs .tel {
+	font-size: 20px; font-weight: 500; color: #fff;
+}
+#footer .cs-wrap .cs .tel a {
+	color: #fff;
+}
+#footer .cs-wrap .chatbot {
+	display: flex; align-items: center; justify-content: center;
+	width: 100%; max-width: 152px; height: 52px;
+	border-radius: 8px;
+	background-color: #0B0A0A;
+	font-size: 14px; font-weight: 300; color: #fff;
+}
+#footer .shop-info {
+	margin: 0 0 40px;
+}
+#footer .shop-info address {	
+	font-size: 11px; line-height: 16px; font-weight: 400; color: #EFEEED;
+	font-style: normal;
+}
+#footer .shop-info address a {
+	color: #EFEEED;
+}
+#footer .shop-info .copyright {
+	margin: 0 0 10px;
+	font-size: 11px; font-weight: 400; color: #EFEEED;
+}
+#footer .shop-info .copyright b {
+	font-weight: 700;
+}
+#footer .name {
+	padding: 60px 0; margin: 0 -40px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+	text-align: center;
+	text-align: center;
+}
+#footer .name img {
+	width: 315px; max-width: 100%;
+}
+
+/* 아이콘 */
+.fbCon .fbTitle {color:#0B0A0A; font-size:20px; font-weight:600; line-height:1.3; margin-bottom:43px; text-align:center;}
+.fbCon ul {display:block; height:auto; overflow:hidden;}
+.fbCon ul li {display:flex; justify-content:flex-start; align-items:center; border-radius:4px; border:1px solid #E6E6E6; color:#999; font-size:14px; font-weight:300; width:100%; position:relative; transition:.4s all; box-sizing:border-box; padding:4px 16px; margin-bottom:8px;}
+.fbCon ul li:hover {border:1px solid #FF5D5C; color:#FF5D5C;}
+.fbCon ul li.on {border:1px solid #FF5D5C; color:#FF5D5C;}
+.fbCon ul li:last-child {margin-bottom:0;}
+.fbCon ul li .ico {width:50px; height:50px; margin-right:8px;}
+.fbCon ul li .ico.fb0101 {background:url(/web/upload/mynomy/kr/diagnosis/ico_cleanning_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0102 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0103 {background:url(/web/upload/mynomy/kr/diagnosis/ico_soft_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0201 {background:url(/web/upload/mynomy/kr/diagnosis/ico_cooling_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0202 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0203 {background:url(/web/upload/mynomy/kr/diagnosis/ico_strong_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0301 {background:url(/web/upload/mynomy/kr/diagnosis/ico_smell_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0302 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep_off.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li .ico.fb0303 {background:url(/web/upload/mynomy/kr/diagnosis/ico_change_off.png) no-repeat 50% 50%; background-size:100%;}
+
+.fbCon ul li:hover .ico.fb0101 {background:url(/web/upload/mynomy/kr/diagnosis/ico_cleanning.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0102 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0103 {background:url(/web/upload/mynomy/kr/diagnosis/ico_soft.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0201 {background:url(/web/upload/mynomy/kr/diagnosis/ico_cooling.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0202 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0203 {background:url(/web/upload/mynomy/kr/diagnosis/ico_strong.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0301 {background:url(/web/upload/mynomy/kr/diagnosis/ico_smell.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0302 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li:hover .ico.fb0303 {background:url(/web/upload/mynomy/kr/diagnosis/ico_change.png) no-repeat 50% 50%; background-size:100%;}
+
+.fbCon ul li.on .ico.fb0101 {background:url(/web/upload/mynomy/kr/diagnosis/ico_cleanning.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0102 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0103 {background:url(/web/upload/mynomy/kr/diagnosis/ico_soft.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0201 {background:url(/web/upload/mynomy/kr/diagnosis/ico_cooling.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0202 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0203 {background:url(/web/upload/mynomy/kr/diagnosis/ico_strong.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0301 {background:url(/web/upload/mynomy/kr/diagnosis/ico_smell.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0302 {background:url(/web/upload/mynomy/kr/diagnosis/ico_keep.png) no-repeat 50% 50%; background-size:100%;}
+.fbCon ul li.on .ico.fb0303 {background:url(/web/upload/mynomy/kr/diagnosis/ico_change.png) no-repeat 50% 50%; background-size:100%;}
+
+.fb-pagination {display:block; bottom:unset; left:unset; text-align:center; padding:18px 0;}
+.fb-pagination .swiper-pagination-bullet {width:6px; height:6px; background:#D9D9D9; opacity:1.0; transition:.4s all; margin:0 2px;}
+.fb-pagination .swiper-pagination-bullet-active {background:#FF5D5C;}
+
+/* 피드백루프_1104 */
+.fixed-box{position: absolute;left: 0;bottom: 40px;right: 0;text-align: center;}
+.fixed-box.fix{position: fixed;left: 0;bottom: 42px;right: 0;text-align: center;width: 100%;z-index: 100;}
+.fixed-box .btn_diagnosis{display: inline-block;background: #FF5C5C;border-radius: 4px;box-shadow: 2px 2px 5px rgba(0,0,0,0.2);}
+.fixed-box .btn_diagnosis a{display: block;width: 335px;font-size: 16px;color: #fff;font-weight: 700;padding: 15px 0;}
+.feedback_wrap{background: #f8f6f4;}
+.feedback_wrap strong{font-weight: 700 !important;}
+.feedback_wrap .inner{max-width: 1200px;margin: 0 auto;position: relative;}
+.feedback_wrap .feedback_top{}
+.feedback_wrap .feedback_top .intro{text-align: center;padding-top: 105px;background: #EBE9E5 url(/web/upload/mynomy/kr/prd/bg_feedback_intro.png) no-repeat center 200px;transition: all 0.2s;}
+.feedback_wrap .feedback_top .intro.action{background-position: center 50px;}
+.feedback_wrap .feedback_top .intro span{display: block;padding-bottom: 16px;}
+.feedback_wrap .feedback_top .intro strong{display: block;font-size: 40px;color: #0B0A0A;line-height: 130%;font-weight: 700 !important;}
+.feedback_wrap .feedback_top .intro .ico_feedback{padding: 50px 0;width: 500px;margin: 0 auto;}
+.feedback_wrap .feedback_top .intro .ico_feedback ul{overflow: hidden;margin-left: -2%;}
+.feedback_wrap .feedback_top .intro .ico_feedback ul li{float: left;width: 31.33%;margin-left: 2%;background-repeat: no-repeat;background-position: top center;padding-top: 90px;}
+.feedback_wrap .feedback_top .intro .ico_feedback ul li.ico01{background-image: url(/web/upload/mynomy/kr/prd/ico_feedback01.png);}
+.feedback_wrap .feedback_top .intro .ico_feedback ul li.ico02{background-image: url(/web/upload/mynomy/kr/prd/ico_feedback02.png);}
+.feedback_wrap .feedback_top .intro .ico_feedback ul li.ico03{background-image: url(/web/upload/mynomy/kr/prd/ico_feedback03.png);}
+.feedback_wrap .feedback_top .intro .ico_feedback ul li span{display: block;font-size: 16px;color: #0B0A0A;line-height: 150%;font-weight: 500;}
+.feedback_wrap .feedback_section{padding: 120px 0;}
+.feedback_wrap .feedback_section.sec01{background: linear-gradient(to bottom, rgba(235,233,229,0.9), rgba(235,233,229,1));}
+.feedback_wrap .feedback_section:after{content: '';display: block;clear: both;}
+.feedback_wrap .feedback_section .c_red{color: #FF5C5C;}
+.feedback_wrap .feedback_section .left{float: left;width: 50%;}
+.feedback_wrap .feedback_section .right{float: right;width: 50%;}
+.feedback_wrap .feedback_section .txt.right{width: 40%;padding-left: 10%;}
+.feedback_wrap .feedback_section .txt{text-align: left;}
+.feedback_wrap .feedback_section .txt .tit{font-size: 40px;color: #0B0A0A;line-height: 130%;font-weight: 700;padding-bottom: 40px;}
+.feedback_wrap .feedback_section .txt p{font-size: 20px;color: #0B0A0A;line-height: 150%;}
+.feedback_wrap .feedback_section .img{text-align: center;}
+.feedback_wrap .feedback_section .img img{max-width: 100%;}
+.feedback_wrap .feedback_section .title{}
+.feedback_wrap .feedback_section .title .care { display: inline-block; font-size: 14px; font-weight: 500; text-align: center; line-height: 19px; color: #fff; padding: 8px 12px 0px; margin: 0 0 6px;
+background: url(/web/upload/mynomy/kr/prd/bg_tlt.png) no-repeat center center; width: 110px; height: 34px; box-sizing: border-box;}
+.feedback_wrap .feedback_section .title h3 { font-size:40px; line-height:130%; color:#0B0A0A; font-weight:700;}
+.feedback_wrap .feedback_section .title strong{font-weight: 700 !important;}
+.feedback_wrap .feedback_section .title p{font-size: 20px;color: #333333;line-height: 150%;padding-top: 40px;}
+.feedback_wrap .feedback_section .title p strong{display: block;color: #0B0A0A;font-weight: 700;}
+.feedback_wrap .feedback_section .img .img_rotation{background: url(/web/upload/mynomy/kr/prd/img_rotation.png) no-repeat center;}
+.feedback_wrap .feedback_loop{}
+.feedback_wrap .feedback_loop .txt{}
+.feedback_wrap .feedback_loop .txt span{display: block;padding-bottom: 16px;}
+.feedback_wrap .feedback_loop .txt .trademark{background: #EEEEEE;padding: 12px 15px;margin-top: 34px;font-size: 12px;line-height: 150%;width: 300px;}
+.feedback_wrap .feedback_loop .txt .trademark strong{display: block;font-size: 14px;color: #0B0A0A;position: relative;padding-bottom: 8px;position: relative;padding-left: 15px;}
+.feedback_wrap .feedback_loop .txt .trademark strong:before{content: '▶';position: absolute;left: 0;top: 0;}
+.feedback_wrap .feedback_loop .txt .trademark strong em{position: absolute;right: 0;top: 0;font-size: 12px;font-style: normal;font-weight: 400;}
+.feedback_wrap .feedback_section.sec03{background: #F9F9F9;padding: 0;}
+.feedback_wrap .feedback_section.sec03 .inner{background: url(/web/upload/mynomy/kr/prd/bg_feedback_sec01.png) no-repeat right center;padding: 120px 0;}
+.feedback_wrap .feedback_section .question{position: absolute;right: 130px;top: 50%;transform: translateY(-50%);background: #fff;border: 1px solid #E6E6E6;border-radius: 4px;padding: 40px 35px;width: 240px;}
+
+.feedback_section .rotation{position: absolute;left: 70px;top: 0;}
+.feedback_section .rotation span{display: block;position: absolute;left: 30px;top:40px;font-size: 12px;color: #0B0A0A;font-weight: 700;}
+.feedback_section .rotation img{
+    animation: rotate_image 3s linear infinite;
+    transform-origin: 50% 50%;
+}
+ 
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+}
+
+.feedback_section.sec05{background: #7D6A57;padding: 0;overflow: hidden;}
+.feedback_section.sec05 .title h3{color: #fff;}
+.feedback_section.sec05 .title .care{color: #6E6259;background-image: url(/web/upload/mynomy/kr/prd/bg_tlt_w.png);}
+.feedback_section.sec05 .title p{color: #fff;}
+.feedback_section.sec05 .title p strong{color: #fff;}
+.feedback_section.sec05 .txt{padding: 103px 0;}
+.feedback_section.sec05 .right{margin-left: -4%;height: 600px;overflow: hidden;}
+.feedback_section.sec05 .right:after{content: '';display: block;clear: both;}
+.feedback_section .feedback_slide{float: left;width: 46%;margin-left: 4%;}
+.feedback_section .feedback_slide ul{}
+.feedback_section .feedback_slide ul li{background: #fff;border-radius: 4px;padding: 36px 30px;}
+.feedback_section .feedback_slide ul li .slide_top{position: relative;}
+.feedback_section .feedback_slide ul li .slide_top .slide_img{position: absolute;left: 0;top: 0;}
+.feedback_section .feedback_slide ul li .slide_top .slide_txt{padding-left: 70px;}
+.feedback_section .feedback_slide ul li .slide_top .slide_txt strong{display: block;font-size: 20px;color: #0B0A0A;line-height: 150%;}
+.feedback_section .feedback_slide ul li .slide_top .slide_txt span{display: block;font-size: 14px;color: #666;}
+.feedback_section .feedback_slide ul li .slide_bot{padding-top: 20px;}
+.feedback_section .feedback_slide ul li .slide_bot p{font-size: 16px;color: #0B0A0A;line-height: 150%;}
+.feedback_section .feedback_slide ul li .slide_bot .tag{padding-top: 10px;}
+.feedback_section .feedback_slide ul li .slide_bot .tag span{display: inline-block;font-size: 14px;color: #999;}
+.feedback_section .feedback_slide .swiper-container{height: 600px;}
+
+.sec06{position: relative;}
+.sec06 .title{text-align: center;padding-bottom: 50px;}
+.sec06 .cont_box{background: #fff;border-radius: 4px;overflow: hidden;padding: 95px 0;}
+.sec06 .cont_box .rebuy{float: left;width: 50%;text-align: center;position: relative;}
+.sec06 .cont_box .rebuy .btn{position: absolute;left: 0;bottom: 25px;right: 0;width: 315px;margin: 0 auto;background: rgba(255,255,255,0.5);border-radius: 4px;box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1);}
+.sec06 .cont_box .rebuy .btn ul{padding: 10px 12px;}
+.sec06 .cont_box .rebuy .btn ul li{border-radius: 4px;padding: 10px 0;text-align: center;}
+.sec06 .cont_box .rebuy .btn ul li.bg_r{background: #FF5D5C;margin-bottom: 10px;}
+.sec06 .cont_box .rebuy .btn ul li.bg_b{background: #0B0A0A;}
+.sec06 .cont_box .rebuy .btn ul li a{display: block;font-size: 18px;color: #fff;font-weight: 600;}
+.sec06 .cont_box .cont{float: left;width: 50%;}
+.sec06 .cont_box .cont > span{display: block;}
+.sec06 .cont_box .cont > strong{display: block;font-size: 40px;font-weight: 700;line-height: 130%;}
+.sec06 .cont_box .cont > p{font-size: 16px;color: #333;line-height: 150%;padding: 15px 0;}
+.sec06 .cont_box .cont .explan{width: 340px;border-top: 2px solid #999;padding-top: 12px;position: relative;margin-top: 50px;}
+.sec06 .cont_box .cont .explan:after{content: '';width: 6px;height: 36px;background: url(/web/upload/mynomy/kr/prd/bg_dot.png) no-repeat center top;position: absolute;left: 50%;top: -50px;margin-left: -3px;text-align: center;}
+.sec06 .cont_box .cont .explan span{display: block;font-size: 16px;line-height: 150%;color: #0B0A0A;}
+.sec06 .cont_box .cont .explan p{font-size: 12px;color: #666;padding: 8px 0;}
+.sec06 .cont_box .cont .explan em{display: block;font-size: 12px;color: #999;line-height: 150%;font-style: normal;}
+
+.bot_banner{background: url(/web/upload/mynomy/kr/prd/bg_botbanner.png) no-repeat center top;background-size: cover;padding: 187px 0;}
+.bot_banner .banner_tit{font-size: 48px;color: #0B0A0A;line-height: 130%;font-weight: 500;}
+.bot_banner .banner_tit strong{font-weight: 700;}
+.bot_banner .banner_cont{font-size: 20px;color: #333;line-height: 150%;padding: 30px 0;}
+.bot_banner .btn_quiz{width: 220px;background: #FF5C5C;border-radius: 4px;text-align: center;}
+.bot_banner .btn_quiz a{display: inline-block;font-size: 16px;color: #fff;background: url(/web/upload/mynomy/kr/prd/btn_quiz.png) no-repeat right center;padding: 15px 35px 15px 0;}
+
+.history_banner{background: url(/web/upload/mynomy/kr/prd/bg_historybanner.png) no-repeat center top;background-size: cover;padding: 187px 0;}
+.history_banner .banner_tit{text-align: center;font-size: 48px;color: #fff;font-weight: 700;}
+.history_banner .banner_cont{width: 270px;margin: 0 auto;background: #fff;border-radius: 4px;padding: 30px 25px;text-align: center;margin-top: 60px;}
+.history_banner .banner_cont strong{display: block;font-size: 24px;color: #333;padding-bottom: 7px;}
+.history_banner .banner_cont p{font-size: 16px;color: #999;}
+.history_banner .banner_cont .product_cont{padding: 20px 0;}
+.history_banner .banner_cont .product_cont img{}
+.history_banner .banner_cont .product_cont em{display: block;font-size: 12px;color: #666;font-style: normal;padding: 8px 0;}
+.history_banner .banner_cont .product_cont span{display: block;font-weight: 700;font-size: 16px;color: #0B0A0A;}
+.history_banner .banner_cont a{display: block;background: #FF5C5C;border-radius: 4px;font-size: 16px;color: #fff;text-align: center;padding: 15px 0;box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.2);}
+.history_banner .btn_view{text-align: center;margin-top: 20px;}
+.history_banner .btn_view a{display: inline-block;font-size: 16px;color: #fff;border-bottom: 1px solid #fff;position: relative;padding-right: 20px;}
+.history_banner .btn_view a:after{content: '▶';font-size: 14px;color: #fff;position: absolute;right: 0;top: 0;}

@@ -1,0 +1,88 @@
+.xans-member-join { margin:14px 7px 0px; padding:0 0 29px; color:#63666e; font-size: 11px; }
+.xans-member-join .agreeArea { margin:0 0 7px; border:1px solid #ccc; background:#fff; }
+.xans-member-join .title { position:relative; line-height:36px; color:#333; border-bottom:1px solid #ccc; }
+.xans-member-join .title h3 { padding:0 0 0 14px; font-size:13px; font-weight:normal; }
+.xans-member-join .title h3 span {display:inline-block; margin-left:5px; color:#FF5D5C; font-size:13px;}
+.xans-member-join .title h3 span em {font-weight:700;}
+
+.xans-member-join .title h3 label { display:none; }
+.xans-member-join .title h3 label.check { display:inline; }
+.xans-member-join .title a.btnMore { position:absolute; top:0px; right:14px; font-size:11px; text-decoration:underline; }
+.xans-member-join .contents { overflow:hidden; overflow-y:auto; height:90px; padding:14px; color:#757575; font-size:11px; }
+
+.progress { overflow:hidden; height:37px; border-bottom:1px solid #eee; text-align:center; }
+.progress li { position:relative; float:left; padding:0 0 0 17px; width:35%; height:100%; line-height:37px; color:#999;  box-sizing:border-box; list-style-type:none; }
+.progress li:first-child { padding:0; width:30%; }
+.progress li:first-child:before { display:none; }
+/*.progress li:before { position:absolute; top:0; left:0; display:inline-block; content:""; width:17px; height:37px; background:url("//img.echosting.cafe24.com/skin/mobile/common/bg_process.png") no-repeat 0 0; background-size:67px auto; }*/
+.progress li.done { background-color:#fff; }
+.progress li.done strong { color: #000; }
+.progress li.done > strong::after { content: ""; width: 3px; height: 3px; background: #f0352e; border-radius: 100%; position: absolute; left: 50%; top: 4px;}
+.progress li.done + li:before { background-position:-25px 0; }
+.progress li.done + li.done:before { background-position:-50px 0; }
+
+.xans-member-join .agreeAll { padding:0 0 20px 15px; }
+.xans-member-join .agreeAll p { font-size:13px; }
+.xans-member-join .agreeAll h3 { margin:0 0 14px; color:#1b1b1b; }
+.xans-member-join .agreeAll label { width:calc(100% - 46px); width:-webkit-calc(100% - 46px); color:#000; vertical-align:top; }
+.xans-member-join .agreeArea .ec-base-chk { margin:0 4px 0 0; }
+
+.xans-member-join .additional { display:flex; display:-webkit-flex; padding:0 14px; border-top:1px solid #ccc; line-height:1.2; background:#fafafa; }
+.xans-member-join .additional li { flex:1; padding:10px 0; }
+.xans-member-join .additional li label { background:#fafafa; }
+
+
+.join_sns { margin: 14px 0; }
+.join_sns.xans-member-login .snsLogin .btnNaver {
+    display:block; margin:10px 0 0; border:0; border-radius:2px; font-size:13px; color:#fff; text-align:center; height:34px; line-height:33px; padding:0 0 0 45px;
+    background:#26c826 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_naver.png") no-repeat 13px 0; background-size:33px 33px;
+    -moz-box-sizing:border-box; box-sizing:border-box;
+}
+.join_sns.xans-member-login .snsLogin .btnFacebook {
+    display:block; margin:10px 0 0; border:0; border-radius:2px; font-size:13px; color:#fff; text-align:center; height:33px; line-height:33px; padding:0 0 0 45px;
+    background:#4267b2 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_facebook.png") no-repeat 13px 0; background-size:33px 33px;
+    -moz-box-sizing:border-box; box-sizing:border-box;
+}
+.join_sns.xans-member-login .snsLogin .btnGoogle {
+    display:block; margin:10px 0 0; border:0; border-radius:2px; font-size:13px; color:#fff; text-align:center; height:33px; line-height:33px; padding:0 0 0 45px;
+    background:#517ff3 url("//img.echosting.cafe24.com/skin/mobile/member/ico_google.png") no-repeat 0 0; background-size:auto 31px; border:1px solid #517ff3;
+    -moz-box-sizing:border-box; box-sizing:border-box;
+}
+.join_sns.xans-member-login .snsLogin .btnKakao {
+    display:block; margin:10px 0 0; border:0; border-radius:2px; font-size:13px; color:#3c1e1e; text-align:center; height:34px; line-height:33px; padding:0 0 0 45px;
+    background:#ffeb00 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_kakao.png") no-repeat 11px 1px; background-size:auto 33px;
+    -moz-box-sizing:border-box; box-sizing:border-box;
+}
+.join_sns.xans-member-login .snsLogin .btnLine {
+    display:block; margin:10px 0 0; border:0; border-radius:2px; font-size:13px; color:#fff; text-align:center; height:34px; line-height:33px; padding:0 0 0 45px;
+    background:#26c826 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_line.png") no-repeat 10px 0; background-size:35px 33px;
+    -moz-box-sizing:border-box; box-sizing:border-box;
+}
+.join_sns.xans-member-login .snsLogin .btnApple {
+    display:block; margin:10px 0 0; border:0; border-radius:2px; font-size:13px; color:#fff; text-align:center; height:34px; line-height:33px; padding:0 0 0 45px;
+    background:#000 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_apple.png") no-repeat 13px 0; background-size:33px 33px;
+    -moz-box-sizing:border-box; box-sizing:border-box;
+}
+.join_sns.xans-member-login .snsLogin .btnYahoo { 
+    display: block; margin: 10px 0 0; border:1px solid #ff0033; border-radius: 2px; font-size: 13px; color: #fff; text-align: center; height: 34px; line-height: 33px; padding: 0 0 0 45px;
+    background: #ff0033 url("//img.echosting.cafe24.com/skin/mobile/member/ico_btn_yahoo2.png") no-repeat 0 0; background-size: 45px 33px; 
+    -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.snsRegist li {display:block; height:48px; width:100%; float:none !important; padding:0 !important; margin-bottom:8px; box-sizing:border-box;}
+.snsRegist li.btn_kakao {background:#FAE64D;}
+.snsRegist li.btn_naver {background:#5AC467;}
+.snsRegist li.btn_facebook {background:#1877F2;}
+.snsRegist li.btn_apple {background:#000;}
+.snsRegist li.btn_google {background:#FFF; border:1px solid #C6C2C0;}
+
+.snsRegist li a {display:block;}
+.snsRegist li a .snsLoginBox {display:flex; align-items:center; color:#FFF !important; font-size:16px; width:216px; height:100%; padding-left:0; box-sizing:border-box; margin:0 auto;}
+.snsRegist li a .snsLoginBox .ico {display:inline-block; width:48px; height:48px; margin-right:4px;}
+.snsRegist li a .snsLoginBox .ico.kakao {background:url(/web/upload/mynomy/kr/layout/sns_ico_kakao.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.naver {background:url(/web/upload/mynomy/kr/layout/sns_ico_naver.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.facebook {background:url(/web/upload/mynomy/kr/layout/sns_ico_facebook.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.apple {background:url(/web/upload/mynomy/kr/layout/sns_ico_apple.svg) no-repeat 50% 50%;}
+.snsRegist li a .snsLoginBox .ico.google {background:url(/web/upload/mynomy/kr/layout/sns_ico_google.svg) no-repeat 50% 50%;}
+.snsRegist li.btn_kakao a .snsLoginBox {color:#391B1B !important;}
+.snsRegist li.btn_google a .snsLoginBox {color:#0B0A0A !important;}

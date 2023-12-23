@@ -1,0 +1,49 @@
+.xans-myshop-asyncbenefit {padding-top:25px; position:relative; }
+.xans-myshop-asyncbenefit:after{content: ''; position: absolute; top: -33px; left: 50%; z-index: 1; width: 600px; height: 300px; transform: translateX(-50%); background: linear-gradient(360deg,#d2d2d2 0%,rgba(248,246,244,0) 85%); border-radius: 50%; display:none;}
+.xans-myshop-asyncbenefit .inner { padding:0 20px 20px; }
+.xans-myshop-asyncbenefit .info { margin:0 0 10px; position:relative; z-index:2; }
+.xans-myshop-asyncbenefit .info .memberInfo { /*position:relative; padding: 3% 2% 3% 26%;*/ min-height:35px; }
+.xans-myshop-asyncbenefit .info .memberInfo > span { /*position:absolute; left:7px; top:7px;*/display:inline-block; width:22%;}
+.xans-myshop-asyncbenefit .info .memberInfo > span img{width:100%;}
+.xans-myshop-asyncbenefit .info .memberInfo .memberInfo_txt{width:100%; box-sizing: border-box;}
+.xans-myshop-asyncbenefit .info .memberInfo .memberInfo_txt p{display: inline-block; font-size: 14px; line-height: 28px; font-weight: 600; padding-left:30px;}
+.xans-myshop-asyncbenefit .info .memberInfo .memberInfo_txt span{font-weight:600;}
+.xans-myshop-asyncbenefit .info .memberInfo .name { color:#000; font-size:20px; font-weight:800 !important; line-height:18px; }
+.xans-myshop-asyncbenefit .info .memberInfo a.modify { position:absolute; top:14px; right:14px; width:59px; height:25px; text-align:center; font-size:11px; line-height:24px; border:1px solid #d5d5d5; border-radius:3px; background:#f1f1f1; }
+.xans-myshop-asyncbenefit .info .memberInfo ul:after{display:block; content:""; clear:both;}
+.xans-myshop-asyncbenefit .info .memberInfo ul li {float:left; margin:0; font-size:17px; font-weight:700; /*line-height:1.5em;*/ }
+.xans-myshop-asyncbenefit .info .memberInfo ul.gradeGuide li { font-size:11px; }
+.xans-myshop-asyncbenefit .info .memberInfo .setting_icon {float:right; font-size: 12px; font-weight:700; margin-top:3px;}
+.xans-myshop-asyncbenefit .info .memberInfo .setting_icon i{font-size:20px;}
+.xans-myshop-asyncbenefit .info .memberInfo .info_date{font-size:13px; margin: 3% 0;}
+.xans-myshop-asyncbenefit .info .memberInfo .info_btn .btn{display:inline-block; padding: 4px 10px;background:#000;margin-right:4px; border-radius:5px;}
+.xans-myshop-asyncbenefit .info .memberInfo .info_btn .btn a{ font-size:10px; font-weight:400; color:#fff;}
+.xans-myshop-asyncbenefit .info .help.tdisplaynonedisplaynone { display:none; }
+
+/*.xans-myshop-asyncbenefit .invite { margin:7px 0; padding:14px; border:1px solid #ddd; }
+.xans-myshop-asyncbenefit .invite h3 { margin:0 0 14px; }
+.xans-myshop-asyncbenefit .invite .inputBox { position:relative; box-sizing:content-box; padding:0 77px 0 0; margin:0 0 14px; }
+.xans-myshop-asyncbenefit .invite .inputBox input { width:100%; }
+.xans-myshop-asyncbenefit .invite a { position:absolute; top:0; right:0; display:block; float:right; }
+.xans-myshop-asyncbenefit .invite .help { font-size:11px; }*/
+
+.xans-myshop-asyncbenefit .myshop_asyntestbook {position:relative; box-sizing:border-box; padding: 9px 0 16px; z-index: 2;}
+.xans-myshop-asyncbenefit .myshop_asyntestbook ul{display:flex; justify-content: space-between;}
+.xans-myshop-asyncbenefit .myshop_asyntestbook li {width:31%; background:#fff; border-radius:4px; font-weight: 500; font-size:15px; box-sizing:border-box; line-height:14px; padding: 25px 20px; box-shadow:0 4px 6px 0 rgb(0,0,0,5%);}
+.xans-myshop-asyncbenefit .myshop_asyntestbook li span{display:block; font-size: 28px; font-weight:500; line-height: 28px; color:#0B0A0A; margin: 10px 0;}
+.xans-myshop-asyncbenefit .myshop_asyntestbook li p{display:inline-block; font-weight: 500; font-size: 12px; color:#666;}
+.xans-myshop-asyncbenefit .myshop_asyntestbook li a {display:block; color:#999;font-size: 14px; font-weight:500; }
+
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook {position:relative; z-index: 2; }
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook ul{border-radius:4px; background:#0B0A0A;}
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook ul:after{display:block; clear:both;content:"";}
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook ul:before{display:block; content:""; width:1px; height:24px; background:#fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook li { float:left; width:48%; font-weight: 500; font-size:15px; padding:0 12px; box-sizing:border-box; line-height:52px;  border-radius:10px; }
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook li:first-child{margin-right:4%;}
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook li p{display: inline-block; font-weight:500; font-size:14px;}
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook li p img{padding-left:5px;}
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook li a {display: block; color:#fff; font-size: 14px; font-weight:500; }
+.xans-myshop-asyncbenefit .xans-myshop-asyncbankbook li span{float:right; font-size:18px; color:#fff; font-weight:500;}
+
+.xans-myshop-asyncbenefit .testBtn a{display: block; margin-top: 8px; box-shadow:0 4px 10px 0 rgb(0,0,0,20%); background: #FF5C5C; border-radius: 4px; line-height: 52px; text-align: center; font-size: 16px; color: #fff; font-weight:500;}
+.xans-myshop-asyncbenefit .testBtn img{padding-left:12px; border:}

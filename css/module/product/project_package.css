@@ -1,0 +1,11 @@
+.xans-project-package #titleArea h2 { padding: 0; }
+
+.xans-project-package .menuCategory { margin: 0; padding:0 12px; background:#fff; font-size: 0; }
+.xans-project-package .menuCategory .icoOpen { width:13px; cursor:pointer; vertical-align:top; }
+.xans-project-package .menuCategory > li { padding: 0; border-top:1px solid #eee; }
+.xans-project-package .menuCategory > li:first-child { border-top:0; }
+.xans-project-package .menuCategory > li > a { display: inline-block; margin: 4px; padding: 8px 16px; font-size: 12px; font-weight: 400; color: #777; border: 1px solid #eee; border-radius: 8px; }
+.xans-project-package .menuCategory li.selected > a { color:#000; }
+.xans-project-package .menuCategory li.xans-product-projectcategory { display:inline-block; border:0; }
+.xans-project-package .banner { padding:10px 14px; }
+.xans-project-list h3 { margin:0; padding:16px 16px 0; font-size:16px; line-height:16px; color:#222; text-align:center; }

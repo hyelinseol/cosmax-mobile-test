@@ -1,0 +1,131 @@
+<!--@layout(/layout/basic/mypage.html)-->
+<div class="myArea">
+  <div class="inner">
+    <div id="myshop_tit">
+      <h3>주문/배송조회</h3>
+    </div>
+  </div>
+  <div class="inner out">
+    <div class="check_box" style="display: none;">
+      <select id="survey_search_date" class="select2" onchange="surveySearch()">
+        <option value="180">최근 6개월</option>
+        <option value="90">최근 3개월</option>
+        <option value="30">최근 1개월</option>
+      </select>
+      <select id="survey_search_status" class="select1" onchange="surveySearch()">
+        <option value="">전체</option>
+        <option value="analysis">상품준비중</option>
+        <option value="ready">배송준비중</option>
+        <option value="prepare">배송대기중</option>
+        <option value="shipping">배송중</option>
+        <option value="complate">배송완료</option>
+        <option value="feedbackloop">피드백루프</option>
+        <option value="cs">취소/교환/반품</option>
+      </select>
+    </div>
+
+
+    <div module="Myshop_OrderHistoryListitem" class="ec-base-table typeList" style="display: none">
+      <table border="1" summary="" class="bdrNone">
+        <colgroup>
+          <col style="width: 112px" />
+        </colgroup>
+        <tbody class="center {$list_display|display}">
+          <tr>
+            <td class="state">
+              <a href="#none" class="survey_shipping_search btnLineG survey_module_shipping" status="{$status}"
+                order_id="{$order_id}" style="display: none" onclick="{$shipping_trace_popup}">배송조회</a>
+              <a href="cancel.html{$param_apply}" class="survey_cancel btnLineG survey_module_cancel" status="{$status}"
+                order_id="{$order_id}">취소요청</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="state">
+              <a href="#none" class="survey_shipping_search btnLineG survey_module_shipping" status="{$status}"
+                order_id="{$order_id}" style="display: none" onclick="{$shipping_trace_popup}">배송조회</a>
+              <a href="cancel.html{$param_apply}" class="survey_cancel btnLineG survey_module_cancel" status="{$status}"
+                order_id="{$order_id}">취소요청</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="state">
+              <a href="#none" class="survey_shipping_search btnLineG survey_module_shipping" status="{$status}"
+                order_id="{$order_id}" style="display: none" onclick="{$shipping_trace_popup}">배송조회</a>
+              <a href="cancel.html{$param_apply}" class="survey_cancel btnLineG survey_module_cancel" status="{$status}"
+                order_id="{$order_id}">취소요청</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="state">
+              <a href="#none" class="survey_shipping_search btnLineG survey_module_shipping" status="{$status}"
+                order_id="{$order_id}" style="display: none" onclick="{$shipping_trace_popup}">배송조회</a>
+              <a href="cancel.html{$param_apply}" class="survey_cancel btnLineG survey_module_cancel" status="{$status}"
+                order_id="{$order_id}">취소요청</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+	<div class="ordBnr">
+		<p class="currentTitle">제품을 업그레이드하고 재구매 해보세요!<span class="ar"></span></p>
+		<div class="ordBnrBox">
+			<a href="/main/feedback.html"><img src="/web/renew_img/my_bnr_ord_mo.png" /></a>
+		</div>
+	</div>
+
+
+
+    <div 1class="list stateSelect survey_diagnosis_list displaynone"
+      class="xans-element- xans-myshop xans-myshop-orderhistorylistitem list stateSelect survey_diagnosis_list xans-record-"
+      1module="Myshop_OrderHistoryListitem">
+      <ul class="diagnosisList survey_order_list">
+
+      </ul>
+    </div>
+    <p class="message displaynone">주문 내역이 없습니다.</p>
+    <div class="btn-more" style="display: none" onclick="addView()">
+      <button>
+        <span>더보기</span><img src="/web/upload/mynomy/kr/layout/arrow.svg" alt="화살표" />
+      </button>
+    </div>
+  </div>
+  <!-- inner -->
+
+</div>
+<!-- //myArea -->
+<!-- 맞춤형 - 문진 -->
+<!--@import(/survey/common.html)-->
+<!--@js(/survey/js/survey_common.js)-->
+<!--@js(/survey/js/class/MyShop.js)-->
+<!--@js(/survey/js/class/OrderList.js)-->
+<!--@js(/survey/js/survey_myshop_order_check.js)-->
+<style>
+  .btnItemFunc {
+    height: 44.6px;
+  }
+
+  .message {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+  }
+</style>
+<style id="add_btn_style"></style>
+
+<!-- snap review script start contact mail : support@snapvi.co.kr -->
+<script>
+  function onloadsnapscript() {
+    var snapInstance = new snapSolution("3waau"); snapInstance.loadScript('review_independent', () => {
+      snapinstanceindependent.catchMoreItemReviewCnt();
+    });
+  }
+</script>
+<script async type='text/javascript' src='//sfre-srcs-service.snapfit.co.kr/js/snap_combine_script.js' defer='true'
+  charset='utf-8' onload='onloadsnapscript()'></script>
+<!-- snap review end -->

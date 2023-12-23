@@ -1,0 +1,31 @@
+.newSec {background:#FFF; position:relative; padding:40px 0;}
+.newSec.prd {padding:20px 0;}
+.newSec .nsInner {width:100%; max-width:1280px; margin:0 auto;}
+
+.mainPrd .prdRolling .swiper-wrapper {display:block;}
+.mainPrd .prdRolling .swiper-slide {float:left; width:49% !important; margin-right:2%; margin-bottom:20px;}
+.mainPrd .prdRolling .swiper-slide:nth-child(2n) {margin-right:0;}
+
+.mainPrd {display:block; height:auto; overflow:hidden;}
+.mainPrd .mpTitle {height:48px;}
+.mainPrd .mpTitle a {color:#242424; font-size:16px; font-weight:700; font-family: "Gotham SSm A","Gotham SSm B"; position:relative; line-height:48px; display:flex; align-items:center; padding:0 20px;}
+.mainPrd .mpTitle a:after {content:''; display:inline-block; width:20px; height:48px; background:url(/web/renew_img/ar_tail_more.svg) no-repeat 50% 50%; margin-top:0px; background-size:auto 30px;}
+.mainPrd .prdRolling {padding:0 20px;}
+#main .ec-base-product {}
+#main .ec-base-product .swiper-slide {display:inline-block; width:auto;}
+#main .ec-base-product .thumbnail {margin:0;}
+#main .ec-base-product .spec li {text-align:left;}
+.mainPrd.hair {margin-top:30px;}
+
+.nsTitle {display:block; padding:0 20px; height:48px; line-height:48px; position:relative; color:#000; font-size:20px; font-weight:600; letter-spacing:-1px;}
+.nsTitle .more a {position:absolute; right:20px; top:50%; transform:translate(0, -50%); color:#666; font-size:12px; font-weight:400;}
+.nsTitle .more a:after {content:''; display:inline-block; width:6px; height:10px; background:url(/web/renew_img/ar_main_more.svg) no-repeat 50% 50%; margin-left:8px;}
+
+/* 230615 추가 */
+.headImgSec {display:block; margin:0 -20px;}
+.headImgSec .imgTop {display:block; position:relative;}
+.headImgSec .imgTop img {max-width:100%;}
+.headImgSec .imgBtm {display:block; position:relative;}
+.headImgSec .imgBtm img {max-width:100%;}
+.headImgSec .imgBtm a.absBtnReview {position:absolute; left:20px; width:calc(100% - 40px); bottom:34px;}
+.headImgSec .imgBtm a.absBtnReview img {max-width:100%;}

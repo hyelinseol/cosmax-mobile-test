@@ -1,0 +1,46 @@
+#mypage #container #contents {background:#FFF !important;}
+.myArea .inner {padding-bottom:20px !important;}
+.titleArea {padding:56px 0 30px 0 !important; text-align:center;}
+.titleArea h2 {color:#000; font-size:24px !important; font-weight:500 !important; letter-spacing:0px !important; font-family: "Gotham SSm A", "Gotham SSm B","Pretendard";}
+
+/* FAQ 서브 카테고리 */
+.bbsSubField {position:relative; margin:0 -20px 20px -20px; white-space:nowrap; overflow-x:scroll;}
+.bbsSubField span a {display:inline-block; font-size:14px; color:#666; padding:10px;}
+.bbsSubField span a.on {color:#FF5C5C; font-weight:600;}
+
+.boardCate { position: relative; margin:0 auto 22px; clear:both; display:block; height:auto; overflow:hidden;}
+.boardCate .board_menu { display:block; }
+.boardCate .board_menu li {float:left; width:33.3333%; height:40px; line-height:40px; border: 1px solid #eee; background:#fff; text-align: center; box-sizing:border-box;}
+.boardCate .board_menu li.on { border:1px solid #000; background:#000; }
+.boardCate .board_menu li.on a { color:#fff; font-weight:500; }
+.boardCate .board_menu li a { display:block; font-size: 14px; color: #999; font-weight: 400;}
+.boardCate .board_menu li:last-child {width:100%; margin-top:-1px;}
+
+/* Comn Search
+.xans-board-search {padding:20px; text-align:center;}
+.xans-board-search p {background:none !important; margin:0 !important; padding:0 !important;}
+.xans-board-search p:before {display:none;}
+.xans-board-search select {width: 100px !important; margin:0 2px !important; height: 40px; border: 1px solid #e6e6e6; font-size: 14px; font-family: "Pretendard"; padding: 0 10px; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #fff url(/web/upload/mynomy/kr/layout/arrow.png) no-repeat 92% 52%; cursor: pointer;}
+.xans-board-search input[type="text"] {width:150px !important; height:40px; line-height:38px; border:1px solid #e6e6e6; font-size:14px; font-family:"Pretendard"; padding:0; box-sizing:border-box; margin-left:2px;}
+.xans-board-search a.btnEmFix {height:38px; line-height:38px; background:#000; border:1px solid #000; box-sizing:border-box; color:#FFF; font-weight:400; margin-left:5px; padding:0 !important;}
+.xans-board-search a.btnEmFix:hover {background:#FFF; color:#000;}
+ */
+
+ 
+/* add */
+.adminAnswer {margin-bottom:10px;}
+
+.ec-base-prdInfo .prdBox {justify-content:flex-start; align-items:center; margin-top:0 !important; min-height:auto !important; padding:10px 0;}
+.ec-base-button.fixed {position:absolute; right:10px; top:50%; transform:translate(0, -50%); display:flex; flex-direction:column;}
+.ec-base-button.fixed span a {margin:3px !important;}
+.ec-base-prdInfo .description .info {margin:0 !important;}
+
+#myshop_tit {margin:0 !important;}
+#myshop_tit h2 {padding-top:0 !important;}
+
+.xans-board-modify, .xans-board-write {padding:14px 0px !important;}
+.xans-board-modify .ec-base-prdInfo {padding:15px 10px !important; border-left:0; border-right:0;}
+.ec-base-table.typeWrite td input[name="subject"] {margin-bottom:5px;}
+
+.ec-base-table tbody th {padding:12px 0 !important;}
+.ec-base-table.typeWrite td {padding:12px 0 !important;}

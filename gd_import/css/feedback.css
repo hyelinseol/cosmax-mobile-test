@@ -1,0 +1,7 @@
+/************** 내용 **************/
+.readyBox { display:flex; flex-direction: column; justify-content: space-between; position:relative; min-height: calc(100vh - 152px); font-size:16px; padding:0 20px; box-sizing:border-box; }
+.readyBox .txt { margin:160px auto 64px; letter-spacing:-0.03em; text-align:center; }
+.readyBox.selectArea  .txt { margin:0 auto; }
+.readyBox .txt h3 { font-size:24px; line-height:36px; color:#0b0a0a; }
+.readyBox .txt p { display:block; font-size:14px; line-height:21px; color:#908775; margin:0 0 20px; }
+

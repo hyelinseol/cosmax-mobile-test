@@ -1,0 +1,16 @@
+/* 타이틀 */
+.xans-myshop-orderhistorylistitem .title h3 { line-height:43px; margin:7px 0 0; padding:0 0 0 14px; font-size:13px; color:#fff; background-color:#4a5164; }
+.xans-myshop-orderhistorylistitem .order h3 { overflow:hidden; margin:0; padding:0 0 0 14px; line-height:43px; color:#0b0a0a; font-size:13px; font-weight:normal; border-bottom:2px solid #0b0a0a;}
+.xans-myshop-orderhistorylistitem .order h3:after { content:""; display:block; clear:both; }
+.xans-myshop-orderhistorylistitem .order h3 a { color:#222; }
+
+/* 상품 리스트 */
+.xans-myshop-orderhistorylistitem { margin:0 20px; }
+.xans-myshop-orderhistorylistitem .order { position:relative; border-radius:8px; margin:0 0 16px; overflow:hidden; }
+.xans-myshop-orderhistorylistitem .order .date { font-weight:bold; }
+.xans-myshop-orderhistorylistitem a.btnDetail { position:absolute; top:14px; right:14px; padding:0 14px 0 0; font-size:11px; color:#333; background:url("/web/upload/mynomy/kr_mobile/layout/btn_more_board.png") right center no-repeat; background-size:15px 25px; }
+.xans-myshop-orderhistorylistitem .empty { text-align:center; padding:30px 0 30px; }
+.xans-myshop-orderhistorylistitem .request { position:relative; overflow:hidden; margin:0 -14px -6px; padding:0 14px; /*border-bottom:1px solid #ddd;*/ font-weight:bold; color:#0b0a0a; background-color:#f1f1f1; text-align:center; }
+.xans-myshop-orderhistorylistitem .prdFoot + .request { margin-top:6px; }
+.xans-myshop-orderhistorylistitem .prdFoot + .request:before { content:''; position:absolute; left:0; right:0; top:0; height:1px; background:#ddd; }
+.xans-myshop-orderhistorylistitem .request [class*='btn'] { margin:6px 0; }

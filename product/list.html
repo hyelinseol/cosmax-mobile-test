@@ -1,0 +1,125 @@
+<!--@layout(/layout/basic/layout.html)-->
+<!--@css(/css/module/product/menuPackage.css)-->
+
+<div class="prdCateSec">
+	<div class="prdCate" id="prdCateMenu">
+		<div class="perCate">
+			<a href="/product/prd_list.html">
+			<div class="imgSec">
+				<span><img src="/web/renew_img/top_cate_all.png" /></span>
+			</div>
+			<p class="txt">전체보기</p>
+			</a>
+		</div>
+		<div data-cateno="26" class="perCate">
+			<a href="/product/list.html?cate_no=26">
+			<div class="imgSec">
+				<span><img src="/web/renew_img/top_cate_hair.png" /></span>
+			</div>
+			<p class="txt">맞춤<br/>헤어케어</p>
+			</a>
+		</div>
+		<div data-cateno="42" class="perCate">
+			<a href="/product/list.html?cate_no=42">
+			<div class="imgSec">
+				<span><img src="/web/renew_img/top_cate_skin.png" /></span>
+			</div>
+			<p class="txt">맞춤<br/>스킨케어</p>
+			</a>
+		</div>
+		<div data-cateno="50" class="perCate">
+			<a href="/product/list.html?cate_no=50">
+			<div class="imgSec">
+				<span><img src="/web/renew_img/top_cate_essence.png" /></span>
+			</div>
+			<p class="txt">고민별<br/>추천 레시피</p>
+			</a>
+		</div>
+		<div class="perCate">
+			<a href="/product/gift_list.html">
+			<div class="imgSec">
+				<span><img src="/web/renew_img/top_cate_gift.png" /></span>
+			</div>
+			<p class="txt">선물하기</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="cateVisualWrap" id="cateVisualSec">
+	<div data-cateno="50" class="cateVisual">
+		<div class="cateTitle">
+			<p class="title">고민별 추천 레시피</p>
+			<p class="desc">
+				맞춤형 에센스의 다양한 레시피 중<br/>
+				가장 인기 있는 피부 고민 해결 레시피를 골라 소개해요.
+			</p>
+		</div>
+		<span><img src="/web/renew_img/img_visual_essence_mo.png" /></span>
+	</div>
+
+	<div data-cateno="42" class="cateVisual">
+		<div class="cateTitle">
+			<p class="title">맞춤 스킨케어</p>
+			<p class="desc">
+				<strong>진정 · 보습 · 색소침착 · 탄력 · 트러블 · 모공</strong><br/>
+				내 고민에 꼭 맞는 성분과 피부타입 맞춤<br/>
+				텍스처로 변화된 피부를 만나보세요.
+			</p>
+		</div>
+		<span><img src="/web/renew_img/img_visual_skin_mo.png" /></span>
+	</div>
+
+	<div data-cateno="26" class="cateVisual">
+		<div class="cateTitle">
+			<p class="title">맞춤 헤어케어</p>
+			<p class="desc">
+				<strong>탈모 · 머릿결 · 두피진정 · 비듬 · 가려움 · 쿨링</strong><br/>
+				내 고민, 두피 타입에 딱 맞춘<br/>
+				성분 처방을 만나보세요.<br/>
+				내가 원하는 향으로 더욱 완벽해져요. 
+			</p>
+		</div>
+		<span><img src="/web/renew_img/img_visual_hair_mo.png" /></span>
+	</div>
+</div>
+
+<div class="ec-base-product category" module="product_listnormal">
+    <!--@js(/js/module/product/listnormal.js)-->
+    <!--
+        $count = 10
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $moreview = yes
+        $cache = yes
+        $basket_result = /product/add_basket.html
+        $basket_option = /product/basket_option.html
+    -->
+    <ul class="prdList grid2">
+        <!--@import(/gd_import/prdList.html)-->
+    </ul>
+</div>
+
+<div module="product_listmore" class="ec-base-paginate typeMoreview">
+    <a href="#none" onclick="{$more_action}" class="btnMore">
+        view (<span id="more_current_page">{$current_page}</span>/<span id="more_total_page">{$total_page}</span>)<span class="icoMore"></span>
+    </a>
+</div>
+
+<!-- prd Bnr S //-->
+<!--@js(/gd_import/js/sub_comn.js)-->
+<!--@import(/gd_import/bnr_detail_rolling.html)-->
+<!-- prd Bnr E //-->
+
+<!-- 상세검색 레이어 팝업 -->
+<!--@import(/product/shoppQ/searchData_typePopup.html)-->
+<!--@js(/gd_import/js/product.js)-->
+
+<!--@import(/survey/common.html)-->
+<!--@js(/survey/js/survey_product_list.js)-->
+
+<!-- snap common  start contact mail : support@snapvi.co.kr -->
+<div id='spm_page_type' style='display:none'>sq_product_list_page</div>
+<script async type="text/javascript" src="//cdn.snapfit.co.kr/js/spm_f_common.js" charset="utf-8"></script>
+<div id="spm_banner_main"></div>
+<!-- snap common end -->

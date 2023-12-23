@@ -1,0 +1,268 @@
+<!--@layout(/layout/basic/mypage.html)-->
+<!--@css(/gd_import/css/mypage.css)-->
+
+<div class="myArea">
+    <div class="inner out">
+        <div id="myshop_tit">
+            <h3>구독내역</h3>
+            <span class="help"><i class="xi-help"></i></span>
+        </div>
+        <div class="slideWrap">
+            <div class="swiper-container cardSlide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="/"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/layout/card01.png" alt="card01" /></a></div>
+                    <div class="swiper-slide addCard">
+                        <a href="/"><div class="add">
+                            <i class="xi-plus-square-o"></i>
+                            <p>구독 카드를 등록해주세요!</p>
+                            </div></a>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!--div class="swiper-pagination swiper-pagination-main"></div-->
+            </div>
+            <!-- Initialize Swiper -->
+            <script>
+                var card_swiper = new Swiper('.cardSlide', {
+                    speed: 600,
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    centeredSlides: true,
+                    parallax: true,
+                    loop: true,
+                    /*pagination: {
+                        el: '.swiper-pagination-main',
+                        type: "fraction",
+                    },*/
+                });
+            </script>
+        </div> 
+        
+        <!--@js(/gd_import/js/tab.js)-->
+        <div class="prdTab">         
+            <ul class="menu gFlex2">
+                <li><a href="#none">신청내역</a></li>
+                <li><a href="#none">구독내역</a></li>
+            </ul>
+
+            <ul class="con">
+                <li>
+                    <!--ul class="application history"-->
+                    <ul>
+                        <li class="diagnosis_list">
+                            <div class="top">
+                                <div class="hair_line">
+                                    <span class="hair_sign">헤어케어</span>
+                                    <p class="word">
+                                        <span class="date">진단일: 22.07.28</span>
+                                        <span class="date">구매일: 22.07.28</span>
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <div class="infoTit">
+                                        <h3 class="nickName">#글자수는열자제한임다</h3>
+                                        <ul class="type">
+                                            <li>
+                                                <span class="typeTit">샴푸</span>
+                                                <div class="level_set">
+                                                    <p class="level">Lv3</p>
+                                                    <span>지성용</span>
+                                                </div>
+                                            </li>
+                                            <li class="gray">
+                                                <span class="typeTit">트리트먼트</span>
+                                                <div class="level_set">
+                                                    <p class="level">Lv3</p>
+                                                    <span>지성용</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="typeTit">향</span>
+                                                <div class="level_set">
+                                                    <p class="fragrance"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/diagnosis/fragrance_slide03.png"></p>
+                                                    <span>Wild Black Berry</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/layout/img_m_prd01.png"/></a>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="mBtn gColumn sBet">
+                                <a href="/myshop/mypage/repurchase_set.html" class="btn3 btn_prd half">재구매하기</a>
+                                <a href="#none" class="btn3 btn_prd half">리뷰 작성하기</a>
+                            </div> 
+                        </li>
+                        <li class="diagnosis_list">
+                            <div class="top">
+                                <div class="hair_line">
+                                    <span class="hair_sign">헤어케어</span>
+                                    <p class="word">
+                                        <span class="date">진단일: 22.07.28</span>
+                                        <span class="date">구매일: 22.07.28</span>
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <div class="infoTit">
+                                        <h3 class="nickName">#글자수는열자제한임다</h3>
+                                        <ul class="type">
+                                            <li>
+                                                <span class="typeTit">샴푸</span>
+                                                <div class="level_set">
+                                                    <p class="level">Lv3</p>
+                                                    <span>지성용</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="typeTit">트리트먼트</span>
+                                                <div class="level_set">
+                                                    <p class="level">Lv3</p>
+                                                    <span>지성용</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="typeTit">향</span>
+                                                <div class="level_set">
+                                                    <p class="fragrance"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/diagnosis/fragrance_slide03.png"></p>
+                                                    <span>Wild Black Berry</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/layout/img_m_prd01.png"/></a>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="mBtn gColumn sBet">
+                                <a href="#none" class="btn3 btn_prd">구매하기</a>
+                            </div> 
+                        </li>
+                        <li class="diagnosis_list">
+                            <div class="top">
+                                <div class="hair_line">
+                                    <span class="hair_sign">헤어케어</span>
+                                    <p class="word">
+                                        <span class="date">진단일: 22.07.28</span>
+                                        <span class="date">구매일: 22.07.28</span>
+                                    </p>
+                                </div>
+                                <div class="info">
+                                    <div class="infoTit">
+                                        <h3 class="nickName">#글자수는열자제한임다</h3>
+                                        <ul class="type">
+                                            <li class="gray">
+                                                <span class="typeTit">샴푸</span>
+                                                <div class="level_set">
+                                                    <p class="level">Lv3</p>
+                                                    <span>지성용</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="typeTit">트리트먼트</span>
+                                                <div class="level_set">
+                                                    <p class="level">Lv3</p>
+                                                    <span>지성용</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="typeTit">향</span>
+                                                <div class="level_set">
+                                                    <p class="fragrance"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/diagnosis/fragrance_slide03.png"></p>
+                                                    <span>Wild Black Berry</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/layout/img_m_prd01.png"/></a>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="mBtn gColumn sBet">
+                                <a href="/myshop/mypage/repurchase_set.html" class="btn3 btn_prd half">재구매하기</a>
+                                <a href="#none" class="btn3 btn_prd half">리뷰 작성하기</a>
+                            </div> 
+                        </li>
+                        <!-- <li class="diagnosis_list">
+                            <div class="top">
+                                <div class="info">
+                                    <div class="infoTit">
+                                        <h4 class="prdName">마이노미헤어케어</h4>
+                                        <h3 class="nickName">#울랄라더운여름용이양</h3>
+                                        <p class="date">구매일: 2022.07.20</p>
+                                        <p class="date">진단일: 2022.07.20</p>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/layout/product01.png"/></a>
+                                    </div>
+                                </div>
+                                <ul class="type">
+                                    <li>
+                                        <span class="typeTit">샴푸</span>
+                                        <p>Lv3</p>
+                                        <span>지성용</span>
+                                    </li>
+                                    <li>
+                                        <span class="typeTit">트리트먼트</span>
+                                        <p>Lv3</p>
+                                        <span>극손상모용</span>
+                                    </li>
+                                    <li>
+                                        <span class="typeTit">향</span>
+                                        <p class="fragrance"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/diagnosis/fragrance_slide03.png"></p>
+                                        <span>Wild Black Berry</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                            <div class="mBtn gColumn">
+                                <a href="#none" class="btn3">재구매하기</a>
+                                <a href="#none" class="btn3">리뷰 쓰기</a>
+                            </div> 
+                        </li>
+                        <li class="diagnosis_list">
+                            <div class="top">
+                                <div class="info">
+                                    <div class="infoTit">
+                                        <h4 class="prdName">마이노미헤어케어</h4>
+                                        <h3 class="nickName">#울랄라더운여름용이양</h3>
+                                        <p class="date">구매일: 2022.07.20</p>
+                                        <p class="date">진단일: 2022.07.20</p>
+                                    </div>
+                                    <div class="thumbnail">
+                                        <a><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/layout/product01.png"/></a>
+                                    </div>
+                                </div>
+                                <ul class="type">
+                                    <li>
+                                        <span class="typeTit">샴푸</span>
+                                        <p>Lv3</p>
+                                        <span>지성용</span>
+                                    </li>
+                                    <li>
+                                        <span class="typeTit">트리트먼트</span>
+                                        <p>Lv3</p>
+                                        <span>극손상모용</span>
+                                    </li>
+                                    <li>
+                                        <span class="typeTit">향</span>
+                                        <p class="fragrance"><img src="//ecimg.cafe24img.com/pg115b69008946048/cosmaxtest/web/upload/mynomy/kr_mobile/diagnosis/fragrance_slide03.png"></p>
+                                        <span>Wild Black Berry</span>
+                                    </li>
+                                </ul>
+                            </div>    
+                            <div class="mBtn gColumn">
+                                <a href="#none" class="btn3">재구매하기</a>
+                                <a href="#none" class="btn3">리뷰 쓰기</a>
+                            </div> 
+                        </li> -->
+                    </ul>
+                </li>
+
+                <li><p class="empty">구독 내역이 없어요.</p></li>
+            </ul>
+        </div>
+    </div> <!-- //inner -->
+</div> <!-- //myArea -->

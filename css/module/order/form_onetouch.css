@@ -1,0 +1,39 @@
+body { font-family:'Lato','Noto Sans KR',sans-serif; } 
+#userStyle #mCafe24Order .btnNormal, #userStyle #mCafe24Order .btnStrong, 
+#userStyle #mCafe24Order .btnBasic, #userStyle #mCafe24Order .btnSubmit, 
+#userStyle #mCafe24Order .btnEm, #userStyle #mCafe24Order .btnBase { font-family:'Lato','Noto Sans KR',sans-serif; }
+
+#userStyle #header .titleArea h1 { background:#000; }
+#userStyle #header .headerMenu .btnBasket .count { background: #000; }
+
+#userStyle #mCafe24Order { background: #f8f8f8; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+#userStyle #mCafe24Order .ec-base-fold { border: 1px solid #ddd; border-width: 1px 0; }
+#userStyle #mCafe24Order .title h2 { font-weight: 400;}
+#userStyle #mCafe24Order .joinArea { background: #eee; }
+#userStyle #mCafe24Order .txtStrong { color: #000; }
+#userStyle #mCafe24Order .orderArea .totalPrice { background: #fff; }
+#userStyle #mCafe24Order .orderArea .totalPrice .title {background: #f8f8f8;}
+#userStyle #mCafe24Order .orderArea .totalPrice .ec-base-table.gCellNarrow th { color: #666; }
+#userStyle #mCafe24Order .totalPay { background: #fff; border-top: 1px solid #ddd; }
+#userStyle #mCafe24Order .payMethod > li.selected > label { border-color: #000; color: #fff; font-weight: 400; background: #000; }
+#userStyle #mCafe24Order .payMethod > li.selected > .inner { border: 1px solid #ddd; }
+#userStyle #mCafe24Order .txtEm { color: #000; }
+#userStyle #mCafe24Order .ec-order-button-list .ec-base-label input:checked + .text { border-color:#000; background:#000; }
+#userStyle #mCafe24Order .btnBasic { border: 1px solid #ddd; background: #eee; }
+#userStyle #mCafe24Order .btnBasic:hover { background: #ddd; }
+#userStyle #mCafe24Order .btnSubmit { border: 1px solid #000; background: #000; }
+#userStyle #mCafe24Order .btnSubmit:hover { background: #fff; color: #000; transition: all 0.3s ease; -khtml-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -ms-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+#userStyle #mCafe24Order .autoDiscountLayer > h1 { background: #000; }
+#userStyle #mCafe24Order .resultArea .message { background: url("/web/upload/mynomy/kr_mobile/layout/ico_resultarea_message.png") no-repeat center 0; background-size:38px 42px; }
+
+#userStyle #mCafe24Order .ec-base-layer h1 { background:#000; }
+#userStyle #mCafe24Order .ec-base-layer.typeWide { background:#f8f8f8; }
+#userStyle #mCafe24Order .ec-base-box { background:#f9f9f9; }
+
+#mCafe24Order .title {align-items:stretch;}
+
+#mCafe24Order .resultArea .message { background: url("/kr/layout/ico_resultarea_message.png") no-repeat center 0; background-size:38px 42px; }
+#mCafe24Order .txtEm {color:#FF5D5C;}
+#mCafe24Order .txtStrong {color:#FF5D5C;}
+#mCafe24Order.xans-order-result .orderArea .totalPrice .ec-base-table .txtStrong  {color:#FF5D5C;}

@@ -1,0 +1,1731 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div class="layout-detail">
+
+	<div module="product_detail">
+		<!--@css(/css/module/product/detail.css)-->
+		<!--@css(/gd_import/css/detail.css)-->
+		<!--@js(/gd_import/js/sub.js)-->
+        <!--@js(/gd_import/js/lib/ScrollMagic.min.js)-->
+		<!--
+			$coupon_download_page = /coupon/coupon_productdetail.html
+		-->
+
+		<div class="re_product_detail">
+            <div class="bnrHook">
+                <div class="inner">지금 3WAAU구독하면 30% 할인 혜택을 드려요!</div>
+            </div>
+            <div class="detail-header">
+                <div class="box-wrap">
+                    <div class="box-img">
+                        <div class="big_img">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="/web/upload/mynomy/kr_mobile/prd/big_img.jpg" alt="큰사진이미지" /></div>
+                                <div class="swiper-slide"><img src="/web/upload/mynomy/kr_mobile/prd/big_img.jpg" alt="큰사진이미지" /></div>
+                                <div class="swiper-slide"><img src="/web/upload/mynomy/kr_mobile/prd/big_img.jpg" alt="큰사진이미지" /></div>
+                            </div>
+                            <div class="pagination"></div>
+                        </div>
+                        <div class="box_ico"><img src="/web/upload/mynomy/kr_mobile/prd/box_ico.png" alt="1:1 맞춤 레시피"></div>
+                        <div class="box_txt">* 진단 결과에 따른 일부 레시피에 한합니다.</div>
+                    </div>
+                    <div class="ticker-wrap">
+                        <div class="ticker">
+                            <div class="item-wrap">
+                                <div class="item">WE ANALYZE YOU TO CREATE YOUR OWN RECIPE. EXPERIENCE THE DIF FERENCE OF TRULY PERSONALIZED HAIRCARE. THE BEAUTY INNOVATION FOR EVERY INDIVIDUAL, 3ONU. WE ANALYZE YOU TO CREATE YOUR OWN RECIPE. EXPERIENCE THE DIFFERENCE </div>
+                                <div class="item">WE ANALYZE YOU TO CREATE YOUR OWN RECIPE. EXPERIENCE THE DIF FERENCE OF TRULY PERSONALIZED HAIRCARE. THE BEAUTY INNOVATION FOR EVERY INDIVIDUAL, 3ONU. WE ANALYZE YOU TO CREATE YOUR OWN RECIPE. EXPERIENCE THE DIFFERENCE </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-info">
+                        <div class="name">3WAAU 헤어케어</div>
+                        <div class="simple">
+                            그동안 해결하지 못한 나의 두피, 모발 고민.<br />
+                            나에게 딱 맞는 솔루션을 찾지 못했기 때문입니다.
+                            3WAAU는 독자적인 고객 진단 및 레시피 시스템을 통해<br />
+                            1:1 레시피로 조제합니다.
+                        </div>
+                        <div class="btn_wrap">
+                            <p><span>구독/// 혜택 추가예정</span></p>
+                            <div module="product_detail">
+                                <div id="{$total.total_price_id}" class="total-price">
+                                    <span class="{$total.total_cnt}"></span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#none" class="btn_style01">선물하기</a></li>
+                                <li><a href="#none" class="btn_style02">진단내역</a></li>
+                                <li><a href="#none" class="btn_style03">헤어퀴즈 시작하기</a></li>
+                            </ul>
+                        </div>
+                        <div module="product_relation" class="relation-prdlist">
+                            <div module="product_relationlist">
+                                <ul class="prd-list">
+                                    <li class="item">
+                                        <div class="box">
+                                            <div class="thumb-wrap"><a href="{$link_product_detail}"><img src="{$img_small}"
+                                                        alt="{$seo_alt_tag}" class="thumb" /></a></div>
+                                            <div class="relation-name"><a href="{$link_product_detail}">{$name}</a></div>
+                                            <div class="relation-price">48,000원</div>
+                                            <!-- <ul>
+                                                <li><strong class="{$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</strong></li>
+                                                <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+                                            </ul> -->
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="box">
+                                            <div class="thumb-wrap"><a href="{$link_product_detail}"><img src="{$img_small}"
+                                                        alt="{$seo_alt_tag}" class="thumb" /></a></div>
+                                            <div class="relation-name"><a href="{$link_product_detail}">{$name}</a></div>
+                                            <div class="relation-price">48,000원</div>
+                                            <!-- <ul>
+                                                <li><strong class="{$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</strong></li>
+                                                <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+                                            </ul> -->
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="box">
+                                            <div class="thumb-wrap"><a href="{$link_product_detail}"><img src="{$img_small}"
+                                                        alt="{$seo_alt_tag}" class="thumb" /></a></div>
+                                            <div class="relation-name"><a href="{$link_product_detail}">{$name}</a></div>
+                                            <div class="relation-price">48,000원</div>
+                                            <!-- <ul>
+                                                <li><strong class="{$product_sale_strike}">{$disp_product_price}{$product_tax_type_text}</strong></li>
+                                                <li class="salePrice {$sale_price_display|display}">{$disp_sale_price}</li>
+                                            </ul> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+<!--
+                        <div id="{$total.total_price_id}" class="total-price">
+                            <strong><span class="{$total.total_cnt}"><strong><em>0</em></strong></span>
+                        </div>
+                        <a href="#none" class="btn-submit">1:1 고객 진단 받기</a>
+-->
+                    </div>
+                </div>
+
+                <div class="displaynone">
+                    <div class="product-info">
+                        <table border="1" summary="" module="product_option">
+                            <!--
+                                $use_per_add_option = yes
+                                -->
+                            <caption>상품 옵션</caption>
+                            <tbody module="product_option">
+                                <tr>
+                                    <th scope="row">{$option_name}</th>
+                                    <td>{$form.option}<p class="value">{$option_desc}</p>
+                                    </td>
+                                </tr>
+                                <tr module="product_quantity">
+                                    <th scope="row">수량</th>
+                                    <td>
+                                        <div class="ec-base-qty">
+                                            {$form.quantity}
+                                            <a href="javascript:;" class="qtyUp eClearUp"><img
+                                                    src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif"
+                                                    id="{$quantity_up_id}" alt="증가" class="up {$quantity_up_class}"></a>
+                                            <a href="javascript:;" class="qtyDown eClearDown"><img
+                                                    src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif"
+                                                    id="{$quantity_down_id}" alt="감소"
+                                                    class="down {$quantity_down_class}"></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr module="product_addoption">
+                                    <th scope="row">{$add_option_name}</th>
+                                    <td>
+                                        {$form.add_option}
+                                        <span class="txtByte" title="현재글자수/최대글자수">(<strong
+                                                class="length">0</strong>/{$option_maxlength})</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tbody>
+                                <tr class="{$option_push_button_display|display}" id="{$option_push_button_id}">
+                                    <td colspan="2" class="selectButton"><a href="#none" class="btnSubmit sizeS"
+                                            onclick="{$action_push_button}">옵션선택</a></td>
+                                </tr>
+                                <tr module="product_fileoption">
+                                    <th scope="row">{$file_option_name}</th>
+                                    <td class="fileInfo">
+                                        {$form.file_option}
+                                        <ul class="infoDesc">
+                                            <li>- 파일은 최대 5개까지 {$file_option_limit}M 이하로 개별업로드 가능합니다.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <dl module="product_quantity" class="ec-base-desc quantity">
+                            <dt>수량</dt>
+                            <dd>
+                                <div class="ec-base-qty">
+                                    {$form.quantity}
+                                    <a href="javascript:;" class="qtyUp eClearUp"><img
+                                            src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_up.gif"
+                                            id="{$quantity_up_id}" alt="증가" class="up {$quantity_up_class}"></a>
+                                    <a href="javascript:;" class="qtyDown eClearDown"><img
+                                            src="//img.echosting.cafe24.com/skin/base/common/btn_quantity_down.gif"
+                                            id="{$quantity_down_id}" alt="감소" class="down {$quantity_down_class}"></a>
+                                </div>
+                            </dd>
+                        </dl>
+                        <div class="guideArea displaynone">
+                            <p class="info {$limit_display|display}">(최소주문수량 {$minimum_limit}개 이상<span
+                                    class="{$maximum_limit_display|display}"> / 최대주문수량 {$maximum_limit}개 이하</span>)</p>
+                            <span class="sizeGuide {$size_guide_display|display}"><a href="#none"
+                                    class="{$size_guide_class}" product_no="{$product_no}">사이즈 가이드</a></span>
+                        </div>
+                        <div id="{$total.total_id}" class="{$total.total_display|display}">
+                            <p class="ec-base-help txtWarn txt12 {$single_item_display|display} displaynone"> 수량을 선택해주세요.
+                            </p>
+                            <p class="ec-base-help txtWarn txt12 {$several_item_display|display}"> 위 옵션선택 박스를 선택하시면 아래에 상품이
+                                추가됩니다.</p>
+                            <table border="1" summary="">
+                                <caption>상품 목록</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">상품이미지</th>
+                                        <th scope="col">상품정보</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="{$quantity_display|display}">
+                                    <tr>
+                                        <td>
+                                            <div class="img"><img src="{$big_img}" alt="{$seo_alt_tag}" /></div>
+                                        </td>
+                                        <td>
+                                            <div class="info">
+                                                <div class="name">{$name}</div>
+                                                <div class="price {$total.quantity_price}">{$product_price}</div>
+                                                <div class="quantity">
+                                                    {$quantity}
+                                                    <a href="javascript:;" class="up {$quantity_up_class}"><img
+                                                            src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
+                                                            alt="수량증가" /></a>
+                                                    <a href="javascript:;" class="down {$quantity_down_class}"><img
+                                                            src="//img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
+                                                            alt="수량감소" /></a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!--@import(/product/detail_element.html)-->
+            </div>
+            
+            <div module="product_additional">
+                <div id="prdDetail">
+                    <div class="ec-base-tab gFlex">
+                        <div class="max-width">
+                            <ul class="menu max-width">
+                                <li class="selected"><a href="#prdDetail">상품상세정보</a></li>
+                                <li><a href="#prdInfo">상품구매안내</a></li>
+                                <li class=""><a href="#prdReview">상품사용후기<span class="review_count">( 0 )</span></a></li>
+                                <li class=""><a href="#prdQnA">상품Q&amp;A</a></li>
+                                <!--li><a href="#prdRelated">관련상품</a></li-->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cont prd_detail">
+                        <div class="product_sec sec01">
+                            <div class="inner">
+                                <div class="txt">
+                                    <span>기성품의 한계를 넘다</span>
+                                    <strong>1:1 밀착<br />샴푸&amp;트리트먼트</strong>
+                                    <div class="effect">
+                                        <ul>
+                                            <li><span>1:1 맞춤레시피</span></li>
+                                            <li><span>탈모완화 기능성</span></li>
+                                            <li><span>특허성분 함유</span></li>
+                                            <li><span>주문 즉시 제조</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="img"><img src="/web/upload/mynomy/kr/prd/img_product_sec01.png" alt="샴푸&트리트먼트 이미지"></div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec02">
+                            <div class="inner">
+                                <div class="fixed_wrap">
+                                    <div class="img_fixed">
+                                        <span>3WAAU에서 조합 가능한 레시피 수</span>
+                                        <p>12,600,000</p>
+                                        <div class="bg"><img src="/web/upload/mynomy/kr/prd/bg_product_sec02.png" alt="그라데이션 배경"></div>
+                                    </div>
+                                    <div class="img"><img src="/web/upload/mynomy/kr_mobile/prd/img_product_sec02.png" alt="3 ON U"></div>
+                                    <div class="txt">
+                                        <strong>
+                                            <em>똑</em><em>같</em><em>을</em> <em>수</em> <em>없</em><em>는</em><br />
+                                            <strong class="red">나만의 헤어케어</strong>를<br /> 만나보세요
+                                        </strong>
+<!--
+                                        <p>
+                                            유명한 샴푸 다 써봐도...<br /> 당신의 두피 모발 고민이 해결되지 않은 이유<br />
+                                            <strong class="red">아무리 좋은 성분이라도,<br /> ’당신’에게 좋은 성분은 아니었기 때문입니다.</strong><br />
+                                            맞춤 정장과 기성복의 핏이 같을 수는 없죠.<br /> 화장품도 마찬가지입니다.<br />
+                                            나만의 특성에 맞춰 만들어진<br /> 제품의 만족도는 다를 수 밖에 없습니다!
+                                        </p>
+-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec03">
+                            <div class="inner">
+                                <div class="tit">
+                                    <span><img src="/web/upload/mynomy/kr_mobile/prd/img_3onu_m.svg" alt=""></span>
+                                    <strong>당신이 기준이 되면<br /> 다릅니다</strong>
+                                </div>
+                                <div class="list">
+                                    <ul>
+                                        <li class="list01">
+                                            <div class="point">
+                                                <img src="/web/upload/mynomy/kr/prd/img_sec03_1.png" alt="1:1 성분 설계">
+                                                <span>1:1 성분 설계</span>
+                                            </div>
+                                        </li>
+                                        <li class="list02">
+                                            <div class="point">
+                                                <img src="/web/upload/mynomy/kr/prd/img_sec03_2.png" alt="향기 선택">
+                                                <span>향기 선택</span>
+                                            </div>
+                                        </li>
+                                        <li class="list03">
+                                            <div class="point">
+                                                <img src="/web/upload/mynomy/kr/prd/img_sec03_3.png" alt="각인 서비스">
+                                                <span>각인 서비스</span>
+                                            </div>
+                                        </li>
+                                        <li class="list04">
+                                            <div class="point">
+                                                <img src="/web/upload/mynomy/kr/prd/img_sec03_4.png" alt="주문 즉시 조제">
+                                                <span>주문 즉시 조제</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec04">
+                            <div class="inner">
+                                <div class="tit">
+                                    <strong>
+                                        3WAAU는<br />
+                                        오직 <strong class="red">당신에게</strong><br />
+                                        <strong class="red">집중</strong>합니다.
+                                    </strong>
+                                </div>
+                                <div class="txt">
+                                    <p>
+                                        유명한 샴푸 다 써봐도...<br />
+                                        당신의 두피 모발 고민이<br />
+                                        해결되지 않은 이유.<br />
+                                        <strong>
+                                            아무리 좋은 성분이라도, <br />
+                                            ’당신’에게 좋은 성분은 아니었기 때문입니다.
+                                        </strong>
+                                        <br /><br />
+                                        <strong>
+                                            그래서 3WAAU는 <br />
+                                            당신의 고민과 상태에 집중한 <br/ >
+                                            해결방법을 고민합니다.
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec05">
+                            <div class="inner">
+                                <div class="c_tit">
+                                    <strong>3WAAU 맞춤 헤어케어가<br /> <em>특</em><em>별</em><em>한</em> <em>이</em><em>유</em>!</strong>
+                                </div>
+                                <div class="left">
+                                    <div class="tit">
+                                        <strong>원하는 것만 고르면</strong><br />
+                                        <strong class="red">다 알아서 전문가가 해주니까!</strong>
+                                    </div>
+                                    <div class="txt">
+                                        <div class="sec05_list">
+                                            <ul>
+                                                <li class="sec05_list01">
+                                                    <p>
+                                                        특허 출원<br />
+                                                        제조 공법<br />
+                                                        <span>총 3건</span>
+                                                    </p>
+                                                </li>
+                                                <li class="sec05_list02">
+                                                    <p>
+                                                        국가공인<br />
+                                                        맞춤형 화장품<br />
+                                                        조제관리사
+                                                    </p>
+                                                </li>
+                                                <li class="sec05_list03">
+                                                    <p>
+                                                        전담 헤어케어<br />
+                                                        LAB
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <div class="explain">
+                                                *출원번호 10-2022-0060413 / 10-2022-0070800 / 10-2022-0076757
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="txt">
+                                        <p>
+                                            한국인들의 두피, 모발 고민 19가지를 엄선했어요!<br />
+                                            가장 해결하고 싶은 고민을 골라보세요.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <div class="random">
+                                        <span>해결하고 싶은 고민을<br />골라주세요!</span>
+                                        <ul>
+                                            <li><a href="#">비듬 / 각질</a></li>
+                                            <li><a href="#">가려움 완화</a></li>
+                                            <li><a href="#">마일드한 세정</a></li>
+                                            <li><a href="#">모발 보습</a></li>
+                                            <li><a href="#">두피 진정</a></li>
+                                            <li><a href="#">냄새 케어</a></li>
+                                            <li><a href="#">떡짐 개선</a></li>
+                                            <li><a href="#">두피 쿨링</a></li>
+                                            <li><a href="#">열손상 보호</a></li>
+                                            <li><a href="#">딥클렌징</a></li>
+                                            <li><a href="#">두피상태개선</a></li>
+                                            <li><a href="#">모발 윤기</a></li>
+                                            <li><a href="#">탈모증상 완화</a></li>
+                                            <li><a href="#">모발 끊어짐 완화</a></li>
+                                            <li><a href="#">염색모 케어</a></li>
+                                            <li><a href="#">모발 부드러움</a></li>
+                                            <li><a href="#">뿌리 볼륨</a></li>
+                                            <li><a href="#">정전기 방지</a></li>
+                                            <li><a href="#">두피 건조감 완화</a></li>
+                                            <li><a href="#">약산성</a></li>
+                                            <li><a href="#">풍성한 거품</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="explain">
+                                        고객의 상태를 진단하고, 맞춤형 제품을 조제하기 위해 활용되는 문진 화면의 예시입니다.<br />
+                                        처방 알고리즘에 따라, 선택한 답변이 실제 제공 제품에 100% 반영되지 않을 수 있습니다.
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec06">
+                            <div class="inner">
+                                <div class="right">
+                                    <div class="tit">
+                                        <strong>지성, 건성, 복합성</strong><br />
+                                        <strong class="red">내 두피 유수분 밸런스에</strong><br />
+                                        <strong class="red">딱 맞춰주니까!</strong>
+                                    </div>
+                                    <div class="balance_box">
+                                        <span>
+                                            뻣뻣함과 떡짐 사이, <strong>고민은 이제 그만!</strong>
+                                        </span>
+                                        <div class="barArea">
+                                            <div class="txt">
+                                                <span class="checked">시원하게</span><span>부드럽게</span>
+                                            </div>
+                                            <div class="bar">
+                                                <span class="progress progress80"></span>
+                                                <span class="percent">세정 성분(<span id="myBar" style="width:0">80%</span>)</span><span>(20%)영양 성분</span>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <strong>3WAAU의 독자적인 진단 시스템으로<br /> 내 두피 모발의 유수분 밸런스를 파악하여</strong><br />
+                                            가장 적절한 세정-영양 밸런스를 제안합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec07">
+                            <div class="inner">
+                                <div class="c_tit">
+                                    <strong>
+                                        <strong class="red">특허성분을 담은 <br />11개 독자 솔루션</strong><br />
+                                        나한테 적합한 것만 넣어주니까!
+                                    </strong>
+                                </div>
+                                <div class="ingredient_list swiper-container typeSlide">
+                                    <ul class="swiper-wrapper">
+                                       <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    돌콩배아추출물
+                                                    <span>(Soybean Germ Extract)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#탈모증상완화</span>
+                                                    <span>#특허성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    딥클린 콤플렉스™
+                                                    <span>(Deep-Clean Complex) </span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#두피딥클렌징</span>
+                                                    <span>#피지케어</span>
+                                                    <span>#특허성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    피록톤올아민
+                                                    <span>(Piroctone Olamine)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#노폐물케어</span>
+                                                    <span>#두피청정</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    멘톨&amp;허브쿨
+                                                    <span>(Menthol &amp; HerbCool)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#두피청량감</span>
+                                                    <span>#허브성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    세범컨트롤 콤플렉스™
+                                                    <span>(Sebum Control Complex)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#과다피지케어</span>
+                                                    <span>#산뜻한두피</span>
+                                                    <span>#특허성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    자라나리옴
+                                                    <span>(Jaranariome)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#두피활력</span>
+                                                    <span>#두피장벽개선</span>
+                                                    <span>#특허성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    미라클미네랄
+                                                    <span>(Miracle Mineral)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#모발부드러움</span>
+                                                    <span>#손상모케어</span>
+                                                    <span>#콩단백질함유</span>
+                                                    <span>특허성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                 <div class="tit">
+                                                    판테놀&amp;아쿠아씰
+                                                    <span>(Panthenol &amp; Aquaxyl)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#두피모발활력</span>
+                                                    <span>#판테놀함유</span>
+                                                    <span>#특허성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    프로텍션 콤플렉스™
+                                                    <span>(Protection Complex)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#모발보호</span>
+                                                    <span>#염색모컬러유지</span>
+                                                    <span>#노니열매추출수함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    너시링 콤플렉스™
+                                                    <span>(Nourishing Complex)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#두피모발탄력</span>
+                                                    <span>#손상모케어</span>
+                                                    <span>#특허성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="swiper-slide item">
+                                            <div class="in">
+                                                <div class="tit">
+                                                    엔젤링 콤플렉스™
+                                                    <span>(Angel Ring Complex)</span>
+                                                </div>
+                                                <div class="img"><img src="/web/upload/mynomy/kr/prd/ampoule01.png" alt="특허성분이미지"/></div>
+                                                <div class="tag">
+                                                    <span>#모발윤기</span>
+                                                    <span>#두피모발영양</span>
+                                                    <span>#발효성분함유</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="point">*특허성분 함유는 일부 솔루션에 한함. 맞춤형 제품 특성상 고객마다<br /> 다른솔루션이 배합되어,  모든 제품에 특허성분이 함유되지 않을 수 있음.</div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec08">
+                            <div class="inner">
+                                <div class="tit">3WAAU의 기술력으로 탄생한<br /> 특허성분!</div>
+                                <div class="w800">
+                                    <div class="patent_list">
+                                        <div class="patent">
+                                            <div class="titarea">
+                                                <div class="patentTit">
+                                                    <strong>진주초™</strong>
+                                                    머릿 결 케어
+                                                </div>
+                                                <div class="patentImg">
+                                                    <span>특허 제 10-1980068호</span>
+                                                    <div><img src="/web/upload/mynomy/kr/prd/patentImg01.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="contarea">
+                                                <div class="contImg">
+                                                    <img src="/web/upload/mynomy/kr/prd/contImg01.png" alt="">
+                                                </div>
+                                                <div class="patentTxt">
+                                                    콩의 배아만을 모아 완성한 성분으로<br /> 
+                                                    유효성분인 이소플라본이 4배 더 함유됨
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="patent">
+                                            <div class="titarea">
+                                                <div class="patentTit">
+                                                    <strong>미라클미네랄™</strong>
+                                                    탈모 방지 도움, 보습
+                                                </div>
+                                                <div class="patentImg">
+                                                    <span>특허 제 10-1816532호</span>
+                                                    <div><img src="/web/upload/mynomy/kr/prd/patentImg01.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="contarea">
+                                                <div class="contImg">
+                                                    <img src="/web/upload/mynomy/kr/prd/contImg01.png" alt="">
+                                                </div>
+                                                <div class="patentTxt">
+                                                    삼다수보다도 미네랄이 풍부한<br />
+                                                    제주 용암 해수염에 발효성분을<br />
+                                                    첨가하여 고농도 사용이 가능하도록 개발한 성분
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="patent">
+                                            <div class="titarea">
+                                                <div class="patentTit">
+                                                    <strong>자라나리옴™</strong>
+                                                    두피 정상화, 두피 재생 
+                                                </div>
+                                                <div class="patentImg">
+                                                    <span>특허 제 00-000000호</span>
+                                                    <div><img src="/web/upload/mynomy/kr/prd/patentImg01.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="contarea">
+                                                <div class="contImg">
+                                                    <img src="/web/upload/mynomy/kr/prd/contImg01.png" alt="">
+                                                </div>
+                                                <div class="patentTxt">
+                                                    유익한 두피 미생물들의 활성을<br />
+                                                    촉진하는 마이크로 바이옴 성분으로,<br />
+                                                    화폐해진 두피 정상화에 도움을 줌
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="patent">
+                                            <div class="titarea">
+                                                <div class="patentTit">
+                                                    <strong>플러스좀™</strong>
+                                                    유효성분 흡수력 강화
+                                                </div>
+                                                <div class="patentImg">
+                                                    <span>특허 제 10-2164218호</span>
+                                                    <div><img src="/web/upload/mynomy/kr/prd/patentImg01.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="contarea">
+                                                <div class="contImg">
+                                                    <img src="/web/upload/mynomy/kr/prd/contImg01.png" alt="">
+                                                </div>
+                                                <div class="patentTxt">
+                                                    양이온 리포좀을 활용하여<br />
+                                                    유효 성분들이 피부에 잘 부착,<br />
+                                                    흡수되도록 도움을 줌
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="patent">
+                                            <div class="titarea">
+                                                <div class="patentTit">
+                                                    <strong>소이액트™</strong>
+                                                    탈모 개선,두피 항노화
+                                                </div>
+                                                <div class="patentImg">
+                                                    <span>특허 제 10-2295754호</span>
+                                                    <div><img src="/web/upload/mynomy/kr/prd/patentImg01.png" alt=""></div>
+                                                </div>
+                                            </div>
+                                            <div class="contarea">
+                                                <div class="contImg">
+                                                    <img src="/web/upload/mynomy/kr/prd/contImg01.png" alt="">
+                                                </div>
+                                                <div class="patentTxt">
+                                                    콩의 배아만을 모아 완성한 성분으로<br />
+                                                    유효 성분인 이소플라본이<br />
+                                                    4배 더 함유되어 있음
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ingredient_wrap">
+                                        <div class="txtBox plus"> 
+                                            <p>건강한 두피, 모발을 위한 <br /><strong>3WAAU만의 플러스 성분</strong></p>
+                                        </div>
+                                        <div class="ingredient_plus">
+                                            <ul>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient01.png" alt="하이드록시프로필"></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient02.png" alt="PQ-47"></div>
+                                                    <div class="txt">
+                                                        PQ-47<br>
+                                                        (액상, 미황색)
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient03.png" alt="식초"></div>
+                                                    <div class="txt">
+                                                        식초
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient04.png" alt="노니열매추출물"></div>
+                                                    <div class="txt">
+                                                        노니열매추출물
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient05.png" alt="하이드록시프로필"></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient06.png" alt="하이드록시프로필"></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient07.png" alt="PQ-47"></div>
+                                                    <div class="txt">
+                                                        PQ-47<br>
+                                                        (액상, 미황색)
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient08.png" alt="노니열매추출물"></div>
+                                                    <div class="txt">
+                                                        노니열매추출물
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient09.png" alt="노니열매추출물"></div>
+                                                    <div class="txt">
+                                                        노니열매추출물
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient10.png" alt="식초"></div>
+                                                    <div class="txt">
+                                                        식초
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient11.png" alt="하이드록시프로필"></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient12.png" alt="하이드록시프로필"></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient13.png" alt="노니열매추출물"></div>
+                                                    <div class="txt">
+                                                        노니열매추출물
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient14.png" alt="PQ-47"></div>
+                                                    <div class="txt">
+                                                        PQ-47<br>
+                                                        (액상, 미황색)
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient15.png" alt="하이드록시프로필"></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient16.png" alt="PQ-47"></div>
+                                                    <div class="txt">
+                                                        PQ-47<br>
+                                                        (액상, 미황색)
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient17.png" alt="식초"></div>
+                                                    <div class="txt">
+                                                        식초
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient18.png" alt="PQ-47"></div>
+                                                    <div class="txt">
+                                                        PQ-47<br>
+                                                        (액상, 미황색)
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient19.png" alt="노니열매추출물"></div>
+                                                    <div class="txt">
+                                                        노니열매추출물
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient20.png" alt="하이드록시프로필"></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient21.png" alt="PQ-47"></div>
+                                                    <div class="txt">
+                                                        PQ-47<br>
+                                                        (액상, 미황색)
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient22.png" alt=""></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient23.png" alt="노니열매추출물"></div>
+                                                    <div class="txt">
+                                                        노니열매추출물
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="img"><img src="/web/upload/mynomy/kr/prd/plusIngredient24.png" alt=""></div>
+                                                    <div class="txt">
+                                                        하이드록시프로필<br>
+                                                        트라이모늄<br>
+                                                        하이알루로네이트
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="btn_more">
+                                                <a href="#"><span>더 많은 성분 보기</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="txtBox minus"> 
+                                            <p>불필요한 성분은 <strong>덜어냈어요!</strong></p>
+                                        </div>
+                                        <div class="ingredient_minus">
+                                            <ul>
+                                                <li class="ingredient01">
+                                                    <p>
+                                                        파라벤<br>
+                                                        무첨가
+                                                    </p>
+                                                </li>
+                                                <li class="ingredient02">
+                                                    <p>
+                                                        설페이트계<br>
+                                                        계면활성제<br>
+                                                        무첨가
+                                                    </p>
+                                                </li>
+                                                <li class="ingredient03">
+                                                    <p>
+                                                        인공색소<br>
+                                                        무첨가
+                                                    </p>
+                                                </li>
+                                                <li class="ingredient04">
+                                                    <p>
+                                                        실리콘 오일<br>
+                                                        무첨가
+                                                    </p>
+                                                </li>
+                                                <li class="ingredient05">
+                                                    <p>
+                                                        pH 5.0 - 6.0<br>
+                                                        약산성
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <span>
+                                                *실리콘오일 무첨가 : 샴푸에 한함 
+                                                *약산성 : 비기능성 샴푸에 한함
+                                            </span>
+                                        </div>
+                                        <div class="bubble">
+                                            <p>
+                                                설페이트계 계면활성제가 없어도<br />
+                                                <strong>거품은 풍성하게!</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec09">
+                            <div class="inner">
+                                <div class="c_tit">
+                                    <strong>
+                                        내가 원하는<br /> <strong class="red">향 선택, 각인서비스</strong><br />
+                                        개성까지 담을 수 있으니까! 
+                                    </strong>
+                                </div>
+                                <div class="scent swiper-container typeSlide">
+                                    <ul class="swiper-wrapper">
+                                        <li class="scent01 swiper-slide item">
+                                            <div class="cont">
+                                                <strong>Forest Dawn</strong>
+                                                <p>
+                                                    #우디 #스모키 #흙내음<br />
+                                                    새벽의 편백숲을<br />
+                                                    담아낸 향
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="scent02 swiper-slide item">
+                                            <div class="cont">
+                                                <strong>Wild Black Berry</strong>
+                                                <p>
+                                                    #베리향 #우디 #풀내음<br />
+                                                    베리향에 우디함을 더해<br />
+                                                    중성적인 매력의 향
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="scent03 swiper-slide item">
+                                            <div class="cont">
+                                                <strong>Blac Musk</strong>
+                                                <p>
+                                                    #머스크 #플로럴 #우아함<br />
+                                                    은방울꽃의 우아함이<br />
+                                                    느껴지는 머스크 향
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="scent04 swiper-slide item">
+                                            <div class="cont">
+                                                <strong>Camellia Tea</strong>
+                                                <p>
+                                                    #동백꽃 #온화함 #찻잎<br />
+                                                    따뜻한 차에서 은은하게<br />
+                                                    퍼지는 동백꽃 향
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="scent05 swiper-slide item">
+                                            <div class="cont">
+                                                <strong>Fresh Yuza</strong>
+                                                <p>
+                                                    #시트러스 #프루티<br />
+                                                    유자가 톡 터지는 듯한<br />
+                                                    상큼하고 경쾌한 향
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="scent06 swiper-slide item">
+                                            <div class="cont">
+                                                <strong>None</strong>
+                                                <p>
+                                                    민감한 고객님들을 위해<br />
+                                                    향료를 추가하지<br />
+                                                    않았습니다
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="txt">
+                                    <strong>내 샴푸에 <strong class="red">원하는 향을 담아보세요!</strong></strong>
+                                    <p>
+                                        스위스 대표 향료사와<br />
+                                        코스맥스 글로벌 향료랩이 함께 개발한 향부터,<br />
+                                        유럽 명품 향수를 그대로 재현해낸 향까지<br /> 다양하게 준비했습니다.
+                                    </p>
+                                </div>
+                                <div class="txt line">
+                                    <div class="img"><img src=" /web/upload/mynomy/kr_mobile/prd/img_product_sec09.svg" alt="각인서비스이미지"></div>
+                                    <strong>패키지까지 특별하게,<br /> 나만을 위한 <strong class="red">각인 서비스</strong></strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec14">
+                            <div class="inner">
+                                <div class="tit">
+                                    <strong>주문 즉시 조제 시스템으로</strong><br><strong class="red">미리 만들어두지 않으니까!</strong>
+                                </div>
+                                <div class="system_slide">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background-image: url(/web/upload/mynomy/kr/prd/system_slide01.png)">
+                                            <div class="cont_txt">
+                                                <p>
+                                                    지금 쓰는 내 샴푸, 트리트먼트<br />
+                                                    언제 만들어졌는지 확인해보셨나요?
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image: url(/web/upload/mynomy/kr/prd/system_slide02.png)">
+                                            <div class="cont_txt">
+                                                <p>
+                                                    적게는 수개월, 길게는 수년의 유통과정을 거쳐<br />
+                                                    소비자에게 판매되는 제품들...
+                                                    <br /><br />
+                                                    헤어케어 제품도 내 피부에 닿으니까,<br />
+                                                    신선한 것을 쓰는 것이 중요합니다.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" style="background-image: url(/web/upload/mynomy/kr/prd/system_slide03.png)">
+                                            <div class="cont_txt">
+                                                <p>
+                                                    그래서 3 ON U는, <br />
+                                                    미리 만들어두지 않아요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pagination"></div>
+                                </div>
+                                <div class="txt">
+                                    오늘 주문하면 24시간 내, 즉시 조제합니다.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_sec sec10">
+                            <div class="inner">
+                                <div class="c_tit">
+                                    <strong>
+                                        당신만을 위한<br /> 맞춤 헤어케어<br />
+                                        이렇게 만들어집니다!
+                                    </strong>
+                                </div>
+                                <div class="process_list">
+                                    <ul>
+                                        <li>
+                                            <div class="icon"><img src="/web/upload/mynomy/kr/prd/ico_process01.png" alt="고민 파악"></div>
+                                            <div class="cont">
+                                                <strong>01</strong>
+                                                <p>
+                                                    두피&amp;모발<br />
+                                                    <strong>고민 파악</strong>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="/web/upload/mynomy/kr/prd/ico_process02.png" alt="상태 파악"></div>
+                                            <div class="cont">
+                                                <strong>02</strong>
+                                                <p>
+                                                    두피&amp;모발<br />
+                                                    <strong>상태 파악</strong>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="/web/upload/mynomy/kr/prd/ico_process03.png" alt="향 선택"></div>
+                                            <div class="cont">
+                                                <strong>03</strong>
+                                                <p>
+                                                    원하는<br />
+                                                    <strong>향 선택</strong>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="/web/upload/mynomy/kr/prd/ico_process04.png" alt="레시피 완성"></div>
+                                            <div class="cont">
+                                                <strong>04</strong>
+                                                <p>
+                                                    맞춤 <strong>레시피</strong><br />
+                                                    <strong>완성</strong>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="/web/upload/mynomy/kr/prd/ico_process05.png" alt="레시피 신선조제"></div>
+                                            <div class="cont">
+                                                <strong>05</strong>
+                                                <p>
+                                                    레시피<br />
+                                                    <strong>즉시조제</strong>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="icon"><img src="/web/upload/mynomy/kr/prd/ico_process06.png" alt="나만의 헤어케어 완성"></div>
+                                            <div class="cont">
+                                                <strong>06</strong>
+                                                <p>
+                                                    <strong>나만의 헤어케어</strong><br />
+                                                    완성!
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec11">
+                            <div class="bg_img"></div>
+                            <div class="txt">
+                                <div class="tit">
+                                    <strong>3WAAU의 맞춤 레시피</strong>
+                                </div>
+                                <ol>
+                                    <li>
+                                        <div class="big">
+                                            <strong>30년 글로벌 연구&amp;제조</strong><br /> 코스맥스의 노하우로 탄생했습니다.
+                                        </div>
+                                    </li>
+                                    <li>화장품 전문가 <strong>474명</strong>이  참여한 진단 베타 테스트</li>
+                                    <li>
+                                        <strong>실제 두피 측정 결과</strong>와 <strong>진단 시스템 비교 개선</strong>
+                                    </li>
+                                    <li>
+                                        <strong>샴푸 실사용 테스트</strong>와 <strong>사용감 개선</strong>
+                                    </li>
+                                    <li>1:1 생산을 구현해낸 첨단 설비</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec12">
+                            <div class="inner">
+                                <div class="title">	
+                                    <h3>
+                                        <strong>3WAAU의 1:1 케어</strong>
+                                        <span><img src="/web/upload/mynomy/kr_mobile/prd/feedback03.svg" alt="피드백루프"></span>
+                                        끝까지 책임집니다
+                                    </h3>
+                                </div>
+                                <div class="feedbackImg"><img src="/web/upload/mynomy/kr/prd/img_feedback.png" alt="피드백단어"></div>
+                                <p>
+                                    계절따라, 컨디션따라<br>
+                                    바뀌는 두피, 모발 고민도 걱정없이!
+                                </p>
+                                <p>
+                                    고객 피드백을 반영하여 <br>
+                                    사용감과 성분을 미세하게 조정하는 <br>
+                                    3WAAU만의 차별화된 서비스 <br>
+                                    첫구매 후 경험해보세요!
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="product_sec sec13">
+                            <div class="inner">
+                                <div class="contentBox">
+                                    <div class="title">	
+                                        <h3>맞춤 처방이 마음에 드신다면<br>
+                                            <strong>지금 바로 구독해보세요!</strong>
+                                        </h3>
+                                        <p>당신의 일상이 더 편리해집니다<br>
+                                            정기결제 전에는 늘 알림을 드리고,<br>
+                                            언제든지 부담없이 취소가 가능해요
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="prdInfo" class="ec-base-tab gFlex max-width">
+                    <ul class="menu">
+                        <li><a href="#prdDetail">상품상세정보</a></li>
+                        <li class="selected"><a href="#prdInfo">상품구매안내</a></li>
+                        <li class="{$review_display|display}"><a href="#prdReview">상품사용후기<span class="review_count">( {$review_count} )</span></a></li>
+                        <li class="{$qna_display|display}"><a href="#prdQnA">상품Q&amp;A</a></li>
+                        <!--li><a href="#prdRelated">관련상품</a></li-->
+                    </ul>
+                    <div class="infoBox">
+                        <div class="box left">
+                            <div class="cont">
+                                <h3>[ 상품결제정보 ]</h3>
+                                {$payment_info}
+                            </div>
+                            <div class="cont">
+                                <h3>[ 배송정보 ]</h3>
+                                <ul class="delivery">
+                                    <li>배송 방법 : {$shipping_method}</li>
+                                    <li>배송 지역 : {$shipping_area}</li>
+                                    <li>배송 비용 : {$shipping_fee}</li>
+                                    <li>배송 기간 : {$shipping_period}</li>
+                                    <li>배송 안내 : {$shipping_info}</li>
+                                </ul>
+                            </div>
+                            <div class="cont">
+                                <h3>[ 서비스문의 ]</h3>
+                                {$service_info}
+                            </div>
+                        </div>
+                        <div class="box right">
+                            <div class="cont">
+                                <h3>[ 교환 및 반품정보 ]</h3>
+                                {$exchange_info}
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div id="prdReview" class="ec-base-tab gFlex {$review_display|display} max-width">
+                    <ul class="menu">
+                        <li><a href="#prdDetail">상품상세정보</a></li>
+                        <li><a href="#prdInfo">상품구매안내</a></li>
+                        <li class="selected"><a href="#prdReview">상품사용후기<span class="review_count">( {$review_count} )</span></a></li>
+                        <li><a href="#prdQnA">상품Q&amp;A</a></li>
+                        <!--li><a href="#prdRelated">관련상품</a></li-->
+                    </ul>
+                    <div class="board">
+                        <!--h3>[ 상품사용후기 ]</h3>
+                        <p class="desc">상품의 사용후기를 적어주세요.</p-->
+
+                        <div module="product_review">
+                            <!--@js(/js/module/product/review.js)-->
+                            <a name="use_review"></a>
+
+                            <p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
+
+                            <div class="minor {$adult_display|display}">
+                                <p><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/ico_under19.gif" alt="" /> <strong>"19세 미만의 미성년자"</strong>는 출입을 금합니다!</p>
+                                <p class="button"><a href="/intro/board.html{$returnParam}" class="btnEm sizeS">성인인증 하기</a></p>
+                            </div>
+
+                            <div class="ec-base-table typeList">
+                                <table border="1" summary="" class="{$list_display|display}">
+                                    <caption>상품사용후기</caption>
+                                    <colgroup>
+                                        <col style="width:64px;" />
+                                        <col style="width:auto" />
+                                        <col style="width:136px;" />
+                                        <col style="width:136px;" />
+                                        <col style="width:80px;" />
+                                        <col style="width:80px;" class="{$use_point_display|display}" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성자</th>
+                                            <th scope="col">작성일</th>
+                                            <th scope="col">조회</th>
+                                            <th scope="col" class="{$use_point_display|display}">평점</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="center">
+                                        <tr>
+                                            <td>{$no}</td>
+                                            <td class="subject left txtBreak">{$icon_re}{$icon_lock} <a href="{$link_board_detail}{$param_read}">{$subject}</a> {$icon_new}{$icon_hit}{$icon_file}<span class="txtWarn">{$comment_count}</span></td>
+                                            <td>{$member_icon} {$writer}</td>
+                                            <td class="txtInfo txt12">{$write_date}</td>
+                                            <td class="txtInfo txt12">{$hit_count}</td>
+                                            <td class="{$use_point_display|display}"><img src="/web/upload/mynomy/kr/layout/star{$point_count}.png" alt="{$point_count}점"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>{$no}</td>
+                                            <td class="subject left txtBreak">{$icon_re}{$icon_lock} <a href="{$link_board_detail}{$param_read}">{$subject}</a> {$icon_new}{$icon_hit}{$icon_file}<span class="txtWarn">{$comment_count}</span></td>
+                                            <td>{$member_icon} {$writer}</td>
+                                            <td class="txtInfo txt12">{$write_date}</td>
+                                            <td class="txtInfo txt12">{$hit_count}</td>
+                                            <td class="{$use_point_display|display}"><img src="/web/upload/mynomy/kr/layout/star{$point_count}.png" alt="{$point_count}점"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <p class="ec-base-button typeBorder">
+                            <span class="gRight">
+                                <a href="{$review_write}" class="btnNormal sizeS">상품후기쓰기</a>
+                                <a href="{$review_list}" class="btnNormal sizeS">모두 보기</a>
+                            </span>
+                        </p>
+
+                        <div module="product_reviewpaging" class="ec-base-paginate typeSub">
+                            <a href="{$param_first}" class="first"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_first2.gif" alt="첫 페이지" /></a>
+                            <a href="{$param_before}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev2.gif" alt="이전 페이지" /></a>
+                            <ol>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}"class="{$param_class}">{$no}</a></li>
+                            </ol>
+                            <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next2.gif" alt="다음 페이지" /></a>
+                            <a href="{$param_last}" class="last"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_last2.gif" alt="마지막 페이지" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="prdQnA" class="ec-base-tab gFlex {$qna_display|display} max-width">
+                    <ul class="menu">
+                        <li><a href="#prdDetail">상품상세정보</a></li>
+                        <li><a href="#prdInfo">상품구매안내</a></li>
+                        <li><a href="#prdReview">상품사용후기<span class="review_count">( {$review_count} )</span></a></li>
+                        <li class="selected"><a href="#prdQnA">상품Q&amp;A</a></li>
+                        <!--li><a href="#prdRelated">관련상품</a></li-->
+                    </ul>
+
+                    <div class="board">
+                        <!--h3>[ 상품 Q&amp;A ]</h3>
+                        <p class="desc">상품에 대해 궁금한 점을 해결해 드립니다.</p-->
+
+                        <div module="product_qna">
+                            <!--@js(/js/module/product/qna.js)-->
+                            <a name="use_qna"></a>
+
+                            <p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
+
+                            <div class="minor {$adult_display|display}">
+                                <p><img src="//img.echosting.cafe24.com/skin/base_ko_KR/product/ico_under19.gif" alt="" /> <strong>"19세 미만의 미성년자"</strong>는 출입을 금합니다!</p>
+                                <p class="button"><a href="/intro/board.html{$returnParam}" class="btnEm sizeS">성인인증 하기</a></p>
+                            </div>
+
+                            <div class="ec-base-table typeList">
+                                <table border="1" summary="" class="{$list_display|display}">
+                                    <caption>상품 Q&amp;A</caption>
+                                    <colgroup>
+                                        <col style="width:64px;" />
+                                        <col style="width:128px;" />
+                                        <col style="width:auto" />
+                                        <col style="width:134px;" />
+                                        <col style="width:134px;" />
+                                        <col style="width:80px;" />
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">카테고리</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성자</th>
+                                            <th scope="col">작성일</th>
+                                            <th scope="col">조회</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="center">
+                                        <tr>
+                                            <td>{$no}</td>
+                                            <td>{$category_name}</td>
+                                            <td class="subject left txtBreak">{$icon_re}{$icon_lock} <a href="{$link_board_detail}{$param_read}">{$subject}</a> {$icon_new}{$icon_hit}{$icon_file}<span class="txtWarn">{$comment_count}</span></td>
+                                            <td>{$member_icon} {$writer}</td>
+                                            <td class="txtInfo txt11">{$write_date}</td>
+                                            <td class="txtInfo txt11">{$hit_count}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{$no}</td>
+                                            <td>{$category_name}</td>
+                                            <td class="subject left txtBreak">{$icon_re}{$icon_lock} <a href="{$link_board_detail}{$param_read}">{$subject}</a> {$icon_new}{$icon_hit}{$icon_file}<span class="txtWarn">{$comment_count}</span></td>
+                                            <td>{$member_icon} {$writer}</td>
+                                            <td class="txtInfo txt11">{$write_date}</td>
+                                            <td class="txtInfo txt11">{$hit_count}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <p class="ec-base-button typeBorder">
+                            <span class="gRight">
+                                <a href="{$qna_write}" class="btnNormal sizeS">상품문의하기</a>
+                                <a href="{$qna_list}" class="btnNormal sizeS">모두 보기</a>
+                            </span>
+                        </p>
+
+                        <div module="product_qnapaging" class="ec-base-paginate typeSub">
+                            <a href="{$param_first}" class="first"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_first2.gif" alt="첫 페이지" /></a>
+                            <a href="{$param_before}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev2.gif" alt="이전 페이지" /></a>
+                            <ol>
+                                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                                <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+                            </ol>
+                            <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next2.gif" alt="다음 페이지" /></a>
+                            <a href="{$param_last}" class="last"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_last2.gif" alt="마지막 페이지" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+<!--
+		<div class="ticker-wrap">
+			<div class="ticker">
+				<div class="item-wrap">
+					<div class="item">OILY</div>
+					<div class="item">NORMAL</div>
+					<div class="item">DRY</div>
+					<div class="item">SENSITIVE</div>
+					<div class="item">RESISTANT</div>
+					<div class="item">HEALTHY</div>
+					<div class="item">DAMAGED</div>
+					<div class="item">EXTREMELY DAMAGED</div>
+					<div class="item">WITHOUT HAIR LOSS</div>
+					<div class="item">HAIR LOSSOILY</div>
+					<div class="item">NORMAL</div>
+					<div class="item">DRY</div>
+					<div class="item">SENSITIVE</div>
+					<div class="item">RESISTANT</div>
+					<div class="item">HEALTHY</div>
+					<div class="item">DAMAGED</div>
+					<div class="item">EXTREMELY DAMAGEDXXXX</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="event-banner"><a href="#none"><img src="/web/upload/mynomy/kr_mobile/prd/event.jpg" alt="" /></a></div>
+	</div>
+-->
+
+	<div module="product_additional">
+		<!--@css(/css/module/product/additional.css)-->
+		<!--@css(/css/module/product/additional_animation.css)-->
+
+		<div id="tabProduct" class="ec-base-tab">
+			<ul>
+				<li class="selected"><a href="#prdDetail" target="_self">상세정보</a></li>
+				<li><a href="#prdInfo">구매안내</a></li>
+				<li class="{$review_display|display}"><a href="#prdReview" name="use_review">상품후기<span class="review_count">({$review_count})</span></a></li>
+				<li class="{$qna_display|display}"><a href="#prdQnA" name="use_qna">Q&amp;A</a></li>
+			</ul>
+		</div>
+
+        
+		<div id="prdDetail">
+			<div class="button" id="prdDetailBtn">
+				<a href="/product/zoom.html?product_no={$product_no}" class="btnNormal">원본보기 <span class="ico"></span></a>
+			</div>
+			<div id="prdDetailContent">{$product_detail}</div>
+
+			<!--css(/gd_import/css/detail_before.css)-->
+            <!--import(/product/detail_before.html)-->
+		</div>
+
+		<div id="prdInfo">
+			<div module="product_detaildesign">
+				<!--@css(/css/module/product/detaildesign.css)-->
+				<!--
+					$cache = no
+				-->
+				<div class="ec-base-table">
+					<table border="1">
+						<caption>상품 상세 정보</caption>
+						<colgroup>
+							<col style="width:100px;">
+							<col style="width:auto;">
+						</colgroup>
+						<tbody>
+							<tr class="{$item_display|display}">
+								<th>{$item_title}</th>
+								<td>{$item_content}</td>
+							</tr>
+							<tr class="{$item_display|display}">
+								<th>{$item_title}</th>
+								<td>{$item_content}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="faq">
+				<div class="toggle eToggle selected {$payment_info|display}">
+					<div class="title">
+						<h3>결제 안내</h3>
+					</div>
+					<div class="contents">
+						{$payment_info}
+					</div>
+				</div>
+				<div class="toggle eToggle selected {$shipping_info|display}">
+					<div class="title">
+						<h3>배송 안내</h3>
+					</div>
+					<div class="contents">
+						<ul>
+							<li>배송 방법 : {$shipping_method}</li>
+							<li>배송 지역 : {$shipping_area}</li>
+							<li>배송 비용 : {$shipping_fee}</li>
+							<li>배송 기간 : {$shipping_period}</li>
+							<li>배송 안내 : {$shipping_info}</li>
+						</ul>
+					</div>
+				</div>
+				<div class="toggle eToggle selected {$exchange_info|display}">
+					<div class="title">
+						<h3>교환/반품 안내</h3>
+					</div>
+					<div class="contents">
+						{$exchange_info}
+					</div>
+				</div>
+				<div class="toggle eToggle selected {$service_info|display}">
+					<div class="title">
+						<h3>서비스문의 안내</h3>
+					</div>
+					<div class="contents">
+						{$service_info}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="prdReview" class="{$review_display|display}">
+			<div class="board">
+				<h3>상품사용후기</h3>
+				<div class="ec-base-button gColumn">
+					<a href="{$review_write}" class="btnSubmit">상품후기쓰기</a>
+					<a href="{$review_list}" class="btnEm">모두보기</a>
+				</div>
+
+				<a name="use_review"></a>
+
+				<div module="product_review">
+					<!--@css(/css/module/product/review.css)-->
+					<!--@js(/js/module/product/review.js)-->
+					<!--
+						$count = 5
+					-->
+
+					<p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
+
+					<div class="minor {$adult_display|display}">
+						<p><span>19세 미만의 미성년자</span>는 출입을 금합니다.</p>
+						<a class="btnBasic" href="/intro/board.html{$returnParam}">성인인증하기</a>
+					</div>
+
+					<ul class="board {$list_display|display}">
+						<li>
+							<p class="descriptions">
+								<a href="/product/provider/review_read.xml{$param_read}">
+									<strong class="summary">{$icon_re} {$icon_lock} {$icon_mobile} {$subject} <span class="commentCnt">{$comment_count}</span> {$icon_hit} {$icon_file} {$icon_new}</strong>
+									<span class="id" title="작성자">{$writer}</span>
+									<span class="date {$date_display|display}" title="작성일">{$write_date}</span>
+									<span class="{$hit_display|display}">조회 {$hit_count}</span>
+									<span class="{$vote_display|display}">추천 {$vote}</span>
+									<span class="point {$use_point_display|display}"><img src="/web/upload/mynomy/kr_mobile/layout/star{$point_count}.png" alt="{$point_count}점" width="50" height="8"></span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="descriptions">
+								<a href="/product/provider/review_read.xml{$param_read}">
+									<strong class="summary">{$icon_re} {$icon_lock} {$icon_mobile} {$subject} <span class="commentCnt">{$comment_count}</span> {$icon_hit} {$icon_file} {$icon_new}</strong>
+									<span class="id" title="작성자">{$writer}</span>
+									<span class="date {$date_display|display}" title="작성일">{$write_date}</span>
+									<span class="{$hit_display|display}">조회 {$hit_count}</span>
+									<span class="{$vote_display|display}">추천 {$vote}</span>
+									<span class="point {$use_point_display|display}"><img src="/web/upload/mynomy/kr_mobile/layout/star{$point_count}.png" alt="{$point_count}점" width="50" height="8"></span>
+								</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+
+				<div module="product_reviewpaging" class="ec-base-paginate typeList">
+					<a href="{$param_before}" class="btnPrev">이전 페이지</a>
+					<ol>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					</ol>
+					<a href="{$param_next}" class="btnNext">다음 페이지</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="prdQnA" class="{$qna_display|display}">
+			<div class="board">
+				<h3>상품 Q&amp;A</h3>
+
+				<div class="ec-base-button gColumn">
+					<a href="{$qna_write}" class="btnSubmit">상품문의하기</a>
+					<a href="{$qna_list}" class="btnEm">모두보기</a>
+				</div>
+
+				<a name="use_review"></a>
+
+				<div module="product_qna">
+					<!--@css(/css/module/product/qna.css)-->
+					<!--@js(/js/module/product/qna.js)-->
+					<!--
+						$count = 5
+					-->
+
+					<p class="noAccess {$deny_display|display}">글읽기 권한이 없습니다.</p>
+
+					<div class="minor {$adult_display|display}">
+						<p><span>19세 미만의 미성년자</span>는 출입을 금합니다.</p>
+						<a class="btnBasic" href="/intro/board.html{$returnParam}">성인인증하기</a>
+					</div>
+
+					<ul class="board {$list_display|display}">
+						<li>
+							<p class="descriptions">
+								<a href="/board/product/read.html{$param_read}">
+									<strong class="summary">{$icon_re} {$icon_lock} {$icon_mobile} {$subject} <span class="commentCnt">{$comment_count}</span> {$icon_hit} {$icon_file} {$icon_new}</strong>
+									<span class="id" title="작성자">{$writer}</span>
+									<span class="date {$date_display|display}" title="작성일">{$write_date}</span>
+									<span class="{$hit_display|display}">조회 {$hit_count}</span>
+									<span class="{$vote_display|display}">추천 {$vote}</span>
+									<span class="point {$use_point_display|display}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_star{$point_count}.png" alt="{$point_count}점" width="50" height="8"></span>
+								</a>
+							</p>
+						</li>
+						<li>
+							<p class="descriptions">
+								<a href="/board/product/read.html{$param_read}">
+									<strong class="summary">{$icon_re} {$icon_lock} {$icon_mobile} {$subject} <span class="commentCnt">{$comment_count}</span> {$icon_hit} {$icon_file} {$icon_new}</strong>
+									<span class="id" title="작성자">{$writer}</span>
+									<span class="date {$date_display|display}" title="작성일">{$write_date}</span>
+									<span class="{$hit_display|display}">조회 {$hit_count}</span>
+									<span class="{$vote_display|display}">추천 {$vote}</span>
+									<span class="point {$use_point_display|display}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_star{$point_count}.png" alt="{$point_count}점" width="50" height="8"></span>
+								</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div module="product_qnapaging" class="ec-base-paginate typeList">
+					<a href="{$param_before}" class="btnPrev">이전 페이지</a>
+					<ol>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+						<li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+					</ol>
+					<a href="{$param_next}" class="btnNext">다음 페이지</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="supplyInfo {$supply_info_display|display}">
+			<h3 module="product_headcategory">판매자 정보</h3>
+			<div class="{$supply_info_display|display}">
+				{$supply_info}
+			</div>
+		</div>
+	</div>
+
+</div>

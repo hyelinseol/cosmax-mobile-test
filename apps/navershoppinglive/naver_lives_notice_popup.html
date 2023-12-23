@@ -1,0 +1,145 @@
+<style>
+    #naver_popup_module_div {
+        position: fixed;
+        z-index: 1090;
+        display: none;
+        justify-content: center;
+        height: 672px;
+        width: 100%;
+        min-height: 680px;
+        min-width: 370px;
+        top: 5%;
+    }
+
+    #naver_popup_module_div > iframe{
+        overflow: hidden;
+    }
+
+    #naver_popup_module_holder {
+        position: sticky;
+        padding: 0;
+        margin: 0;
+        width: 380px;
+        height: 672px;
+        min-height: 500px;
+        min-width: 370px;
+        top: 5%;
+    }
+
+    #naver_popup_module_iframe {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+
+    #naver_popup_module_redirect_div {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+    }
+    #naver_popup_module_redirect_div:hover {
+        cursor: pointer;
+    }
+
+    #naver_popup_module_close_button {
+        position: absolute;
+        z-index: 20;
+        opacity: 0;
+        height: 40px;
+        width: 60px;
+        right: 2%;
+        top: 2.0%;
+    }
+
+    #naver_popup_module_close_button:hover {
+        cursor: pointer;
+    }
+</style>
+<script>
+    $(document).ready(function () {
+        let oPopup = {
+            oMainPopupElement:
+                '<div id="naver_popup_module_div">\n' +
+                '<div id="naver_popup_module_holder">\n' +
+                '<div id="naver_popup_module_close_button"></div>\n' +
+                '<div id="naver_popup_module_redirect_div"></div>\n' +
+                '<iframe id="naver_popup_module_iframe" src="" title="naver popup webview"></iframe>\n' +
+                '</div>\n' +
+                '</div>',
+            init: function () {
+                this.oBody = $('body');
+                this.oBody.append(oPopup.oMainPopupElement);
+                this.iRequestCounter = 0;
+                this.front_url = 'https://navershoppinglive.cafe24.com';
+                this.oDivElement = $('#naver_popup_module_div');
+                this.oIframeElement = $('#naver_popup_module_iframe');
+                this.sRedirectDivElement = '#naver_popup_module_redirect_div';
+                this.sCloseButtonElement = '#naver_popup_module_close_button';
+                this.mall_id = this.getMallIdByDomain();
+                this.getPopupNotification();
+            },
+            getMallIdByDomain: function () {
+                return CAFE24.GLOBAL_INFO.getBaseDomain().split('.')[0] ?? '';
+            },
+            getPopupNotification: function () {
+                $.ajax({
+                    url: this.front_url + '/front/getPopupNotification?mall_id=' + this.mall_id,
+                    type: 'GET',
+                    success: function (oResponse) {
+                        if (oResponse.activeLinkUrl !== undefined && oResponse.activeLinkUrl !== null) {
+                            oPopup.oIframeElement.attr('src', oResponse.activeLinkUrl);
+                            let iBodyWidth = oPopup.oBody.width();
+                            let iBodyHeight = oPopup.oBody.height();
+                            oPopup.oDivElement.width(iBodyWidth);
+                            oPopup.oDivElement.height(iBodyHeight);
+                            oPopup.oDivElement.css('display', 'flex');
+                            oPopup.oBody.delegate(oPopup.sRedirectDivElement, 'click', function () {
+                                oPopup.redirectEvent(oResponse);
+                            });
+                            oPopup.oBody.delegate(oPopup.sCloseButtonElement, 'click', function () {
+                                oPopup.closePopup();
+                            });
+                        }
+                    },
+                    error: function (oError) {
+                        if (oPopup.iRequestCounter === 3) {
+                            console.error(oError);
+                        } else {
+                            setTimeout(function () {
+                                oPopup.iRequestCounter++;
+                                oPopup.getPopupNotification();
+                            }, 1000);
+                        }
+                    }
+                });
+            },
+            isCafe24Plus: function () {
+                return (/Cafe24Plus/i).test(navigator.userAgent);
+            },
+            redirectEvent: function(aBroadcast) {
+                let sStatus = aBroadcast['status'] ?? '';
+                let sBridgeUrl = aBroadcast['bridgeUrl'] ?? null;
+                if (sStatus === 'ONAIR') {
+                    let sMobileRedirectUrl = '/apps/navershoppinglive/naver_mobile_redirect.html?broadcast_id=' + aBroadcast.id;
+                    let sLivePlayerUrl = '/apps/navershoppinglive/naver_lives_Player.html?broadcastId=' + aBroadcast.id + '&playMode=live';
+                    if (this.isCafe24Plus() === true) {
+                        top.window.location.href = sMobileRedirectUrl;
+                    } else {
+                        top.window.open(sLivePlayerUrl, '_blank');
+                    }
+                } else if (sBridgeUrl !== null) {
+                    top.window.location.href = '/apps/navershoppinglive/naver_lives_preview.html?broadcastId=' + aBroadcast.id;
+                } else {
+                    top.window.location.href = '/apps/navershoppinglive/naver_lives_list_detail.html';
+                }
+            },
+            closePopup: function() {
+                this.oDivElement.css('display', 'none');
+            }
+        };
+        oPopup.init();
+    });
+</script>

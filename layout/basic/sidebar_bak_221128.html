@@ -1,0 +1,137 @@
+<!----------------------------------------------------------
+	※ 좌측 퀵바 css및 js 수정 위치 ▼▼▼▼
+------------------------------------------------------------>
+<!--@css(/layout/basic/css/slideMenu.css)-->
+<!--@js(/layout/basic/js/slide_menu.js)-->
+
+<aside id="aside" module="layout_slidePackage">
+	<div class="inner">
+        <div class="top">
+            <div class="top_section"> 
+                <!-- * 멀티샵 아이콘 생성 시 위치 * -->
+                <div class="multishop" module="Layout_multishopList" id="slideMultishopList">
+                    <ul module="multishop_listitem">
+                        <li>
+                            <a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="//{$shop_domain}/"><img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 로그아웃 시 -->
+                <div module="Layout_stateLogoff" class="member">
+                    <p> 
+                        <a href="/myshop/index.html"><span class="log_name"></span>님 반가워요</a>
+                    </p>            
+                </div>
+                <!-- 로그인 시 -->
+                <div module="Layout_stateLogon" class="member">
+                    <p><a href="/myshop/index.html"><span class="log_name">{$name}</span>님<i class="xi-angle-right-min"></i> 반가워요</a></p>       
+                    <div module="myshop_main">
+                        <a href="/myshop/mypage/diagnosis_list.html" class="icon"><span>진단중</span><span class="count">2</span></a>
+                        <a href="/myshop/mypage/order_check.html" class="icon"><span>배송중</span><span class="count">0</span></a>
+                        <a href="/myshop/order/list.html" class="icon"><span>피드백</span><span class="count">0</span></a>
+                        <a href="/order/basket.html" class="icon"><span>장바구니</span><span class="count">{$basket_count}</span></a>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="cateWrap">
+                <!-- 카테고리 수동 -->
+                <div class="categoryCont">
+                    <h2 class=""><a href="/">About MYNOMY</a></h2>
+                </div>
+
+                <!-- 카테고리 수동 -->
+                <div class="categoryCont">
+                    <h2 class=""><a href="/diagnosis/intro01.html">Quiz</a></h2>
+                </div>
+
+                <div id="slideCateList" class="categoryCont">
+                    <!-- ** 슬라이드 메뉴 바 카테고리 영역 ** -->
+                    <!--h2 class="">Product<button type="button" class="icoCategory">펼침</button></h2-->
+                    <ul module="layout_category" class="categoryList">
+                        <li id="cate{$cate_no}">
+                            <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                            <a href="{$link_product_list}" class="view">view</a>
+                            <button type="button" class="icoBookmark" id="icoBookmark">즐겨찾기 추가</button>
+                        </li>
+                        <li id="cate{$cate_no}">
+                            <a href="#none" class="cate" cate="{$param}">{$name|cut 25}</a>
+                            <a href="{$link_product_list}" class="view">view</a>
+                            <button type="button" class="icoBookmark" id="icoBookmark">즐겨찾기 추가</button>
+                        </li>
+                    </ul>
+
+                    <div id="slideProjectList" module="layout_project" class="projectCont">
+                        <h2 class="">기획전<button type="button" class="icoCategory">펼침</button></h2>
+                        <ul class="categoryList">
+                            <li id="cate{$cate_no}">
+                                <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                            </li>
+                            <li id="cate{$cate_no}">
+                                <a href="#none" class="cate" cate="{$param}">{$category_text|cut 25}</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--div class="bookmarkCategory" id="bookmarkCategory">
+                        <h2 class="selected">즐겨찾기<button type="button" class="icoCategory">펼침</button></h2>
+                        <p class="bookmarkEmpty" id="bookmarkEmpty">자주쓰는 카테고리 우측에 <img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/ico_bookmark_star.png" alt="즐겨찾기"> 을 눌러주세요.<br>쉽게 카테고리를 이용할 수 있습니다.</p>
+                        <div id="bookmartCateArea" class="bookmarkCategory"></div>
+                    </div>
+                    <div class="multishop" module="Layout_multishopList" id="slideMultishopList">
+                        <h2 class="selected countryTitle">SHIP TO<button type="button" class="icoCategory">펼침</button></h2>
+                        <ul module="Layout_multishopListmultioptionCountry" class="xans-element- xans-multishop xans-multishop-listitem">
+                            <li>
+                                <a href="#none" class="countryLink"></a>
+                            </li>
+                        </ul>
+                        <h2 class="selected languageTitle">LANGUAGE<button type="button" class="icoCategory">펼침</button></h2>
+                        <ul module="Layout_multishopListmultioptionLanguage" class="xans-multishop xans-multishop-listitem">
+                            <li>
+                                <a href="#none" class="languageLink">
+                                    <span class="name"> {$language_name}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div-->
+                </div>
+
+                <!-- 카테고리 자동모듈 - 게시판메뉴 -->
+                <!--div id="slideCateList" class="categoryCont">
+                    <h2 class="">COMMUNITY<button type="button" class="icoCategory">펼침</button></h2>
+                    <ul module="Layout_BoardInfo" class="boardList">
+                        <li><a href="{$board_list_url}" class="cate2">{$board_name}</a></li>
+                        <li><a href="{$board_list_url}" class="cate2">{$board_name}</a></li>
+                        <li module="Layout_sosBanner"><a href="/board/urgency/urgency.html" class="cate2">긴급 문의</a></li>
+                        <li module="Layout_calendarBanner"><a href="{$calendar_view_page}" class="cate2">Calendar Board</a><li>
+                    </ul>
+                </div-->
+
+                <!-- 카테고리 수동 -->
+                <div class="categoryCont">
+                    <h2 class="point"><a href="/main/feedback.html">Feedback L<i class="xi-all"></i>p<sup>TM</sup></a></h2>
+                </div>
+
+                <!-- 카테고리 수동 -->
+                <div class="categoryCont">
+                    <h2 class=""><a href="/board/product/list.html?board_no=4">Review</a></h2>
+                </div>
+
+                <!-- 카테고리 수동 -->
+                <div class="categoryCont">
+                    <h2 class=""><a href="/board/gallery/list.html?board_no=8&category_no=1#ING">Event</a></h2>
+                </div>
+            </div> <!-- cateWrap 끝 -->
+            <a href="#none" class="btnClose"><img src="/web/upload/mynomy/kr_mobile/layout/del.png" width="20" alt="닫기"></a>
+        </div>
+
+        <div class="bottom">
+            <div module="Layout_stateLogoff" class="color"><a href="/member/login.html">로그인</a></div>
+            <div module="Layout_stateLogon" class="color"><a href="{$action_logout}">로그아웃</a></div>
+        </div>
+    </div>
+    
+</aside>

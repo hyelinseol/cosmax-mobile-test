@@ -1,0 +1,34 @@
+<style>
+body {margin:0; padding:0;}
+img {max-width:100%;}
+.eventBlock {text-align:center;}
+</style>
+<div>
+	<div class="eventBlock"><img src="/web/upload/mynomy/event/buildup_cont01.jpg" usemap="#image-map"></div>
+	<div class="eventBlock"><img src="/web/upload/mynomy/event/buildup_cont02.jpg"></div>
+	<div class="eventBlock"><img src="/web/upload/mynomy/event/buildup_cont03.jpg"></div>
+	<div class="eventBlock"><img src="/web/upload/mynomy/event/buildup_cont04.jpg"></div>
+	<div class="eventBlock"><img src="/web/upload/mynomy/event/buildup_cau.jpg"></div>
+</div>
+
+<map name="image-map">
+    <area target="_parent" alt="" title="" href="https://3waau.com/member/login.html" coords="410,1138,1091,1283" shape="rect">
+</map>
+
+<script>
+$(document).ready(function() {
+	$('img[usemap]').rwdImageMaps();
+});
+</script>
+<script>
+function copyURL() {
+	var copyText = document.createElement("textarea");
+	document.body.appendChild(copyText);
+	copyText.value = 'https://3waau.com/member/join.html';
+	copyText.select();
+	document.execCommand('copy');
+	document.body.removeChild(copyText);
+	alert(copyText.value + '\n회원가입 주소가 복사 되었습니다.');
+}
+</script>
+<script src="/gd_import/js/jquery.rwdImageMaps.min.js"></script>

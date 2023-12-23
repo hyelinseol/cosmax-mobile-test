@@ -1,0 +1,44 @@
+#seborrheic { font-size:0; line-height:0; }
+#seborrheic > div { position:relative; }
+#seborrheic img { max-width:100%; }
+#seborrheic .seborrheic_top {  }
+#seborrheic .seborrheic_button1 { position:absolute; top:4%; right:26%; width:48%; height:6.3%; }
+#seborrheic .seborrheic_button2 { position:absolute; bottom:9%; right:44%; width:12%; height:7%; cursor: pointer; }
+#seborrheic .seborrheic_top .seborrheic_check { position:absolute; width:6.9%; height:3.1%; background:#fff; }
+#seborrheic .seborrheic_top input[type="checkbox"] { width: 100%; height: 100%; border: 0; background: url(/web/upload/mynomy/kr/layout/bg_checkbox.svg) no-repeat 0 0; background-size: auto 100%; -webkit-appearance: none; }
+#seborrheic .seborrheic_top input[type="checkbox"]:checked { background: url(/web/upload/mynomy/kr/layout/bg_checkbox_on.svg) no-repeat 0 0; background-size: auto 100%; -webkit-appearance: none; }
+#seborrheic .seborrheic_top input:checked + .checkbox { background-position: 102% 0; }
+#seborrheic .seborrheic_top .seborrheic_check1 { top:28%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check2 { top:33.3%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check3 { top:38.5%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check4 { top:43.8%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check5 { top:48.9%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check6 { top:54.3%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check7 { top:59.5%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check8 { top:66.4%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check9 { top:73.3%; left: 13.3%; }
+#seborrheic .seborrheic_top .seborrheic_check label { position:absolute; width:900%; height:100%; }
+#seborrheic .seborrheic_top .seborrheic_check1 label { top:3%; left: 99.3%; }
+#seborrheic .seborrheic_top .seborrheic_check2 label { top:3%; left: 99.3%; }
+#seborrheic .seborrheic_top .seborrheic_check3 label { top:3%; left: 99.3%; }
+#seborrheic .seborrheic_top .seborrheic_check4 label { top:3%; left: 99.3%; }
+#seborrheic .seborrheic_top .seborrheic_check5 label { top:3%; left: 99.3%; }
+#seborrheic .seborrheic_top .seborrheic_check6 label { top:3%; left: 99.3%; }
+#seborrheic .seborrheic_top .seborrheic_check7 label { top:3%; left: 99.3%; height: 141%; }
+#seborrheic .seborrheic_top .seborrheic_check8 label { top:3%; left: 99.3%; height: 141%; }
+#seborrheic .seborrheic_top .seborrheic_check9 label { top:3%; left: 99.3%; height: 141%; }
+
+#seborrheic .seborrheic_bottom { position:relative; display:none; }
+#seborrheic .seborrheic_bottom .seborrheic_bottom_cate { display:none; position:absolute; top:0; left:0; width:100%; }
+#seborrheic .seborrheic_bottom.seborrheic_bottom1,
+#seborrheic .seborrheic_bottom.seborrheic_bottom2,
+#seborrheic .seborrheic_bottom.seborrheic_bottom3,
+#seborrheic .seborrheic_bottom.seborrheic_bottom4 { display:block }
+#seborrheic .seborrheic_bottom.seborrheic_bottom1 .seborrheic_bottom_cate { display:none; }
+#seborrheic .seborrheic_bottom.seborrheic_bottom2 .seborrheic_bottom_cate.seborrheic_bottom1 { display:block; }
+#seborrheic .seborrheic_bottom.seborrheic_bottom3 .seborrheic_bottom_cate.seborrheic_bottom2 { display:block; }
+#seborrheic .seborrheic_bottom.seborrheic_bottom4 .seborrheic_bottom_cate.seborrheic_bottom3 { display:block; }
+#seborrheic .seborrheic_bottom a { position:absolute; }
+#seborrheic .seborrheic_bottom a.seborrheic_bottom_button1 { top:16.8%; left:8%; width:83%; height:1.5%; }
+#seborrheic .seborrheic_bottom a.seborrheic_bottom_button2 { bottom:2.2%; left:9%; width:81%; height:1.1%; }
+#seborrheic .seborrheic_bottom a.seborrheic_bottom_button3 { bottom:1%; left:9.1%; width:81%; height:1.1%; }

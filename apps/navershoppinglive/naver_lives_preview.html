@@ -1,0 +1,88 @@
+<!--@layout(/layout/basic/layout.html)-->
+<script type="text/javascript" src="https://cafe24img.poxo.com/file.cafe24cos.com/common/js/jquery/jquery.min-3.6.0.js"></script>
+<script>
+    var jQuery3 = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="https://im.pstatic.net/live-commerce/modules/launcher/0.20.1/index.js"></script>
+<script type="text/javascript" src="https://cafe24img.poxo.com/file.cafe24cos.com/nsl/archive_files/resources/prod/js/naverlibrary.js"></script>
+<link rel="stylesheet" href="https://cafe24img.poxo.com/file.cafe24cos.com/nsl/archive_files/resources/common/css/form_nickname.css">
+<div module="Layout_Dummy">
+    <div id="bridge-page-cafe24"></div>
+</div>
+<script>
+    jQuery3(document).ready(function () {
+        let oNaverLivesList = {
+            init: function () {
+                this.broadcastId = this.getSearchParam('broadcastId');
+            },
+            initiateLibrary: function () {
+                this.oLibrary = window.navershoppinglivelibrary(this);
+            },
+            removeBackButton: function () {
+                let oBackButton = jQuery3('span.xans-element-.xans-layout.xans-layout-mobileaction.RTMB');
+                if (oBackButton.length !== 0) {
+                    oBackButton.remove();
+                }
+            },
+            getSearchParam: function (sKey) {
+                sKey = (new RegExp('[?&]' + encodeURIComponent(sKey) + '=([^&]*)')).exec(location.search);
+                return sKey !== null ? decodeURIComponent(sKey[1]) : '';
+            },
+            runLico: function () {
+                lico.launcher({
+                    name: 'ShoppingLiveBridgePage',
+                    module: {
+                        resourcePath: 'https://im.pstatic.net/live-commerce/products/bridge-page/latest/real/', //개발환경에서는 beta로 설정
+                        entry: 'index.js'
+                    },
+                    moduleConfig: {
+                        broadcastId: oNaverLivesList.broadcastId, // 노출할 방송id 주입
+                        externalServiceId: oNaverLivesList.oLibrary.externalServiceId, // externalServiceId 주입
+                        header: {
+                            useFeature: true,
+                            title: {
+                                text: '라이브 예고',
+                                onClick: () => {
+                                    // 백버튼 클릭시 동작 정의
+                                    if (window.history.length > 1) {
+                                        window.history.back()
+                                    } else {
+                                        window.close()
+                                    }
+                                },
+                            },
+                            backButton: {
+                                useFeature: true,
+                            },
+                        }, // 헤더 영역 사용 유무
+                        products: {
+                            useFeature: true, // 상품 영역 사용 유무
+                        },
+                        broadcasts: {
+                            onClickLive: function (oBroadcast) {
+                                oNaverLivesList.oLibrary.verifyPlatform('#bridge-page-cafe24', oBroadcast.broadcastId, 'T');
+                            },
+                            onClickReplay: function (oBroadcast) {
+                                oNaverLivesList.oLibrary.verifyPlatform('#bridge-page-cafe24', oBroadcast.broadcastId, 'T');
+                            },
+                        },
+                        style: {
+                            maxWidth: "1280px" // 영역 최대 너비
+                        },
+                        target: document.getElementById('bridge-page-cafe24'),
+                    },
+                    onLoad: function(oInstance) {
+                        window.bridgePageModule = oInstance;
+                    },
+                    onError: function(oError) {
+                        console.error(oError);
+                    },
+                });
+            }
+        }
+        oNaverLivesList.removeBackButton();
+        oNaverLivesList.init();
+        oNaverLivesList.initiateLibrary();
+        oNaverLivesList.oLibrary.init();
+    });
+</script>

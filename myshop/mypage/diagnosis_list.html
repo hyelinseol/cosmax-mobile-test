@@ -1,0 +1,223 @@
+<!--@layout(/layout/basic/mypage.html)-->
+<div module="layout_logincheck">
+  <!--
+      $url = /member/login.html
+  -->
+</div>
+
+<div class="myArea">
+  <div class="inner out">
+    <div id="myshop_tit">
+      <h3>진단내역</h3>
+    </div>
+    <!--@js(/gd_import/js/tab.js)-->
+    <div class="check_box">
+      <select id="survey_search_date" class="select2" onchange="surveySearch()">
+        <option value="180">최근 6개월</option>
+        <option value="90">최근 3개월</option>
+        <option value="30">최근 1개월</option>
+      </select>
+      <select id="survey_search_status" class="select1" onchange="surveySearch()">
+        <option value="">전체</option>
+        <option value="buy_completion">구매완료</option>
+        <option value="diagnosis_completion">진단완료</option>
+        <option value="diagnosis_ing">진단중</option>
+      </select>
+    </div>
+
+	<div class="myshop_treat">
+
+	  <div class="survey_diagnosis_start progress" style="display: none;">
+		<div class="trySurvey">
+			<p class="tsTitle">쓰리와우의 진단을 경험해보세요</p>
+			<div class="surveyKind">
+				<div class="tryBox">
+					<a class="survey_skin_care" href="#none">
+					<span class="thumb"><img src="/web/renew_img/ico_empty_skin.png" /></span>
+					<p class="tsDesc">내 피부타입<br/>알아보기</p>
+					</a>
+				</div>
+				<div class="tryBox">
+					<a class="survey_hair_care" href="#none">
+					<span class="thumb"><img src="/web/renew_img/ico_empty_hair.png" /></span>
+					<p class="tsDesc">내 두피타입<br/>알아보기</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	  </div>
+
+	  <div class="treatHis survey_diagnosis_list"  style="display: none;">
+		<!-- LOOP //-->
+		<div class="treatHisBox">
+		  <span class="delHis"><a href="javascript:deleteSurveyDiagnosis('62f7af8375551c20f97c6c3ef929ec8d')" title="진단내역 삭제"></a></span>
+		  <div class="treatTitle">
+			<span class="labelFb"></span>
+			<p>
+				#글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한
+			</p>
+			<span class="treatDate">진단일 : 22.07.28</span>
+		  </div>
+		  <div class="treatInfo">
+			<div class="inBox">
+				<div class="thumb"><img src="/web/renew_img/thumb_shampoo.png" /></div>
+				<div class="thumbDesc">
+					<p class="treatPart">샴푸</p>
+					<p class="treatCode">9000000312</p>
+					<p class="treatLevel"><em>Lv3.</em>지성용</p>
+				</div>
+			  </div>
+			  <div class="inBox">
+				<div class="thumb"><img src="/web/renew_img/thumb_treatment.png" /></div>
+				<div class="thumbDesc">
+					<p class="treatPart">트리트먼트</p>
+					<p class="treatCode">9000000312</p>
+					<p class="treatLevel"><em>Lv3.</em>지성용</p>
+				</div>
+			  </div>   
+		  </div>
+		  <div class="treatBtns">
+				<a href="#none" class="btnSq full black">구매하기</a>
+			</div>
+		</div>
+		<!-- LOOP //-->
+		<!-- LOOP //-->
+		<div class="treatHisBox">
+		  <span class="delHis"><a href="javascript:deleteSurveyDiagnosis('62f7af8375551c20f97c6c3ef929ec8d')" title="진단내역 삭제"></a></span>
+		  <div class="treatTitle">
+			<p>
+				#글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한
+			</p>
+			<span class="treatDate">진단일 : 22.07.28</span>
+		  </div>
+		  <div class="treatInfo">
+			<div class="inBox full">
+				<div class="thumb"><img src="/web/renew_img/thumb_shampoo.png" /></div>
+				<div class="thumbDesc">
+					<p class="treatPart">에센스</p>
+					<p class="treatCode">9000000312</p>
+					<p class="treatLevel"><!-- 총 5개 중 2개 타입만 노출 됩니다. //-->
+						<span class="sType purple">Hydrating</span>
+						<span class="sType orange">Illuminating</span>
+						<!-- 
+						<span class="sType yellow">Smoothing</span>
+						<span class="sType green">Pore Refreshing</span>
+						<span class="sType blue">Calming</span>
+						//-->
+					</p>
+				</div>
+			  </div>
+		  </div>
+		  <div class="treatBtns">
+				<a href="#none" class="btnSq full black">구매하기</a>
+			</div>
+		</div>
+		<!-- LOOP //-->
+		<!-- LOOP //-->
+		<div class="treatHisBox">
+		  <span class="delHis"><a href="javascript:deleteSurveyDiagnosis('62f7af8375551c20f97c6c3ef929ec8d')" title="진단내역 삭제"></a></span>
+		  <div class="treatTitle">
+			<span class="labelFb"></span>
+			<p>
+				#글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한
+			</p>
+			<span class="treatDate">진단일 : 22.07.28</span>
+		  </div>
+		  <div class="treatInfo">
+			<div class="inBox">
+				<div class="thumb"><img src="/web/renew_img/thumb_shampoo.png" /></div>
+				<div class="thumbDesc">
+					<p class="treatPart">샴푸</p>
+					<p class="treatCode">9000000312</p>
+					<p class="treatLevel"><em>Lv3.</em>지성용</p>
+				</div>
+			  </div>
+			  <div class="inBox">
+				<div class="thumb"><img src="/web/renew_img/thumb_treatment.png" /></div>
+				<div class="thumbDesc">
+					<p class="treatPart">트리트먼트</p>
+					<p class="treatCode">9000000312</p>
+					<p class="treatLevel"><em>Lv3.</em>지성용</p>
+				</div>
+			  </div>   
+		  </div>
+		  <div class="treatBtns">
+				<a href="#none" class="btnSq full black">구매하기</a>
+			</div>
+		</div>
+		<!-- LOOP //-->
+		<!-- LOOP //-->
+		<div class="treatHisBox">
+		  <span class="delHis"><a href="javascript:deleteSurveyDiagnosis('62f7af8375551c20f97c6c3ef929ec8d')" title="진단내역 삭제"></a></span>
+		  <div class="treatTitle">
+			<p>
+				#글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한 임다글자수는 열자제한
+			</p>
+			<span class="treatDate">진단일 : 22.07.28</span>
+		  </div>
+		  <div class="treatInfo">
+			<div class="inBox full">
+				<div class="thumb"><img src="/web/renew_img/thumb_shampoo.png" /></div>
+				<div class="thumbDesc">
+					<p class="treatPart">에센스</p>
+					<p class="treatCode">9000000312</p>
+					<p class="treatLevel"><!-- 총 5개 중 2개 타입만 노출 됩니다. //-->
+						<span class="sType purple">Hydrating</span>
+						<span class="sType orange">Illuminating</span>
+						<!-- 
+						<span class="sType yellow">Smoothing</span>
+						<span class="sType green">Pore Refreshing</span>
+						<span class="sType blue">Calming</span>
+						//-->
+					</p>
+				</div>
+			  </div>
+		  </div>
+		  <div class="treatBtns">
+				<a href="#none" class="btnSq full black">구매하기</a>
+			</div>
+		</div>
+		<!-- LOOP //-->
+	  </div>
+
+	  <div class="survey_progress progress new" style="display: none;">
+		<div class="prog_txt">
+			아직 완료되지 않은 진단이 있어요.
+			<em>진단을 완료해보세요!</em>
+		</div>
+		<div class="prog_quiz">
+			<div class="progBox skin" style="display: none;">
+				<a href="#none" class="survey_progress_skin_link">
+				<strong>피부 진단</strong> 이어하기
+				</a>
+			</div>
+			<div class="progBox hair" style="display: none;">
+				<a href="#none" class="survey_progress_hair_link">
+				<strong>헤어 진단</strong> 이어하기
+				</a>
+			</div>
+		</div>
+	  </div>
+
+	 </div>
+
+  </div>
+  <!-- //inner -->
+</div>
+<!-- //myArea -->
+
+<!-- 맞춤형 - 문진 -->
+<!--@import(/survey/common.html)-->
+
+<!--@js(/survey/js/class/MyShop.js)-->
+<!--@js(/survey/js/survey_diagnosis_list.js)-->
+<style>
+  .message {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    font-weight: 400;
+  }
+</style>

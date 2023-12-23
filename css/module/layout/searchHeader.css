@@ -1,0 +1,33 @@
+#searchBarForm .dimmed { display:none !important; }
+
+.searchBox.xans-layout-searchheader { display:none; position:absolute; top:80px; left:0; right:0; z-index:99; background: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1)); /*background-color:#fff;*/ /*box-shadow: 0px 0px 4px 0px rgb(34 34 34 / 20%);border:1px solid #cccccc; border-radius:1px;*/ }
+.searchBox.xans-layout-searchheader .searchForm { position:relative; margin:7px 80px 7px 16px; padding:0 34px 0 16px; background:#f5f5f5; /*background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/bg_search.png") no-repeat 7px 5px; background-size:20px 20px;*/ }
+.searchBox.xans-layout-searchheader .btnDelete { position:absolute; right:8px; top:6px; width:20px; height:20px; border:0; cursor:pointer; background:transparent; /*overflow:hidden; text-indent:100%; font-size:13px; white-space:nowrap; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0; background-size:20px 20px;*/ }
+.searchBox.xans-layout-searchheader .btnDelete i { font-size:20px; color:#333; }
+.searchBox.xans-layout-searchheader #keyword { width:100%; height:32px; padding:0; border:0; background:transparent; }
+.searchBox.xans-layout-searchheader .btnClose { position:absolute; right:16px; top:7px; width:56px; height:32px; margin:0; padding:0; border:1px solid #ddd; outline-style:none; cursor:pointer; background:#fff; font-size:13px; color:#000; text-align:center; }
+.searchBox.xans-layout-searchheader .btnSearch { position:absolute; right:16px; top:7px; width:56px; height:32px; margin:0; padding:0; border:0px solid #000; outline-style:none; cursor:pointer; background:#000; font-size:13px; color:#fff; text-align:center; }
+
+.searchBox.xans-layout-searchheader .xans-search-hotkeyword { }
+.searchBox.xans-layout-searchheader .xans-search-hotkeyword ul { overflow-y:auto; max-height:252px; text-align:left; /*overflow-y:auto; max-height:278px; padding:7px 16px; border-bottom:1px solid #ddd; text-align:left; font-size:0;*/ }
+.searchBox.xans-layout-searchheader .xans-search-hotkeyword li { position:relative; padding:0; border-bottom:1px dashed #ddd; /*position:relative; display:inline-block; vertical-align:top;*/ }
+.searchBox.xans-layout-searchheader .xans-search-hotkeyword li:last-child { border-bottom:1px solid #ddd; }
+.searchBox.xans-layout-searchheader .xans-search-hotkeyword li a { display:block; padding:12px 16px 11px; color:#333; font-size:13px; min-height:13px; /*display:inline-block; padding:7px 15px 7px 14px; color:#333; font-size:13px;*/ }
+/*.searchBox.xans-layout-searchheader .xans-search-hotkeyword li a:before { display:block; content:""; position:absolute; top:7px; right:0; width:1px; height:13px; background:#757575; }*/
+.searchBox.xans-layout-searchheader .xans-search-hotkeyword li:last-child a:before { display:none; }
+
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword { }
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword p { padding:12px 14px 11px; border-bottom:1px solid #d5d5d5; color:#787878; font-size:13px; text-align:left; }
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword ul { overflow-y:auto; max-height:252px; text-align:left; }
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword li { position:relative; padding:0 39px 0 0; border-bottom:1px dashed #ddd; }
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword li a { display:block; padding:12px 0 11px 16px; color:#333; font-size:13px; min-height:13px; }
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword li .btnDelete { position:absolute; right:9px; top:10px; overflow:hidden; width:20px; height:20px; padding:0; border:0; /*text-indent:100%; white-space:nowrap; background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_delete.png") no-repeat 0 0; background-size:20px 20px;*/ }
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword .button { padding:8px 0; text-align:center; border-bottom:1px solid #ddd; /*background:#f8f8f8;*/ }
+.searchBox.xans-layout-searchheader .xans-search-recentkeyword .button .btnDeleteAll { display:inline-block; height:32px; line-height:32px; margin:0; padding:0 18px; border:1px solid #ddd; font-size:13px; cursor:pointer; vertical-align:middle; color:#000; background-color:#fff; -moz-box-sizing:border-box; box-sizing:border-box; font-family: 'Ubuntu','Noto Sans KR',sans-serif; }
+
+.xans-layout-searchheader .searchForm .autoDrop { display:none; position:absolute; left:0; z-index:201; width:100%; border:1px solid #d5d5d5; background-color:#fff; }
+.xans-layout-searchheader .searchForm .autoDrop li a { display:block; width:auto; padding:10px 33px; border-bottom:1px solid #d5d5d5; text-align:left; }
+.xans-layout-searchheader .searchForm .autoDrop li:last-of-type a { border-bottom:none; }
+
+.searchBox .ec-base-tab ul { margin: 0 12px; }
+.searchBox .ec-base-tab li.selected a { border-left:1px solid #eee; }

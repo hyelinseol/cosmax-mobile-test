@@ -1,0 +1,31 @@
+#contents { padding:0 0 8px; }
+.xans-mall-company { margin:14px 20px 0; font-size:13px;  }
+.xans-mall-company .info { margin:7px 0 0; background:#fff; }
+.xans-mall-company .info:first-child { margin-top:0; }
+.xans-mall-company .info > h3 { padding:10px 14px 9px; border-bottom:1px solid #f1f1f1; font-weight:normal; font-size:13px; }
+.xans-mall-company .info .desc { padding:8px 7px; color:#444; font-size:11px; }
+.xans-mall-company .info .desc img { width:auto !important; height:auto !important; max-width:100%; }
+.xans-mall-company .info > span { display:block; padding:7px 14px; text-align:center; }
+.xans-mall-company .info > span img { max-width:100%; }
+
+.xans-mall-company .xans-layout-footer.ec-base-table  { border:1px solid #ddd; border-radius:8px; overflow:hidden; }
+
+/* 회사소개 - 굿디몰 추가 */
+.comNotice { border: 1px solid #ddd; margin: 0 auto; padding: 16px 8px 8px; box-sizing: border-box;}
+.comNotice .com_notice { font-size: 12px; line-height: 1.6em; font-weight: 300; margin: 0 0 8px;}
+.comNotice .com_notice span { background: #ffef00; font-weight: 400;}
+
+.comArea { position: relative; overflow: hidden; width: 100%; margin: 0 auto 20px; color: #444; font-size: 14px; line-height: 20px; text-align: center; }
+.comArea a:hover { text-decoration: none; }
+.comArea .box { margin: 0 0 40px; box-sizing: border-box; }
+.com_info { margin: 30px 0 40px;}
+.com_info .tit { color: #222; font-size: 24px; line-height: 1.3em; font-weight: 700;}
+.com_info .con {font-size: 14px; line-height: 1.5em; color: #333; font-weight: 400; margin: 20px 0 0;}
+
+.com_txt { margin: 0 auto 40px; vertical-align: top;}
+.com_txt .tit { position: relative; font-size: 20px;  font-weight: 500; color:#333;  margin:0 0 20px; line-height:1.3em; word-spacing:-.5px;}
+.com_txt .tit span {color: #f26522; font-weight: 700;}
+.com_txt .con { font-size: 13px; line-height: 1.5em; font-weight: 400;  color: #555; }
+
+.com_img { width: 100%; margin: 0 auto; }
+.com_img img { width: 100%; }

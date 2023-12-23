@@ -1,0 +1,108 @@
+.xans-product-menupackage #titleArea h2 { padding: 0; }
+
+.xans-product-menupackage .titleArea { margin:0; }
+.xans-product-menupackage > ul { margin: 0 auto; padding:0 15px; background:#fff; font-size: 0; }
+.xans-product-menupackage > ul .icoOpen { width:13px; cursor:pointer; vertical-align:top; }
+.xans-product-menupackage > ul > li { padding: 0; border-top:1px solid #eee; }
+.xans-product-menupackage > ul > li:first-child { border-top:0; }
+.xans-product-menupackage > ul > li > a { display: inline-block; margin: 4px; padding: 8px 12px; font-size: 12px; font-weight: 400; color: #777; border: 1px solid #eee; }
+.xans-product-menupackage > ul > li > ul { display:inline; }
+.xans-product-menupackage > ul > li > ul > li { position:relative; display:inline-block; padding:0 7px 0 8px; }
+.xans-product-menupackage > ul > li > ul > li:before { display:block; content:""; position:absolute; top:0; left:0; width:1px; height:13px; background:#d6d6d6; }
+.xans-product-menupackage > ul > li > ul > li:first-child:before { display:none; }
+.xans-product-menupackage > ul li.selected > a { color:#000; }
+.xans-product-menupackage > ul > li > ul > li > .button { display:inline-block; position:relative; width:13px; height:12px; }
+.xans-product-menupackage .subCategory { display:none; position:absolute; right:0; top:13px; z-index:11; min-width:120px; padding:12px 12px 0; border:1px solid #9b9b9b; background:#fff; border-radius:4px; box-shadow: 3px 3px 15px #a8a8a8;}
+.xans-product-menupackage .subCategory li { padding:7px 0 0; }
+.xans-product-menupackage .subCategory li:first-child { padding:0 13px 0 0; }
+.xans-product-menupackage .subCategory li a { color:#000; }
+.xans-product-menupackage .subCategory li a:hover,
+.xans-product-menupackage .subCategory li.selected a { color:#000; }
+.xans-product-menupackage .subCategory .icoClose { position:absolute; right:12px; top:12px; width:13px; cursor:pointer; }
+.xans-product-menupackage .menuCategory .button.selected { z-index:11; }
+.xans-product-menupackage .menuCategory .button.selected .subCategory { display:block; }
+.xans-product-menupackage .menuCategory li.xans-product-displaysubcategory { display:inline-block; border:0; }
+.xans-product-menupackage .banner { margin:16px; }
+.xans-product-menupackage .banner img { width:100%; }
+
+/* 기능버튼 */
+.xans-product-menupackage #titleArea .funcArea.like { position:absolute; top:auto; bottom:8px; right:14px; }
+.xans-product-menupackage #titleArea .likeButton { position:static; top:auto; left:auto; display:inline-block; margin:0; vertical-align:middle; }
+.xans-product-menupackage .likeButton button { border:0; background:none; }
+.xans-product-menupackage .likeButton button strong { margin:0 0 0 3px; font-size:11px; line-height:20px; color:#757575; }
+.xans-product-menupackage .likeButton.selected button strong { line-height:20px; color:#2e2e2e; vertical-align:middle; }
+.xans-product-menupackage #titleArea .likeButton span { position:static; }
+
+/* ADD */
+.subVisual {position:relative; height:210px;}
+.subVisual.svProduct {background:url(/web/upload/mynomy/kr_mobile/layout/sv_product.jpg) no-repeat center/cover; background-size:cover;}
+
+.txtNavi {display:block; height:auto; overflow:hidden; border-top:2px solid#0B0A0A; border-bottom:2px solid#0B0A0A; color:#0B0A0A; font-weight:400;}
+.txtNavi .swiper-slide {width:auto; font-size:12px; line-height:1.5; font-weight:400; text-transform:uppercase; padding:5px 0; letter-spacing:0;}
+.txtNavi .swiper-wrapper{
+  -webkit-transition-timing-function:linear!important; transition-timing-function:linear!important; 
+  position: relative;
+}
+
+/* 230413 */
+.giftList {display:block; background:#F7F7F7; padding-bottom:80px;}
+.giftPrd {position:relative; padding:36px 0 0px;}
+.giftPrd:after {content:''; clear:both; display:block; height:auto; overflow:hidden;}
+.giftPrd .mpTitle {color:#242424; font-size:20px; font-weight:700; font-family: "Gotham SSm A","Gotham SSm B"; position:relative; margin-bottom:15px; display:flex; align-items:center; padding:0 20px;}
+.giftPrd .prdRollingGift {padding:0 20px;}
+.giftPrd .prdRollingGift .prdList {margin-top:0; padding-top:0;}
+.giftPrd .prdRollingGift .prdList .swiper-slide {margin-bottom:0;}
+.giftPrd .ec-base-product {}
+.giftPrd .ec-base-product .swiper-slide {display:inline-block; width:auto;}
+.giftPrd .ec-base-product .thumbnail {margin:0;}
+.giftPrd .ec-base-product .spec li {text-align:left;}
+
+.giftPrd .ec-base-product {margin-top:0;}
+.giftPrd .ec-base-product .description ul.otDis .price.origin { text-decoration:line-through; color:#999 !important; font-size:12px !important; font-weight:400 !important; line-height:1.5; vertical-align:0;}
+.giftPrd .ec-base-product .description {padding-right:42px; box-sizing:border-box; position:relative;}
+.giftPrd .ec-base-product .description .prdGift {position:absolute; right:3px; top:0; display:flex; justify-content:center; align-items:center; width:34px; height:34px; background:#FF5D5C; border-radius:4px;}
+.giftPrd .ec-base-product .description .prdGift:before {content:''; display:inline-block; width:20px; height:20px; background:url(/web/renew_img/ico_list_gift.svg) no-repeat 50% 50%; background-size:auto 100%;}
+
+.giftPrd .ec-base-product .description .price.sale .disPrice {margin-top:0;}
+.giftPrd .ec-base-product .description ul.otDis .price.origin {margin:0 !important;}
+.giftPrd .ec-base-product .description ul.otDis .simple {display:none;}
+.giftPrd .ec-base-product .spec li.price.origin,
+.giftPrd .ec-base-product .spec li.price.sale {margin-bottom:2px;}
+
+/* 230912 Add */
+.prdCateSec {display:flex; flex-direction:column; justify-content:flex-end; width:100%; max-width:1440px; margin:0 auto; padding:26px 0 30px;}
+.prdCateSec .titleSec {text-align:center; margin-bottom:50px;}
+.prdCateSec .titleSec .title {color:#0B0A0A; font-size:40px; font-weight:700; font-family: "Gotham SSm A","Gotham SSm B","Pretendard";}
+
+.prdCateSec .prdCate {display:flex; justify-content:flex-start; align-items:stretch; gap:8px; white-space:nowrap; overflow-x:auto; padding:0 20px;}
+.prdCateSec .prdCate::-webkit-scrollbar {display: none;}
+.prdCateSec .prdCate {
+	-ms-overflow-style: none; /* 인터넷 익스플로러 */
+	scrollbar-width: none; /* 파이어폭스 */
+}
+.prdCateSec .prdCate .perCate {display:inline-block; width:75px; text-align:center;}
+.prdCateSec .prdCate .perCate a {display:block;}
+.prdCateSec .prdCate .perCate .imgSec {width:75px; height:75px; border:1px solid #FFF; border-radius:50%; padding:3px; box-sizing:border-box; margin-bottom:5px;}
+.prdCateSec .prdCate .perCate .imgSec span {width:100%; height:100%; border-radius:50%; overflow:hidden;}
+.prdCateSec .prdCate .perCate .imgSec span img {max-width:100%;}
+.prdCateSec .prdCate .perCate .txt {color:#000; font-size:13px; font-weight:500; opacity:0.7; word-break:keep-all;}
+.prdCateSec .prdCate .perCate.on .imgSec {border:2px solid #000;}
+.prdCateSec .prdCate .perCate.on .txt {opacity:1.0;}
+
+.cateVisualWrap {}
+.cateVisualWrap .cateVisual {position:relative; display:none;}
+.cateVisualWrap .cateVisual span img {width:100%;}
+.cateVisualWrap .cateVisual .cateTitle {position:absolute; left:50%; top:22%; transform:translate(-50%, 0); width:100%; height:auto; max-width:1440px; padding:0 20px; margin:0 auto; box-sizing:border-box; z-index:10;}
+.cateVisualWrap .cateVisual .cateTitle .title {color:#FFF; font-size:24px; font-weight:700; margin-bottom:17px;}
+.cateVisualWrap .cateVisual .cateTitle .desc {color:#FFF; font-size:14px; font-weight:400; line-height:1.5;}
+.cateVisualWrap .cateVisual .cateTitle .desc strong {font-weight:700 !important;}
+
+.catePrdWrap {position:relative; padding:0 20px;}
+.catePrdWrap:after {content:''; position:absolute; left:0; top:0; width:100%; height:143px; background: linear-gradient(180deg, #DCDCDC 0%, rgba(220, 220, 220, 0.00) 100%);}
+.catePrdWrap .prdInner {width:100%; max-width:1440px; margin:0 auto 70px; position:relative; z-index:10;}
+.catePrdWrap .prdInner.giftPrd {padding-top:0;}
+.catePrdWrap .prdInner .title {padding:54px 0 40px 0 ; color:#0B0A0A; font-size:20px; font-weight:600; letter-spacing:-1px;}
+
+.prdBnrSec {display:block; width:100%; max-width:1440px; margin:40px auto;}
+.prdBnrSec .prdBnr img {max-width:100%;}
+.prdBnrSec .prdBnr .count-pagination.swiper-pagination-fraction {position:absolute; left:unset; right:10px; bottom:10px; color:#FFF; background:rgba(51, 51, 51, 0.5); border-radius:50px; padding:0 9px; height:24px; line-height:24px; width:auto; z-index:10;}

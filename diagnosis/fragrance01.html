@@ -1,0 +1,38 @@
+<!--@layout(/layout/basic/diagnosis.html)-->
+<!--@import(/diagnosis/progress.html)-->
+<div class="progress-percent" data-start="80%" data-progress="100%"></div>
+<div class="contentBox fragrance">
+    <div class="full">
+        <div class="txt treat">
+            <h3>원하는 향과 부향율을 선택하세요.</h3>
+        </div>                
+        <div class="select">
+            <div class="controlSlide fragrance plus"> 
+                <!---------------------------------------------------------------------------------------------------------------------------
+                    ■ 슬라이드 ■
+
+                    ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+                    ※ 앞에 @가 있는 파일들을 수정하실 경우, 마우스 오버시 보이는 파일열기 버튼 클릭 후 나타나는 창에서 수정하시면 됩니다.
+                ---------------------------------------------------------------------------------------------------------------------------->
+                <!--@import(/diagnosis/fragrance_slide01.html)-->
+
+                <div class="strength">
+                    <span>부향율</span>
+                    <span>
+                        <input type="radio" name="strength" class="radiobox"><label>보통</label>
+                        <input type="radio" name="strength" class="radiobox"><label>강하게</label>      
+                    </span>    
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="dBtn gColumn gFixed">
+        <a href="/diagnosis/lifestyle02.html" class="btnPrev">이전</a>
+        <a href="/diagnosis/profile01.html" class="btnNext">다음</a>
+    </div>  
+</div>
+<div class="popWrap">
+    <div class="pop">
+        <p>거의 다 왔어요!<br>원하시는 향을 골라주세요~!</p>
+    </div>    
+</div>   

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- 웹아이콘 -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    
+    <!-- 홈페이지 사용 폰트:: 대부분 구글 웹 폰트를 사용합니다  -->
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7612620/6589632/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    
+    <title></title>
+    <!--@css(/layout/basic/css/common.css)--> <!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요 :: 수정 시 주의요망 -->
+    <!--@css(/layout/basic/css/layout.css)-->
+    <!--@css(/gd_import/css/layout.css)--> <!-- 굿디몰 추가 CSS :: 사이트 디자인에 사용된 대부분의 css는 해당 파일에서 수정하실 수 있습니다 :: 수정 시 주의요망 -->
+    <!--@css(/gd_import/css/mypage.css)-->
+    <!--@css(/gd_import/css/btn.css)--> <!-- 굿디몰 추가 CSS :: 사이트 디자인에 사용된 대부분의 css는 해당 파일에서 수정하실 수 있습니다 :: 수정 시 주의요망 -->
+    <!--@css(/layout/basic/css/ec-base-ui.css)-->
+    <!--@css(/layout/basic/css/ec-base-paginate.css)-->
+    <!--@css(/layout/basic/css/ec-base-help.css)-->
+    <!--@css(/layout/basic/css/ec-base-product.css)--> <!-- 상품관련 CSS :: 상품진열과 관련된 css는 해당 파일에서 수정하실 수 있습니다 :: 수정 시 주의요망 -->
+    <!--@css(/layout/basic/css/ec-base-button.css)-->
+    <!--@css(/layout/basic/css/ec-base-box.css)-->
+    <!--@css(/layout/basic/css/ec-base-layer.css)-->
+    <!--@css(/layout/basic/css/ec-base-tab.css)-->
+    <!--@css(/layout/basic/css/ec-base-tooltip.css)-->
+    <!--@css(/layout/basic/css/ec-base-table.css)-->
+    <!--@css(/layout/basic/css/ec-base-fold.css)-->
+    <!--@css(/layout/basic/css/ec-base-prdInfo.css)-->
+
+    <!--@js(/layout/basic/js/common.js)-->
+    <!--@js(/gd_import/js/sale_price.js)-->
+    <!--@js(/gd_import/js/basic.js)-->
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="/gd_import/css/swiper.min.css">
+    <script src="/gd_import/js/swiper.min.js"></script>   
+</head>
+<body id="mypage">
+	<div id="wrap">
+    	<!--@import(/layout/basic/sidebar.html)--> <!-- ◀ 햄버거메뉴 수정영역 -->
+    	<hr class="layout">
+    	<div id="container">
+            <!---------------------------------------------------------------------------------------------------------------------------
+            ■ 탑배너 ■
+            ※ 해당영역을 사용을 원치 않을 경우, @import < 의 @를 삭제해주시기 바랍니다. ( 추후 재사용시에는 @다시 붙여서 사용 )
+            ---------------------------------------------------------------------------------------------------------------------------->
+            <!--import(/gd_import/top_banner.html)-->
+        	<header id="header">
+                <!--@import(/gd_import/header.html)--> <!-- ◀ 헤더영역 //  로고 수정위치입니다. -->
+                <!--import(/gd_import/navigation.html)--> <!-- ◀ 네비게이션 //  상단 카테고리 소스 위치입니다. -->
+            </header>
+            <hr class="layout">
+            <div id="contents">
+                <!--@contents-->
+            </div>
+            <hr class="layout">
+           <!-----------------------------------------------------------------------------------
+            ■ footer 정보 수정시 아래의 html파일에서 [파일열기] 클릭 후 수정하시면 됩니다. ■
+
+            ※ 홈페이지 최 하단 회사정보는 해당 파일에서 수정하실 수 있습니다
+                : 계좌번호, 연락처, 운영시간 등등
+            ------------------------------------------------------------------------------------>
+            <!--import(/layout/basic/footer.html)-->
+        </div>
+    </div>
+    <!-- 마케팅 정보 전송 -->
+	<!--@js(/gd_import/js/marketting_info.js)-->
+</body>
+</html>

@@ -1,0 +1,3 @@
+.promoWrap {display:block; height:auto; overflow:hidden;}
+.promoWrap .promoSec {display:block; padding:0; margin:0;}
+.promoWrap .promoSec img {max-width:100%;}

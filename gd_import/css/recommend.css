@@ -1,0 +1,24 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.recommend_wrap{position: relative;font-family: 'Pretendard';}
+.recommend_wrap .top_banner{position: absolute;left: 0;top: 0;right: 0;}
+.recommend_wrap .top_banner a{display: block;font-size: 10px;color: #fff;text-align: center;background: #FF585D;height: 30px;line-height: 30px;}
+.recommend_wrap .inner{max-width: 1200px;margin: 0 auto;}
+.recommend_wrap .recommend{background: linear-gradient(to bottom, rgba(255,231,231,0.8) 10%, rgba(255,231,231,1) 15%);padding: 53px 0 36px;}
+.recommend_wrap .recommend .title{text-align: center;}
+.recommend_wrap .recommend .title > span{display: block;font-size: 28px;color: #333333;line-height: 135%;}
+.recommend_wrap .recommend .title > strong{display: block;font-size: 28px;color: #FF5D5C;padding-bottom: 16px;font-weight: 700 !important;line-height: 135%;}
+.recommend_wrap .recommend .title p{font-size: 16px;color: #333333;line-height: 150%;}
+.recommend_wrap .recommend .title p.bot_txt{font-size: 14px;}
+.recommend_wrap .recommend .title .img{padding: 36px 0;}
+.recommend_wrap .recommend .title .img img{max-width: 100%;}
+.recommend_wrap .recommend .title a{display: inline-block;background: #0B0A0A;width: 335px;height: 52px;line-height: 52px;border-radius: 4px;margin-top: 34px;}
+.recommend_wrap .recommend .title a span{display: inline-block;font-size: 16px;color: #fff;position: relative;padding-right: 20px;}
+.recommend_wrap .recommend .title a span:after{content: '>';font-size: 18px;color: #fff;position: absolute;right: 0;top: 0;line-height: 50px;}
+.recommend_wrap .note{background: #333333;padding: 20px;overflow: hidden;}
+.recommend_wrap .note h3{font-size: 14px;color: #fff;text-align: left;padding-bottom: 14px;}
+.recommend_wrap .note .note_list{}
+.recommend_wrap .note .note_list ul{}
+.recommend_wrap .note .note_list ul li{margin-bottom: 20px;font-size: 12px;color: #fff;line-height: 150%;}
+.recommend_wrap .note .note_list ul li:last-child{margin-bottom: 0;}
+.recommend_wrap .note .note_list ul li span{display: block;font-size: 12px;color: #fff;line-height: 150%;position: relative;padding-left: 10px;margin-left: 10px;}
+.recommend_wrap .note .note_list ul li span:before{content: '-';font-size: 12px;color: #fff;position: absolute;left: 0;top: 0;}
